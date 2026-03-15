@@ -86,58 +86,26 @@ jobs:
             echo "⚠️ latest.json not found - might be no changes detected"
           fi
       
-      - name: Archive latest.json with timestamp
+      - name: Commit updated data
         if: success()
         run: |
-          # Create archive directory with year-month subdirectory
-          YEAR_MONTH=$(date -u +"%Y-%m")
-          mkdir -p "archive/${YEAR_MONTH}"
-          
-          # Get timestamp
-          TIMESTAMP=$(date -u +"%Y%m%d_%H%M%S")
-          
-          # Copy latest.json to archive if it exists
-          if [ -f latest.json ]; then
-            cp latest.json "archive/${YEAR_MONTH}/${TIMESTAMP}.json"
-            echo "✅ Archived to archive/${YEAR_MONTH}/${TIMESTAMP}.json"
-            
-            # Configure git
-            git config --local user.email "github-actions[bot]@users.noreply.github.com"
-            git config --local user.name "github-actions[bot]"
-            
-            # Stage ALL generated files BEFORE pulling to prevent
-            # "untracked working tree files would be overwritten" errors
-            git add archive/
-            if [ -f ftp_history.json ]; then
-              git add ftp_history.json
-              echo "✅ Staged ftp_history.json"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          for f in latest.json history.json intervals.json ftp_history.json; do
+            if [ -f "$f" ]; then
+              git add "$f"
             fi
-            if [ -f history.json ]; then
-              git add history.json
-              echo "✅ Staged history.json"
-            fi
-            if [ -f latest.json ]; then
-              git add latest.json
-              echo "✅ Staged latest.json"
-            fi
-            if [ -f intervals.json ]; then
-              git add intervals.json
-              echo "✅ Staged intervals.json"
-            fi
-            
-            # Now pull - autostash will safely stash staged changes
-            git pull --rebase --autostash origin main
-            
-            # Only commit if there are changes
-            if ! git diff --staged --quiet; then
-              git commit -m "Archive training data + FTP history - $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
-              git push
-              echo "✅ Archive and FTP history committed and pushed"
-            else
-              echo "⏭️  No new archive to commit"
-            fi
+          done
+
+          git pull --rebase --autostash origin main
+
+          if ! git diff --staged --quiet; then
+            git commit -m "Update training data - $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
+            git push
+            echo "✅ Data committed and pushed"
           else
-            echo "⚠️ Skipping archive - no latest.json to archive"
+            echo "⏭️  No changes to commit"
           fi
       
       - name: Update README with last sync time
