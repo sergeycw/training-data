@@ -1,22 +1,9 @@
 # Athlete Training Dossier & Performance Roadmap
 
-**Dossier Version:** v1.1.1  
-**Protocol Compatibility:** Section 11 v11.6+  
-**Date:** [YYYY-MM-DD]  
-**Primary Source Systems:** Intervals.icu | [Other platforms]
-
-This document serves as a reference template for endurance athletes using the deterministic AI-coaching framework defined in Section 11.
-
----
-
-## Quick Start
-
-1. Fill in your athlete profile (Section 1)
-2. Document your equipment (Section 2)
-3. Define your training schedule and goals (Section 3)
-4. Enter your current performance metrics (Section 4)
-5. Set up your nutrition/fueling protocol (Section 5)
-6. Link this dossier to your JSON data mirror (see Section 11 for protocol)
+**Dossier Version:** v1.0
+**Protocol Compatibility:** Section 11 v11.6+
+**Date:** 2026-03-15
+**Primary Source Systems:** Intervals.icu | Garmin
 
 ---
 
@@ -26,39 +13,30 @@ This document serves as a reference template for endurance athletes using the de
 
 | Field | Value |
 |-------|-------|
-| Name | [Your name or alias] |
-| Age | [Age] |
-| Height | [cm] |
-| Current Weight | [kg] |
-| Target Weight | [kg] |
-| Location | [City, Country] |
-
-**Weigh-in Protocol:** [e.g., Once weekly, Friday morning, after bathroom, before food/drink]
-
-### Medications & Supplements (Optional)
-
-| Time | Items |
-|------|-------|
-| [Time] | [List medications/supplements] |
-| [Time] | [List medications/supplements] |
+| Name | Sergey |
+| Age | 35-40 |
+| Height | — |
+| Current Weight | 69.4 kg |
+| Target Weight | — |
+| Location | — |
 
 ### Sport Focus
 
 | Type | Description |
 |------|-------------|
-| Primary | [e.g., Cycling performance (Endurance)] |
-| Secondary | [e.g., Running, SkiErg, Walking] |
+| Primary | Cycling (Road / Gravel) |
+| Secondary | — |
 
 ### Goals
 
 | Goal | Target Date |
 |------|-------------|
-| [Primary goal] | [Year] |
-| [Secondary goal] | [Year] |
-| [Tertiary goal] | [Year] |
+| Reach 4+ W/kg | 2026 |
+| Increase FTP from 243W to 280W+ | 2026 |
+| Optimize weight (currently ~70 kg) | 2026 |
 
-**Current Phase:** [e.g., Aerobic build + threshold development]  
-**Training Style:** [e.g., High-volume polarized (~15h/week)]
+**Current Phase:** Build (threshold + VO2max development)
+**Training Style:** High-volume polarized (~12h/week)
 
 ---
 
@@ -68,36 +46,17 @@ This document serves as a reference template for endurance athletes using the de
 
 | Component | Details |
 |-----------|---------|
-| Trainer/Bike | [Model] |
-| Platform | [e.g., Zwift, TrainerRoad, Tacx App] |
-| Cooling | [Fans, AC, etc.] |
-| Sensors | [HRM, power meter, cadence] |
-| Pedals | [Model] |
+| Platform | Zwift |
+| Sensors | Smart trainer (power), HRM |
 
 ### Outdoor Setup
 
 | Component | Details |
 |-----------|---------|
-| Bike | [Model, size] |
-| Power Meter | [Model] |
-| Head Unit | [Model] |
-| HRM | [Model] |
+| Bike | Gravel bike (no power meter) |
+| HRM | Garmin |
 
-### Other Modalities
-
-| Modality | Equipment | Purpose |
-|----------|-----------|---------|
-| [e.g., SkiErg] | [Model] | [e.g., Upper-body aerobic] |
-| [e.g., Running] | [Shoes, watch] | [e.g., Active recovery] |
-| [e.g., Strength] | [Equipment] | [e.g., Core stability] |
-
-### Environment
-
-| Factor | Details |
-|--------|---------|
-| Indoor | [Description of training space, ventilation, temperature] |
-| Outdoor | [Typical terrain, climate, temperature range] |
-| Calibration | [Routine for power meter calibration] |
+**Note:** Outdoor rides use HR-based intensity guidance only (no power data).
 
 ---
 
@@ -105,129 +64,82 @@ This document serves as a reference template for endurance athletes using the de
 
 ### Weekly Volume Target
 
-**Baseline:** [X] hours/week (± [Y] hours)  
-**Peak phases:** Up to [Z] hours (requires RI ≥ 0.8, HRV within 10%)
+**Baseline:** 12 hours/week (± 2 hours)
+**Peak phases:** Up to 15 hours (requires RI ≥ 0.8, HRV within 10%)
 
 ### Normal Weekly Schedule
 
-| Day | Primary Session | Duration | Secondary |
-|-----|-----------------|----------|-----------|
-| Sunday | [Workout type] | [Duration] | [Optional] |
-| Monday | [Workout type] | [Duration] | [Optional] |
-| Tuesday | [Workout type] | [Duration] | [Optional] |
-| Wednesday | [Workout type] | [Duration] | [Optional] |
-| Thursday | [Workout type] | [Duration] | [Optional] |
-| Friday | [Workout type] | [Duration] | [Optional] |
-| Saturday | [Workout type] | [Duration] | [Optional] |
+| Day | Primary Session | Duration |
+|-----|-----------------|----------|
+| Monday | Endurance Z2 (Zwift) | 1.5-2h |
+| Tuesday | VO2max intervals (Zwift) | 1-1.5h |
+| Wednesday | Endurance Z2 (Zwift) | 1.5-2h |
+| Thursday | Threshold / Sweetspot (Zwift) | 1-1.5h |
+| Friday | Recovery or Rest | 0-1h |
+| Saturday | Long ride (outdoor gravel or Zwift) | 2.5-4h |
+| Sunday | Endurance Z2 (Zwift or outdoor) | 1.5-2.5h |
 
 ### Session Details
 
 | Session Type | Target Power/HR | Duration | Purpose |
 |--------------|-----------------|----------|---------|
-| VO₂Max | [W or % FTP] | [Duration] | [Purpose] |
-| Endurance | [W or % FTP] | [Duration] | [Purpose] |
-| Sweetspot | [W or % FTP] | [Duration] | [Purpose] |
-| Long Ride | [W or % FTP] | [Duration] | [Purpose] |
-| Recovery | [W or % FTP] | [Duration] | [Purpose] |
+| VO2Max | 258-292W (106-120% FTP) | 1-1.5h | Aerobic capacity |
+| Threshold | 221-255W (91-105% FTP) | 1-1.5h | FTP development |
+| Sweetspot | 204-236W (84-97% FTP) | 1.5-2h | Time at intensity |
+| Endurance | 136-182W (56-75% FTP) | 1.5-4h | Aerobic base |
+| Recovery | <134W (<55% FTP) | 0.5-1h | Active recovery |
 
 ### Recovery Protocol
 
 **Recovery Triggers (Auto-Deload):**
-- HRV ↓ > 20% → [Response]
-- RHR ↑ ≥ 5 bpm → [Response]
-- Feel ≥ 4 → [Response]
-- Two+ triggers → [Response]
-
-**Feel Scale:**
-| Score | Meaning |
-|-------|---------|
-| 1 | Excellent (fully recovered) |
-| 2 | Good (normal fatigue) |
-| 3 | Moderate (manageable tiredness) |
-| 4 | Fatigued (reduced readiness, deload trigger) |
-| 5 | Exhausted (complete rest required) |
-
-### Performance Objectives
-
-| Year | Phase | Focus | Primary KPI |
-|------|-------|-------|-------------|
-| [Year] | [Phase name] | [Focus area] | [Target metrics] |
-| [Year] | [Phase name] | [Focus area] | [Target metrics] |
-| [Year] | [Phase name] | [Focus area] | [Target metrics] |
+- HRV ↓ > 20% → Easy day, Z1-Z2 only
+- RHR ↑ ≥ 5 bpm → Flag fatigue, reduce volume 30%
+- Feel ≥ 4 → Reduce volume 30-40%
+- Two+ triggers → Full rest day
 
 ---
 
 ## 4. Performance Metrics
 
-### Current Power Zones
+### Current Power Zones (FTP = 243W)
 
 | Zone | % of FTP | Power (W) | Notes |
 |------|----------|-----------|-------|
-| Z1 | 0–55% | [Calculate] | Active Recovery |
-| Z2 | 56–75% | [Calculate] | Endurance (Base) |
-| Z3 | 76–90% | [Calculate] | Tempo |
-| Z4 | 91–105% | [Calculate] | Threshold |
-| Z5 | 106–120% | [Calculate] | VO₂max |
-| Z6 | 121–150% | [Calculate] | Anaerobic |
-| Z7 | 151%+ | [Calculate] | Neuromuscular |
-| SS | 84–97% | [Calculate] | Sweetspot |
+| Z1 | 0-55% | 0-134 | Active Recovery |
+| Z2 | 56-75% | 136-182 | Endurance (Base) |
+| Z3 | 76-90% | 185-219 | Tempo |
+| Z4 | 91-105% | 221-255 | Threshold |
+| Z5 | 106-120% | 258-292 | VO2max |
+| Z6 | 121-150% | 294-365 | Anaerobic |
+| Z7 | 151%+ | 367+ | Neuromuscular |
+| SS | 84-97% | 204-236 | Sweetspot |
 
-**Current FTP:** [W] (Indoor: [W])  
-**Max HR:** [bpm]  
-**Threshold HR:** [bpm]
+**Current FTP:** 243W (Indoor: 243W)
+**Max HR:** 176 bpm
+**Threshold HR (LTHR):** 160 bpm
+**Resting HR:** 45 bpm
+**HRV:** 46
+**eFTP:** 243.3W
+**W':** 20.3 kJ
+**P-max:** 800W
 
 ### Current Fitness Markers
 
-| Metric | Value | Notes |
-|--------|-------|-------|
-| FTP (Outdoor) | [W] | |
-| FTP (Indoor) | [W] | Adjusted for indoor conditions |
-| LT2 Power (MLSS) | [W] | ≈[%] of FTP |
-| LT2 HR | [bpm] | |
-| LT1 (AeT) | [W] | HR ≈[bpm] |
-| VO₂max Interval Power | [W] | |
-| Sweetspot Target | [W] | |
-| Weekly Volume | [hours] | [TSS range] |
-
-### Weight Tracking
-
-**Protocol:** [Frequency, conditions]  
-**Adjustment Control:** Weight adjustments only permitted during readiness-positive periods (DI ≥ 0.95, HR drift ≤ 3%, RI ≥ 0.8)
+| Metric | Value |
+|--------|-------|
+| CTL | 93.78 |
+| ATL | 97.72 |
+| TSB | -3.94 |
+| ACWR | 0.92 (optimal) |
+| Recovery Index | 1.2 |
+| Monotony | 1.86 (normal) |
+| W/kg | ~3.5 |
 
 ---
 
 ## 5. Nutrition / Fueling
 
-### Training Fuel Recipe
-
-```
-[Your carb mix recipe]
-```
-
-**CHO per bottle:** [g]  
-**Target absorption:** [g CHO/h]
-
-### Recovery Drink Recipe
-
-```
-[Your recovery drink recipe]
-```
-
-### Fueling by Workout Type
-
-| Workout Type | Duration | CHO Target | Setup |
-|--------------|----------|------------|-------|
-| Recovery / Z1–Z2 | < 1.5 h | [g/h] | [Description] |
-| Endurance | 1.5–3 h | [g/h] | [Description] |
-| Long Endurance | 3–6 h | [g/h] | [Description] |
-| Threshold / SS | 1–2 h | [g/h] | [Description] |
-| VO₂ / High Intensity | 1–1.5 h | [g/h] | [Description] |
-| Race / Event | 4–6 h | [g/h] | [Description] |
-
-### Hydration
-
-**Target:** [ml/hour]  
-**Sodium:** [mg/L] base, + [mg/h] additional for long/hot rides
+*To be filled in*
 
 ---
 
@@ -235,31 +147,25 @@ This document serves as a reference template for endurance athletes using the de
 
 ### Current Adaptation Focus
 
-- [ ] [Focus item 1]
-- [ ] [Focus item 2]
-- [ ] [Focus item 3]
-- [ ] [Focus item 4]
+- [ ] Raise FTP from 243W toward 280W+ (4+ W/kg target)
+- [ ] Maintain polarized distribution (80/20)
+- [ ] Improve VO2max power (target 290W+ intervals)
+- [ ] Optimize weight from ~70 kg toward 67-68 kg (without compromising power)
 
 ### Next-Phase Options
 
-[Description of upcoming phase transition criteria and options]
+Transition to outdoor season as weather improves. Use HR for outdoor intensity guidance since no outdoor power meter.
 
 ---
 
-## 7. Outdoor Transition Plan (if applicable)
+## 7. Outdoor Transition Plan
 
-### Transition Timeline
+### General Rules
 
-| Month | Changes | Notes |
-|-------|---------|-------|
-| [Month] | [Transition step] | [Details] |
-| [Month] | [Transition step] | [Details] |
-| [Month] | [Transition step] | [Details] |
-
-**General Rules:**
 - Outdoor rides replace indoor 1:1
-- HR < 85% of threshold = aerobic
-- Use HR to guide intensity early season
+- HR < 136 bpm (~85% of LTHR) = aerobic
+- Use HR to guide intensity (no outdoor power meter)
+- Indoor power sessions remain on Zwift for structured work
 
 ---
 
@@ -267,92 +173,33 @@ This document serves as a reference template for endurance athletes using the de
 
 ### Primary Objective
 
-[Your main goal with target time/performance]
+Reach 4+ W/kg by end of 2026 season. Two levers: raise FTP (243W → 280W+) and optimize weight (~70 kg → 67-68 kg).
 
 ### Progression Overview
 
-| Year | Focus | FTP Target | W/kg Target | Key Metrics |
-|------|-------|------------|-------------|-------------|
-| [Year] | [Focus] | [W] | [W/kg] | [Metrics] |
-| [Year] | [Focus] | [W] | [W/kg] | [Metrics] |
-| [Year] | [Focus] | [W] | [W/kg] | [Metrics] |
-
-### Event-Specific Targets (Optional)
-
-| Event/Segment | Year | Priority | Target Time | Target Power |
-|---------------|------|----------|-------------|--------------|
-| [Event] | [Year] | [A/B/C] | [Time] | [W] |
-| [Event] | [Year] | [A/B/C] | [Time] | [W] |
-
-> **Race tagging for automated protocol activation:** Tag races in Intervals.icu as `RACE_A`, `RACE_B`, or `RACE_C` using the event category selector. The race-week protocol (Section 11A) activates automatically for A and B races within 7 days. C races are training races — no taper adjustments. For best results, also set expected duration (`moving_time`) in the event to enable event-type modifiers (carb loading, opener intensity, TSB targets).
-
----
-
-## 9. Coach Notes
-
-[Space for coach observations, athlete-specific considerations, or important reminders]
-
----
-
-## 10. Operational & Data Integrity Log
-
-### Training Timeline & Event Log
-
-| Date | Event | Notes |
-|------|-------|-------|
-| [Date] | [Event] | [Details] |
-| [Date] | [Event] | [Details] |
-
-### Calibration & Data Log
-
-| Date | Item | Action |
-|------|------|--------|
-| [Date] | [Equipment] | [Action taken] |
-| [Date] | [Equipment] | [Action taken] |
+| Year | Focus | FTP Target | W/kg Target |
+|------|-------|------------|-------------|
+| 2026 | Threshold + VO2max development, weight optimization | 280W+ | 4.0+ |
 
 ---
 
 ## Data Mirror Configuration
 
-### JSON Endpoint (for AI coaches)
+### GitHub Connector
 
-**URL:** `https://raw.githubusercontent.com/[username]/[repo]/main/latest.json`
+**Repo:** `sergeycw/training-data` (private, connected via GitHub integration)
 
-**Archive:** `https://github.com/[username]/[repo]/tree/main/archive`
-
-**— OR (GitHub connector) —**
-
-**Repo:** `[username]/[repo]` (connected via platform's GitHub integration — AI reads files directly, no URLs needed)
-
-> **Tip:** If you commit `DOSSIER.md` to your data repo alongside `latest.json`, `history.json`, and `intervals.json`, connecting the repo gives the AI both your data and your profile in one connection. The only remaining piece is `SECTION_11.md`, which the AI can fetch from the public CrankAddict/section-11 repo or a second connector.
-
-**— OR (local setup) —**
-
-**Path:** `latest.json` (data directory root, alongside this dossier)
-
-**History:** `history.json` (data directory root)
-
-**Intervals:** `intervals.json` (data directory root — on-demand, for structured session analysis)
-
-**Data Path (optional):** `[/path/to/training-data/]`
-Only needed if the AI agent's working directory is different from where data files live (e.g., OpenClaw workspace is `~/clawd/` but data is in `~/training-data/`). Leave blank if they are the same directory.
-
-For local setups where sync.py runs on the same machine as the AI agent, files are read directly from the filesystem — no URLs needed. See `examples/json-local-sync/SETUP.md` for the complete local pipeline.
-
-This endpoint provides synchronized Intervals.icu metrics for deterministic AI parsing. See **Section 11** for the full AI Coach Guidance Protocol.
+Files: `latest.json`, `history.json`, `intervals.json`, `ftp_history.json`, `DOSSIER.md`, `SECTION_11.md`
 
 ---
 
 ## Protocol Reference
 
-This dossier follows the **Section 11 A/B AI Coach Guidance Protocol** for AI integration.
-
-**Protocol Location:** [Link to your Section 11 document or repo]
+**Protocol Location:** `SECTION_11.md` (in this repo)
 
 ---
 
 ## Changelog
 
-### v1.0 ([Date])
+### v1.0 (2026-03-15)
 - Initial dossier creation
-
