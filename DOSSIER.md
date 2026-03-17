@@ -2,7 +2,7 @@
 
 **Dossier Version:** v1.0
 **Protocol Compatibility:** Section 11 v11.6+
-**Date:** 2026-03-15
+**Date:** 2026-03-17
 **Primary Source Systems:** Intervals.icu | Garmin
 
 ---
@@ -16,7 +16,7 @@
 | Name | Sergey |
 | Age | 35-40 |
 | Height | — |
-| Current Weight | 69.4 kg |
+| Current Weight | 70.0 kg |
 | Target Weight | — |
 | Location | — |
 
@@ -32,7 +32,7 @@
 | Goal | Target Date |
 |------|-------------|
 | Reach 4+ W/kg | 2026 |
-| Increase FTP from 243W to 280W+ | 2026 |
+| Increase FTP from 263W to 280W+ | 2026 |
 | Optimize weight (currently ~70 kg) | 2026 |
 
 **Current Phase:** Build (threshold + VO2max development)
@@ -83,11 +83,11 @@
 
 | Session Type | Target Power/HR | Duration | Purpose |
 |--------------|-----------------|----------|---------|
-| VO2Max | 258-292W (106-120% FTP) | 1-1.5h | Aerobic capacity |
-| Threshold | 221-255W (91-105% FTP) | 1-1.5h | FTP development |
-| Sweetspot | 204-236W (84-97% FTP) | 1.5-2h | Time at intensity |
-| Endurance | 136-182W (56-75% FTP) | 1.5-4h | Aerobic base |
-| Recovery | <134W (<55% FTP) | 0.5-1h | Active recovery |
+| VO2Max | 279-316W (106-120% FTP) | 1-1.5h | Aerobic capacity |
+| Threshold | 239-276W (91-105% FTP) | 1-1.5h | FTP development |
+| Sweetspot | 221-255W (84-97% FTP) | 1.5-2h | Time at intensity |
+| Endurance | 148-197W (56-75% FTP) | 1.5-4h | Aerobic base |
+| Recovery | <145W (<55% FTP) | 0.5-1h | Active recovery |
 
 ### Recovery Protocol
 
@@ -101,39 +101,39 @@
 
 ## 4. Performance Metrics
 
-### Current Power Zones (FTP = 243W)
+### Current Power Zones (FTP = 263W)
 
 | Zone | % of FTP | Power (W) | Notes |
 |------|----------|-----------|-------|
-| Z1 | 0-55% | 0-134 | Active Recovery |
-| Z2 | 56-75% | 136-182 | Endurance (Base) |
-| Z3 | 76-90% | 185-219 | Tempo |
-| Z4 | 91-105% | 221-255 | Threshold |
-| Z5 | 106-120% | 258-292 | VO2max |
-| Z6 | 121-150% | 294-365 | Anaerobic |
-| Z7 | 151%+ | 367+ | Neuromuscular |
-| SS | 84-97% | 204-236 | Sweetspot |
+| Z1 | 0-55% | 0-145 | Active Recovery |
+| Z2 | 56-75% | 148-197 | Endurance (Base) |
+| Z3 | 76-90% | 200-237 | Tempo |
+| Z4 | 91-105% | 239-276 | Threshold |
+| Z5 | 106-120% | 279-316 | VO2max |
+| Z6 | 121-150% | 318-395 | Anaerobic |
+| Z7 | 151%+ | 397+ | Neuromuscular |
+| SS | 84-97% | 221-255 | Sweetspot |
 
-**Current FTP:** 243W (Indoor: 243W)
+**Current FTP:** 263W (Indoor: 263W)
 **Max HR:** 176 bpm
 **Threshold HR (LTHR):** 160 bpm
-**Resting HR:** 45 bpm
-**HRV:** 46
-**eFTP:** 243.3W
-**W':** 20.3 kJ
-**P-max:** 800W
+**Resting HR:** 44 bpm
+**HRV:** 45
+**eFTP:** 263W
+**W':** 21.1 kJ
+**P-max:** 799W
 
 ### Current Fitness Markers
 
 | Metric | Value |
 |--------|-------|
-| CTL | 93.78 |
-| ATL | 97.72 |
-| TSB | -3.94 |
-| ACWR | 0.92 (optimal) |
-| Recovery Index | 1.2 |
-| Monotony | 1.86 (normal) |
-| W/kg | ~3.5 |
+| CTL | 90.3 |
+| ATL | 78.4 |
+| TSB | +11.9 |
+| ACWR | 0.82 (optimal) |
+| Recovery Index | 1.17 |
+| Monotony | 1.39 (normal) |
+| W/kg | 3.76 |
 
 ---
 
@@ -147,7 +147,7 @@
 
 ### Current Adaptation Focus
 
-- [ ] Raise FTP from 243W toward 280W+ (4+ W/kg target)
+- [ ] Raise FTP from 263W toward 280W+ (4+ W/kg target)
 - [ ] Maintain polarized distribution (80/20)
 - [ ] Improve VO2max power (target 290W+ intervals)
 - [ ] Optimize weight from ~70 kg toward 67-68 kg (without compromising power)
@@ -173,7 +173,7 @@ Transition to outdoor season as weather improves. Use HR for outdoor intensity g
 
 ### Primary Objective
 
-Reach 4+ W/kg by end of 2026 season. Two levers: raise FTP (243W → 280W+) and optimize weight (~70 kg → 67-68 kg).
+Reach 4+ W/kg by end of 2026 season. Two levers: raise FTP (263W → 280W+) and optimize weight (~70 kg → 67-68 kg).
 
 ### Progression Overview
 
@@ -200,6 +200,12 @@ Files: `latest.json`, `history.json`, `intervals.json`, `ftp_history.json`, `DOS
 ---
 
 ## Changelog
+
+### v1.1 (2026-03-17)
+- FTP updated: 243W → 263W (Ramp Test 17.03)
+- Power zones recalculated for FTP 263W
+- Fitness markers updated from latest.json
+- Weight updated to 70.0 kg, W/kg = 3.76
 
 ### v1.0 (2026-03-15)
 - Initial dossier creation
