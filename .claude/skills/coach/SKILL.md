@@ -116,6 +116,39 @@ cd /Users/sergeycw/Documents/projects/pets/training-data && git pull --quiet
 
 При планировании недели учитывать тренд RPE из session_feedback.json — если субъективная нагрузка растёт быстрее объективной, снизить intensity или добавить recovery.
 
+### Push в Intervals.icu / Zwift
+
+При создании или обновлении недельного плана → сгенерировать `plan_events.json` и предложить push.
+
+**Обязательно спросить** какие дни outdoor, какие indoor (Zwift). От этого зависит:
+
+| Тип сессии | category | target | Zwift |
+|-----------|----------|--------|-------|
+| Indoor (любая) | `WORKOUT` | %FTP | Да (structured workout) |
+| Outdoor (любая) | `WORKOUT` | bpm (HR-зоны) | Да (игнорировать в Zwift) |
+
+**Всегда `WORKOUT`** — `NOTE` ломает плановые weekly load/time в Intervals.icu.
+
+После генерации: "Пушить в Intervals.icu?" → при согласии `python push_plan.py`.
+
+### Синтаксис description (plan_events.json)
+
+**Формат шага:** `- {duration} {target} [cadence]`
+
+**Power (indoor):** `- 10m 62%`, `- 5m 99%`, `- 120m 65%`
+- НЕ использовать диапазоны `60-70%` — могут не парситься. Указывать конкретный % или использовать ramp: `- 5m 70-82%` (от→до)
+
+**HR (outdoor):** `- 120m Z2 HR`, `- 30m Z3 HR`, `- 60m 75-80% HR`, `- 20m 90% LTHR`
+- НЕ использовать абсолютные bpm (`128-143bpm`) — Intervals.icu их не парсит, тренировка создаётся без duration/load
+
+**Repeat-блоки:** ОБЯЗАТЕЛЬНО отделять пустыми строками
+```
+...\n\n4x\n- 10m 99%\n- 5m 58%\n\n...
+```
+Без пустых строк `4x` приклеивается к предыдущему шагу как суффикс.
+
+**Category:** всегда `WORKOUT` (не `NOTE`).
+
 ---
 
 ## Правила вывода

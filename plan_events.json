@@ -4,7 +4,7 @@
     "start_date_local": "2026-03-18T00:00:00",
     "name": "Z2 Easy Recovery (outdoor)",
     "type": "Ride",
-    "description": "- 120m 128-143bpm",
+    "description": "- 120m Z2 HR",
     "external_id": "claude-plan-2026-03-18"
   },
   {
@@ -12,7 +12,7 @@
     "start_date_local": "2026-03-19T00:00:00",
     "name": "Z2 Endurance (outdoor)",
     "type": "Ride",
-    "description": "- 120m 128-143bpm",
+    "description": "- 120m Z2 HR",
     "external_id": "claude-plan-2026-03-19"
   },
   {
@@ -28,7 +28,7 @@
     "start_date_local": "2026-03-21T00:00:00",
     "name": "Long Ride Z2 Hilly (outdoor)",
     "type": "Ride",
-    "description": "- 210m 128-143bpm",
+    "description": "- 210m Z2 HR",
     "external_id": "claude-plan-2026-03-21"
   },
   {
@@ -36,7 +36,7 @@
     "start_date_local": "2026-03-22T00:00:00",
     "name": "Z2 Endurance",
     "type": "Ride",
-    "description": "- 120m 60-70%",
+    "description": "- 120m 65%",
     "external_id": "claude-plan-2026-03-22"
   }
 ]
