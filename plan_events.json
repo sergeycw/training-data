@@ -2,17 +2,17 @@
   {
     "category": "WORKOUT",
     "start_date_local": "2026-03-18T00:00:00",
-    "name": "Z2 Easy Recovery",
+    "name": "Z2 Easy Recovery (outdoor)",
     "type": "Ride",
-    "description": "- 120m 60-70%",
+    "description": "- 120m 128-143bpm",
     "external_id": "claude-plan-2026-03-18"
   },
   {
     "category": "WORKOUT",
     "start_date_local": "2026-03-19T00:00:00",
-    "name": "Z2 Endurance",
+    "name": "Z2 Endurance (outdoor)",
     "type": "Ride",
-    "description": "- 120m 60-70%",
+    "description": "- 120m 128-143bpm",
     "external_id": "claude-plan-2026-03-19"
   },
   {
@@ -20,15 +20,15 @@
     "start_date_local": "2026-03-20T00:00:00",
     "name": "Threshold Intervals 4x10m",
     "type": "Ride",
-    "description": "- 10m 62%\n- 5m 70-82%\n- 1m 107%\n- 1m 53%\n- 1m 107%\n- 2m 53%\n4x\n- 10m 99%\n- 5m 58%\n- 10m 53%",
+    "description": "- 10m 62%\n- 5m 70-82%\n- 1m 107%\n- 1m 53%\n- 1m 107%\n- 2m 53%\n\n4x\n- 10m 99%\n- 5m 58%\n\n- 10m 53%",
     "external_id": "claude-plan-2026-03-20"
   },
   {
     "category": "WORKOUT",
     "start_date_local": "2026-03-21T00:00:00",
-    "name": "Long Ride Z2 Hilly",
+    "name": "Long Ride Z2 Hilly (outdoor)",
     "type": "Ride",
-    "description": "- 210m 60-70%",
+    "description": "- 210m 128-143bpm",
     "external_id": "claude-plan-2026-03-21"
   },
   {

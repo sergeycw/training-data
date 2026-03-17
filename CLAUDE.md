@@ -72,7 +72,7 @@ FTP обновлён 17.03: 243→263W после полного Ramp Test (те
 ## Push плана в Intervals.icu
 
 При создании/обновлении тренировочного плана:
-1. Сгенерировать `plan_events.json` (description в текстовом формате Intervals.icu: `- 10m 62%`, `- 5m 70-82%`, `4x\n- 10m 99%\n- 5m 58%`)
+1. Сгенерировать `plan_events.json` (description в текстовом формате Intervals.icu: `- 10m 62%`, `- 5m 70-82%`). **Repeat-блоки отделять пустыми строками:** `...\n\n4x\n- 10m 99%\n- 5m 58%\n\n...` — иначе парсер приклеит `4x` к предыдущему шагу
 2. external_id = `claude-plan-{YYYY-MM-DD}` — обеспечивает upsert
 3. Спросить атлета: "Пушить в Intervals.icu?"
 4. При согласии: `python push_plan.py` (или `--dry-run` для превью)
