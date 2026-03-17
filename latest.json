@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-17T06:37:32.911675",
+    "last_updated": "2026-03-17T07:40:13.525213",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.84"
@@ -63,14 +63,14 @@
       "unavailable": 0
     },
     "phase_context": {
-      "phase": "Build",
-      "phase_week": 4,
-      "amber_threshold": 3,
-      "modifier_applied": "build_loosened"
+      "phase": "Base",
+      "phase_week": 0,
+      "amber_threshold": 2,
+      "modifier_applied": "default"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
+    "reason": "P3 green light. 6 green, 0 amber (threshold 2), 0 red.",
     "alarm_refs": []
   },
   "history": {
@@ -114,8 +114,8 @@
           "max_hr": 176,
           "threshold_pace": null,
           "pace_units": null,
-          "ftp": 243,
-          "ftp_indoor": 243
+          "ftp": 263,
+          "ftp_indoor": 263
         },
         "run": {
           "lthr": 160,
@@ -273,10 +273,10 @@
       "note": "No planned workouts in period"
     },
     "phase_detection": {
-      "phase": "Build",
+      "phase": "Base",
       "confidence": "medium",
       "reason_codes": [
-        "NO_PLANNED_WORKOUTS"
+        "PHASE_TRANSITION_Build_TO_Base"
       ],
       "basis": {
         "stream_1": {
@@ -286,35 +286,35 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
+          "planned_tss_delta": 0.95,
+          "hard_sessions_planned": 1,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
+          "plan_coverage_current_week": 1.0,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
         "stream_agreement": null
       },
       "previous_phase": "Build",
-      "phase_duration_weeks": 4,
+      "phase_duration_weeks": 0,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Build",
+    "phase_detected": "Base",
     "phase_triggers": [
-      "NO_PLANNED_WORKOUTS"
+      "PHASE_TRANSITION_Build_TO_Base"
     ],
     "seasonal_context": "Late Base / Build",
     "benchmark_indoor": {
-      "current_ftp": 243,
+      "current_ftp": 263,
       "ftp_8_weeks_ago": null,
       "benchmark_index": null,
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
     "benchmark_outdoor": {
-      "current_ftp": 243,
+      "current_ftp": 263,
       "ftp_8_weeks_ago": null,
       "benchmark_index": null,
       "benchmark_percentage": null,
@@ -326,7 +326,7 @@
     "p_max": 799,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-17T06:37:32.910560",
+    "calculation_timestamp": "2026-03-17T07:40:13.524089",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -833,14 +833,70 @@
       "vo2max": null
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 99050094,
+      "date": "2026-03-18",
+      "name": "Z2 Easy Recovery",
+      "type": "WORKOUT",
+      "planned_tss": 85,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description": "- 120m 60-70%"
+    },
+    {
+      "id": 99050097,
+      "date": "2026-03-19",
+      "name": "Z2 Endurance",
+      "type": "WORKOUT",
+      "planned_tss": 85,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description": "- 120m 60-70%"
+    },
+    {
+      "id": 99050100,
+      "date": "2026-03-20",
+      "name": "Threshold Intervals 4x10m",
+      "type": "WORKOUT",
+      "planned_tss": 108,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "10m @163W | 5m @200W | 1m @281W | 1m @139W | 1m @281W | 2m @139W | 4\u00d710m @260W / 5m rec | 10m @139W",
+      "description": "- 10m 62%\n- 5m 70-82%\n- 1m 107%\n- 1m 53%\n- 1m 107%\n- 2m 53%\n\n4x\n- 10m 99%\n- 5m 58%\n\n- 10m 53%"
+    },
+    {
+      "id": 99050102,
+      "date": "2026-03-21",
+      "name": "Long Ride Z2 Hilly",
+      "type": "WORKOUT",
+      "planned_tss": 148,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
+      "workout_summary": null,
+      "description": "- 210m 60-70%"
+    },
+    {
+      "id": 99050104,
+      "date": "2026-03-22",
+      "name": "Z2 Endurance",
+      "type": "WORKOUT",
+      "planned_tss": 85,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description": "- 120m 60-70%"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 5,
+    "success": 1,
+    "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 10.06,
