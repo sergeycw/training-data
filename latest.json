@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-17T08:29:50.134828",
+    "last_updated": "2026-03-17T09:30:27.709624",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.84"
@@ -286,7 +286,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.2,
+          "planned_tss_delta": 1.14,
           "hard_sessions_planned": 1,
           "race_proximity": null,
           "next_week_load": null,
@@ -326,7 +326,7 @@
     "p_max": 799,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-17T08:29:50.133735",
+    "calculation_timestamp": "2026-03-17T09:30:27.708548",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 7,
@@ -838,23 +838,23 @@
       "id": 99050094,
       "date": "2026-03-18",
       "name": "Z2 Easy Recovery (outdoor)",
-      "type": "NOTE",
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
+      "type": "WORKOUT",
+      "planned_tss": 112,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
       "workout_summary": null,
-      "description": "- 120m 128-143bpm"
+      "description": "- 120m Z2 HR"
     },
     {
       "id": 99050097,
       "date": "2026-03-19",
       "name": "Z2 Endurance (outdoor)",
-      "type": "NOTE",
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
+      "type": "WORKOUT",
+      "planned_tss": 112,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
       "workout_summary": null,
-      "description": "- 120m 128-143bpm"
+      "description": "- 120m Z2 HR"
     },
     {
       "id": 99050100,
@@ -871,23 +871,23 @@
       "id": 99050102,
       "date": "2026-03-21",
       "name": "Long Ride Z2 Hilly (outdoor)",
-      "type": "NOTE",
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
+      "type": "WORKOUT",
+      "planned_tss": 196,
+      "duration_hours": 3.5,
+      "duration_formatted": "3h30m",
       "workout_summary": null,
-      "description": "- 210m 128-143bpm"
+      "description": "- 210m Z2 HR"
     },
     {
       "id": 99050104,
       "date": "2026-03-22",
       "name": "Z2 Endurance",
-      "type": "NOTE",
-      "planned_tss": null,
-      "duration_hours": 0.0,
-      "duration_formatted": "0s",
+      "type": "WORKOUT",
+      "planned_tss": 84,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
       "workout_summary": null,
-      "description": "- 120m 60-70%"
+      "description": "- 120m 65%"
     }
   ],
   "workout_summary_stats": {
