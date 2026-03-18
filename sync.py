@@ -6348,6 +6348,20 @@ def main():
             except Exception as e:
                 print(f"   ⚠️ intervals.json push failed (non-critical): {e}")
         
+        # === PUBLISH FTP_HISTORY.JSON (GitHub mode) ===
+        ftp_history_path = sync.data_dir / sync.FTP_HISTORY_FILE
+        if ftp_history_path.exists():
+            try:
+                with open(ftp_history_path, 'r') as f:
+                    ftp_history_data = json.load(f)
+                sync.publish_to_github(ftp_history_data, filepath="ftp_history.json",
+                                       commit_message=f"Update ftp_history.json - {datetime.now().strftime('%Y-%m-%d')}")
+                indoor_count = len(ftp_history_data.get("indoor", {}))
+                outdoor_count = len(ftp_history_data.get("outdoor", {}))
+                print(f"   📈 ftp_history.json pushed (indoor: {indoor_count}, outdoor: {outdoor_count} entries)")
+            except Exception as e:
+                print(f"   ⚠️ ftp_history.json push failed (non-critical): {e}")
+
         # === AUTO HISTORY GENERATION (Sundays/Mondays, first two runs after midnight) ===
         if sync.should_generate_history():
             try:
