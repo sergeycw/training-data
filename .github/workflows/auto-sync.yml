@@ -86,13 +86,34 @@ jobs:
             echo "⚠️ data/latest.json not found - might be no changes detected"
           fi
 
+      - name: Check SECTION_11.md upstream updates
+        run: |
+          UPSTREAM_URL="https://raw.githubusercontent.com/CrankAddict/section-11/main/SECTION_11.md"
+          LOCAL_FILE="context/SECTION_11.md"
+
+          echo "🔍 Checking SECTION_11.md for upstream updates..."
+          curl -sfL "$UPSTREAM_URL" -o /tmp/section11_upstream.md || {
+            echo "⚠️ Could not fetch upstream SECTION_11.md (non-critical)"
+            exit 0
+          }
+
+          if [ ! -f "$LOCAL_FILE" ]; then
+            echo "📥 Local SECTION_11.md not found — downloading"
+            cp /tmp/section11_upstream.md "$LOCAL_FILE"
+          elif ! diff -q "$LOCAL_FILE" /tmp/section11_upstream.md > /dev/null 2>&1; then
+            echo "📥 SECTION_11.md updated upstream — syncing"
+            cp /tmp/section11_upstream.md "$LOCAL_FILE"
+          else
+            echo "✅ SECTION_11.md is up to date"
+          fi
+
       - name: Commit updated data
         if: success()
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          for f in data/latest.json data/history.json data/intervals.json data/ftp_history.json; do
+          for f in data/latest.json data/history.json data/intervals.json data/ftp_history.json context/SECTION_11.md; do
             if [ -f "$f" ]; then
               git add "$f"
             fi
