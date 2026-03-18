@@ -17,7 +17,7 @@ from pathlib import Path
 
 INTERVALS_BASE_URL = "https://intervals.icu/api/v1"
 EXTERNAL_ID_PREFIX = "claude-plan-"
-PLAN_EVENTS_FILE = "plan_events.json"
+PLAN_EVENTS_FILE = Path(__file__).resolve().parent.parent / "data" / "plan_events.json"
 
 
 def _api_request(method, url, auth, data=None):
@@ -39,7 +39,7 @@ def _api_request(method, url, auth, data=None):
 
 def load_config():
     config = {}
-    config_path = Path.cwd() / ".sync_config.json"
+    config_path = Path(__file__).resolve().parent.parent / ".sync_config.json"
     if config_path.exists():
         with open(config_path) as f:
             config = json.load(f)
@@ -56,7 +56,7 @@ def load_config():
 
 
 def load_plan_events():
-    path = Path.cwd() / PLAN_EVENTS_FILE
+    path = Path(PLAN_EVENTS_FILE)
     if not path.exists():
         print(f"❌ Файл {PLAN_EVENTS_FILE} не найден")
         sys.exit(1)

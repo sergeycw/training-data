@@ -144,7 +144,7 @@ class IntervalsSync:
         self.github_repo = github_repo
         self.debug = debug
         self.script_dir = Path(__file__).parent
-        self.data_dir = Path.cwd()  # Data files (history.json, ftp_history.json) write to caller's working directory
+        self.data_dir = Path(__file__).resolve().parent.parent / "data"
         self.week_start_day = week_start_day if week_start_day is not None else self.WEEK_START_DAY
         self.zone_preference = zone_preference or {}  # {"run": "hr", "cycling": "power", ...}
     
@@ -5410,7 +5410,7 @@ class IntervalsSync:
             "by_activity_type": activity_breakdown
         }
     
-    def publish_to_github(self, data: Dict, filepath: str = "latest.json", 
+    def publish_to_github(self, data: Dict, filepath: str = "data/latest.json",
                          commit_message: str = None) -> str:
         """Publish data to GitHub repository"""
         if not self.github_token or not self.github_repo:
@@ -5462,7 +5462,7 @@ class IntervalsSync:
         raw_url = f"https://raw.githubusercontent.com/{self.github_repo}/main/{filepath}"
         return raw_url
     
-    def save_to_file(self, data: Dict, filepath: str = "latest.json"):
+    def save_to_file(self, data: Dict, filepath: str = "data/latest.json"):
         """Save data to local JSON file"""
         with open(filepath, 'w') as f:
             json.dump(data, f, indent=2, default=str)
@@ -5937,8 +5937,9 @@ def notify_if_updates_available():
     this must never interrupt a sync run.
     """
     try:
-        config_path = Path.cwd() / ".sync_config.json"
-        section11_dir = Path.cwd() / "section11"
+        repo_root = Path(__file__).resolve().parent.parent
+        config_path = repo_root / ".sync_config.json"
+        section11_dir = repo_root / "section11"
         
         # Only relevant for local setups with section11/
         if not section11_dir.exists():
@@ -6137,13 +6138,14 @@ def main():
         if zone_pref_input:
             config["zone_preference"] = zone_pref_input
             
-        with open(".sync_config.json", "w") as f:
+        repo_root = Path(__file__).resolve().parent.parent
+        with open(repo_root / ".sync_config.json", "w") as f:
             json.dump(config, f, indent=2)
         print("\n✅ Config saved to .sync_config.json")
         print("\nUsage:")
-        print("  Export locally:    python sync.py --output latest.json")
-        print("  Push to GitHub:    python sync.py")
-        print("  Generate history:  python sync.py --generate-history --output history.json")
+        print("  Export locally:    python scripts/sync.py --output data/latest.json")
+        print("  Push to GitHub:    python scripts/sync.py")
+        print("  Generate history:  python scripts/sync.py --generate-history --output data/history.json")
         return
     
     if args.init:
@@ -6167,8 +6169,10 @@ def main():
             return  # Another instance is running
     
     config = {}
-    if os.path.exists(".sync_config.json"):
-        with open(".sync_config.json") as f:
+    repo_root = Path(__file__).resolve().parent.parent
+    config_path = repo_root / ".sync_config.json"
+    if config_path.exists():
+        with open(config_path) as f:
             config = json.load(f)
     
     athlete_id = args.athlete_id or config.get("athlete_id") or os.getenv("ATHLETE_ID")
@@ -6214,7 +6218,7 @@ def main():
     
     if not athlete_id or not intervals_key:
         print("\n❌ Error: Missing credentials.")
-        print("   Run: python sync.py --setup")
+        print("   Run: python scripts/sync.py --setup")
         return
     
     sync = IntervalsSync(athlete_id, intervals_key, github_token, github_repo, 
@@ -6234,7 +6238,7 @@ def main():
         # Also publish to GitHub if credentials available
         if github_token and github_repo and not args.output:
             print("\n📤 Publishing history.json to GitHub...")
-            sync.publish_to_github(history, filepath="history.json",
+            sync.publish_to_github(history, filepath="data/history.json",
                                    commit_message=f"Generate history.json - {datetime.now().strftime('%Y-%m-%d')}")
             print("   ✅ history.json pushed to GitHub")
         return
@@ -6342,7 +6346,7 @@ def main():
             with open(intervals_path, 'w') as f:
                 json.dump(intervals_data, f, indent=2, default=str)
             try:
-                sync.publish_to_github(intervals_data, filepath="intervals.json",
+                sync.publish_to_github(intervals_data, filepath="data/intervals.json",
                                        commit_message=f"Update intervals.json - {datetime.now().strftime('%Y-%m-%d')}")
                 print(f"   📊 intervals.json pushed ({len(intervals_data['activities'])} activities)")
             except Exception as e:
@@ -6354,7 +6358,7 @@ def main():
             try:
                 with open(ftp_history_path, 'r') as f:
                     ftp_history_data = json.load(f)
-                sync.publish_to_github(ftp_history_data, filepath="ftp_history.json",
+                sync.publish_to_github(ftp_history_data, filepath="data/ftp_history.json",
                                        commit_message=f"Update ftp_history.json - {datetime.now().strftime('%Y-%m-%d')}")
                 indoor_count = len(ftp_history_data.get("indoor", {}))
                 outdoor_count = len(ftp_history_data.get("outdoor", {}))
@@ -6367,7 +6371,7 @@ def main():
             try:
                 print("\n📊 Auto-generating history.json...")
                 history = sync.generate_history()
-                sync.publish_to_github(history, filepath="history.json",
+                sync.publish_to_github(history, filepath="data/history.json",
                                        commit_message=f"Auto-generate history.json - {datetime.now().strftime('%Y-%m-%d')}")
                 print("   ✅ history.json auto-generated and pushed to GitHub")
             except Exception as e:

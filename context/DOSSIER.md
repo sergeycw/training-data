@@ -125,15 +125,7 @@
 
 ### Current Fitness Markers
 
-| Metric | Value |
-|--------|-------|
-| CTL | 90.3 |
-| ATL | 78.4 |
-| TSB | +11.9 |
-| ACWR | 0.82 (optimal) |
-| Recovery Index | 1.17 |
-| Monotony | 1.39 (normal) |
-| W/kg | 3.76 |
+Актуальные фитнес-метрики (CTL, ATL, TSB, ACWR, W/kg) → `data/latest.json` → `current_status` + `derived_metrics`
 
 ---
 
@@ -189,13 +181,13 @@ Reach 4+ W/kg by end of 2026 season. Two levers: raise FTP (263W → 280W+) and 
 
 **Repo:** `sergeycw/training-data` (private, connected via GitHub integration)
 
-Files: `latest.json`, `history.json`, `intervals.json`, `ftp_history.json`, `DOSSIER.md`, `SECTION_11.md`
+Files: `data/latest.json`, `data/history.json`, `data/intervals.json`, `data/ftp_history.json`, `context/DOSSIER.md`, `context/SECTION_11.md`
 
 ---
 
 ## Protocol Reference
 
-**Protocol Location:** `SECTION_11.md` (in this repo)
+**Protocol Location:** `context/SECTION_11.md` (in this repo)
 
 ---
 
