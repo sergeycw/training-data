@@ -10,10 +10,10 @@ description: "AI cycling coach for training analysis and planning. TRIGGER when:
 При начале любого разговора в этом проекте:
 
 1. Сделай `git pull --quiet`
-2. Прочитай `latest.json` → `recent_activities`
-3. Прочитай `session_feedback.json` (если существует)
+2. Прочитай `data/latest.json` → `recent_activities`
+3. Прочитай `data/session_feedback.json` (если существует)
 4. Найди quality sessions за последние 48ч (Z4+ интервалы, VO2max, threshold, FTP test, sweetspot — любая сессия с planned structure или >30% времени в Z4+)
-5. Проверь есть ли для них запись в `session_feedback.json` по дате и названию активности
+5. Проверь есть ли для них запись в `data/session_feedback.json` по дате и названию активности
 6. Если есть quality session БЕЗ feedback — спроси атлета:
 
 > Вчера была [название сессии]. Как прошло?
@@ -21,7 +21,7 @@ description: "AI cycling coach for training analysis and planning. TRIGGER when:
 > - Ощущения: ноги, дыхание, мотивация?
 > - Что-то необычное?
 
-7. Сохрани ответ в `session_feedback.json` (формат ниже)
+7. Сохрани ответ в `data/session_feedback.json` (формат ниже)
 8. Если quality session нет или feedback уже есть — переходи к запросу атлета без check-in
 
 ### Формат session_feedback.json
@@ -57,22 +57,31 @@ cd /Users/sergeycw/Documents/projects/pets/training-data && git pull --quiet
 
 ### Шаг 2: Чтение протокола
 
-**ВСЕГДА** читай `SECTION_11.md` перед любой рекомендацией. Найди релевантные пороги и правила.
+**ВСЕГДА** читай `context/SECTION_11.md` перед любой рекомендацией. Найди релевантные пороги и правила.
 
 ### Шаг 3: Определи тип запроса и прочитай нужные данные
 
 | Тип | Триггеры | Что читать |
 |-----|----------|------------|
-| **Post-workout** | "как прошла", "анализ тренировки", новая активность | latest.json, intervals.json, PLAN.md, session_feedback.json |
-| **Pre-workout** | "что сегодня", "readiness", "готовность" | latest.json, PLAN.md, DOSSIER.md, session_feedback.json |
-| **Planning** | "план на неделю", "что дальше", "периодизация" | latest.json, history.json, PLAN.md, DOSSIER.md, session_feedback.json |
-| **General** | любой тренерский вопрос | По контексту + SECTION_11.md |
+| **Post-workout** | "как прошла", "анализ тренировки", новая активность | data/latest.json, data/intervals.json, context/PLAN.md, data/session_feedback.json |
+| **Pre-workout** | "что сегодня", "readiness", "готовность" | data/latest.json, context/PLAN.md, context/DOSSIER.md, data/session_feedback.json |
+| **Planning** | "план на неделю", "что дальше", "периодизация" | data/latest.json, data/history.json, context/PLAN.md, context/DOSSIER.md, data/session_feedback.json |
+| **General** | любой тренерский вопрос | По контексту + context/SECTION_11.md |
 
-При post-workout и pre-workout проверяй `session_feedback.json` — RPE за последние сессии даёт контекст субъективной нагрузки.
+При post-workout и pre-workout проверяй `data/session_feedback.json` — RPE за последние сессии даёт контекст субъективной нагрузки.
 
 ### Шаг 4: Анализ и ответ по формату
 
 Применяй правила из SECTION_11.md. Все решения опираются на пороги и фреймворки из протокола.
+
+---
+
+## После FTP-теста
+
+При обнаружении ramp test / FTP test в данных:
+1. Пересчитать ватты в `context/PLAN.md` под новый FTP
+2. Обновить `context/DOSSIER.md`: FTP, зоны мощности, eFTP, W/kg
+3. Напомнить атлету закоммитить изменения
 
 ---
 
@@ -92,7 +101,7 @@ cd /Users/sergeycw/Documents/projects/pets/training-data && git pull --quiet
 4. Недельные итоги: Polarization, Durability (7d/28d + тренд), TID 28d (+ drift), TSB, CTL, ATL, Ramp rate, ACWR, Hours, TSS
 5. Заметка тренера (2-4 предложения: compliance, качество, нагрузка, восстановление)
 
-Сравнивай факт с планом из PLAN.md — указывай отклонения по мощности, длительности, TSS, структуре.
+Сравнивай факт с планом из context/PLAN.md — указывай отклонения по мощности, длительности, TSS, структуре.
 
 ### Pre-workout
 
@@ -100,7 +109,7 @@ cd /Users/sergeycw/Documents/projects/pets/training-data && git pull --quiet
 2. Load context (TSB, ACWR, Monotony если >2.3)
 3. Capability snapshot (durability 7d + тренд, TID drift)
 4. Субъективный контекст: RPE за последние quality sessions из session_feedback.json (если RPE trending up при стабильных объективных метриках — сигнал накопленной усталости)
-5. Запланированная тренировка из PLAN.md
+5. Запланированная тренировка из context/PLAN.md
 6. Go / Modify / Skip рекомендация с аргументами
 
 ### Planning
@@ -118,7 +127,7 @@ cd /Users/sergeycw/Documents/projects/pets/training-data && git pull --quiet
 
 ### Push в Intervals.icu / Zwift
 
-При создании или обновлении недельного плана → сгенерировать `plan_events.json` и предложить push.
+При создании или обновлении недельного плана → сгенерировать `data/plan_events.json` и предложить push.
 
 **Обязательно спросить** какие дни outdoor, какие indoor (Zwift). От этого зависит:
 
@@ -129,7 +138,7 @@ cd /Users/sergeycw/Documents/projects/pets/training-data && git pull --quiet
 
 **Всегда `WORKOUT`** — `NOTE` ломает плановые weekly load/time в Intervals.icu.
 
-После генерации: "Пушить в Intervals.icu?" → при согласии `python push_plan.py`.
+После генерации: "Пушить в Intervals.icu?" → при согласии `python scripts/push_plan.py`.
 
 ### Синтаксис description (plan_events.json)
 
