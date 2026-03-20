@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-19T04:55:14.338668",
+  "generated_at": "2026-03-20T04:47:53.352297",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
@@ -693,6 +693,25 @@
           "duration_secs": 9379,
           "avg_hr": 120,
           "max_hr": 156,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i133153978",
+      "date": "2026-03-19",
+      "type": "Ride",
+      "name": "Z2 Endurance (outdoor)",
+      "interval_summary": [
+        "1x 1h56m 118bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "7015s@118bpm",
+          "duration_secs": 7015,
+          "avg_hr": 118,
+          "max_hr": 162,
           "zone": 1
         }
       ]
