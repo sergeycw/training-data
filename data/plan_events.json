@@ -1,42 +1,90 @@
 [
   {
     "category": "WORKOUT",
-    "start_date_local": "2026-03-18T00:00:00",
-    "name": "Z2 Easy Recovery (outdoor)",
+    "start_date_local": "2026-03-23T00:00:00",
+    "name": "Z2 Endurance",
     "type": "Ride",
-    "description": "- 120m Z2 HR",
-    "external_id": "claude-plan-2026-03-18"
+    "description": "- 90m 65%",
+    "external_id": "claude-plan-2026-03-23"
   },
   {
     "category": "WORKOUT",
-    "start_date_local": "2026-03-19T00:00:00",
-    "name": "Z2 Endurance (outdoor)",
+    "start_date_local": "2026-03-24T00:00:00",
+    "name": "Sweetspot Climbing Sim 4x12m",
     "type": "Ride",
-    "description": "- 120m Z2 HR",
-    "external_id": "claude-plan-2026-03-19"
+    "description": "- 10m 60%\n- 5m 65-76%\n\n3x\n- 12m 85%\n- 5m 57%\n\n- 10m 83%\n- 10m 53%",
+    "external_id": "claude-plan-2026-03-24"
   },
   {
     "category": "WORKOUT",
-    "start_date_local": "2026-03-20T00:00:00",
-    "name": "Threshold Intervals 4x10m",
+    "start_date_local": "2026-03-25T00:00:00",
+    "name": "Z2 Easy",
     "type": "Ride",
-    "description": "- 10m 62%\n- 5m 70-82%\n- 1m 107%\n- 1m 53%\n- 1m 107%\n- 2m 53%\n\n4x\n- 10m 99%\n- 5m 58%\n\n- 10m 53%",
-    "external_id": "claude-plan-2026-03-20"
+    "description": "- 90m 65%",
+    "external_id": "claude-plan-2026-03-25"
   },
   {
     "category": "WORKOUT",
-    "start_date_local": "2026-03-21T00:00:00",
-    "name": "Long Ride Z2 Hilly (outdoor)",
-    "type": "Ride",
-    "description": "- 210m Z2 HR",
-    "external_id": "claude-plan-2026-03-21"
-  },
-  {
-    "category": "WORKOUT",
-    "start_date_local": "2026-03-22T00:00:00",
+    "start_date_local": "2026-03-26T00:00:00",
     "name": "Z2 Endurance",
     "type": "Ride",
     "description": "- 120m 65%",
-    "external_id": "claude-plan-2026-03-22"
+    "external_id": "claude-plan-2026-03-26"
+  },
+  {
+    "category": "WORKOUT",
+    "start_date_local": "2026-03-28T00:00:00",
+    "name": "Long Ride Mountain (outdoor)",
+    "type": "Ride",
+    "description": "- 280m Z2 HR <133bpm\nHilly route 800-1200m gain\nFueling practice: 60-70g carbs/hr",
+    "external_id": "claude-plan-2026-03-28"
+  },
+  {
+    "category": "WORKOUT",
+    "start_date_local": "2026-03-29T00:00:00",
+    "name": "Z2 Recovery Easy",
+    "type": "Ride",
+    "description": "- 90m 60%",
+    "external_id": "claude-plan-2026-03-29"
+  },
+  {
+    "category": "WORKOUT",
+    "start_date_local": "2026-03-30T00:00:00",
+    "name": "Z2 Endurance",
+    "type": "Ride",
+    "description": "- 90m 65%",
+    "external_id": "claude-plan-2026-03-30"
+  },
+  {
+    "category": "WORKOUT",
+    "start_date_local": "2026-03-31T00:00:00",
+    "name": "Openers",
+    "type": "Ride",
+    "description": "- 15m 60%\n- 3m 90%\n- 3m 53%\n- 3m 95%\n- 3m 53%\n- 2m 100%\n- 3m 53%\n- 0.5m 133%\n- 10m 53%",
+    "external_id": "claude-plan-2026-03-31"
+  },
+  {
+    "category": "WORKOUT",
+    "start_date_local": "2026-04-01T00:00:00",
+    "name": "Z2 Easy Spin",
+    "type": "Ride",
+    "description": "- 60m 60%",
+    "external_id": "claude-plan-2026-04-01"
+  },
+  {
+    "category": "WORKOUT",
+    "start_date_local": "2026-04-02T00:00:00",
+    "name": "Z1 Easy Spin (pre-load)",
+    "type": "Ride",
+    "description": "- 45m 55%",
+    "external_id": "claude-plan-2026-04-02"
+  },
+  {
+    "category": "WORKOUT",
+    "start_date_local": "2026-04-04T00:00:00",
+    "name": "🏔 Challenge: Over the Mountains to the Sea",
+    "type": "Ride",
+    "description": "- 540m Z2 HR\n214km / +2773m / Akhaltsikhe → Batumi\nPacing: HR <130 first 64km, <136 on main climb, <125 descent\nFueling: 60-80g carbs/hr from km 0",
+    "external_id": "claude-plan-2026-04-04"
   }
 ]
