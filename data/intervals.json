@@ -1,83 +1,9 @@
 {
-  "generated_at": "2026-03-22T06:18:13.890697",
+  "generated_at": "2026-03-23T05:04:15.290609",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i132098502",
-      "date": "2026-03-15",
-      "type": "VirtualRide",
-      "name": "Zwift - New Workout",
-      "interval_summary": [
-        "1x 6m58s 189w",
-        "1x 38m19s 198w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 10073,
-          "avg_power": 157,
-          "max_power": 506,
-          "avg_hr": 129,
-          "max_hr": 156,
-          "avg_cadence": 84.07166,
-          "zone": 2,
-          "training_load": 107.97351,
-          "decoupling": -12.087932
-        },
-        {
-          "type": "WORK",
-          "label": "418s@189w92rpm",
-          "duration_secs": 418,
-          "avg_power": 189,
-          "max_power": 198,
-          "avg_hr": 135,
-          "max_hr": 142,
-          "avg_cadence": 91.731415,
-          "zone": 3,
-          "training_load": 7.0240054,
-          "decoupling": 2.6560342
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 281,
-          "avg_power": 152,
-          "max_power": 229,
-          "avg_hr": 129,
-          "max_hr": 145,
-          "avg_cadence": 85.06406,
-          "zone": 2,
-          "training_load": 3.2169216,
-          "decoupling": -6.592226
-        },
-        {
-          "type": "WORK",
-          "label": "2299s@198w85rpm",
-          "duration_secs": 2299,
-          "avg_power": 198,
-          "max_power": 229,
-          "avg_hr": 148,
-          "max_hr": 157,
-          "avg_cadence": 84.80774,
-          "zone": 3,
-          "training_load": 42.398872,
-          "decoupling": 3.384795
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 252,
-          "avg_power": 113,
-          "max_power": 201,
-          "avg_hr": 137,
-          "max_hr": 154,
-          "avg_cadence": 75.31349,
-          "zone": 1,
-          "training_load": 2.1839187,
-          "decoupling": -2.0513246
-        }
-      ]
-    },
     {
       "activity_id": "i132630916",
       "date": "2026-03-17",
