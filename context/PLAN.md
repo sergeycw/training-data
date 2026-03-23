@@ -15,8 +15,8 @@
 | День | Сессия | Длит. | Интенсивность | TSS |
 |------|--------|-------|---------------|-----|
 | Пн 23 | Z2 endurance (Zwift) | 1ч30м | 157–184W | ~50 |
-| Вт 24 | **Sweetspot + Climbing Sim** | 1ч30м | см. детали ниже | ~85 |
-| Ср 25 | Z2 easy (Zwift) | 1ч30м | 157–184W | ~50 |
+| Вт 24 | Z2 endurance (outdoor) | 1ч30м | HR <136 bpm | ~50 |
+| Ср 25 | **Sweetspot + Climbing Sim** (Zwift) | 1ч30м | см. детали ниже | ~85 |
 | Чт 26 | Z2 endurance (Zwift) | 2ч | 157–184W | ~70 |
 | Пт 27 | Отдых | — | — | 0 |
 | Сб 28 | **Long ride outdoor (горный маршрут)** | 4ч30м–5ч | HR <133 bpm | ~150 |
@@ -25,7 +25,7 @@
 **Итого: ~12–13ч / ~445 TSS**
 **Hard days: 1** (вт sweetspot) + 1 long ride (сб)
 
-### Вт 24 — Sweetspot + Climbing Simulation (детально)
+### Ср 25 — Sweetspot + Climbing Simulation (детально)
 
 Имитация горного пейсинга: длинные sweetspot блоки с низким каденсом (как на реальном подъёме на грэвеле).
 

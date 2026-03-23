@@ -10,17 +10,17 @@
   {
     "category": "WORKOUT",
     "start_date_local": "2026-03-24T00:00:00",
-    "name": "Sweetspot Climbing Sim 4x12m",
+    "name": "Z2 Endurance (outdoor)",
     "type": "Ride",
-    "description": "- 10m 60%\n- 5m 65-76%\n\n3x\n- 12m 85%\n- 5m 57%\n\n- 10m 83%\n- 10m 53%",
+    "description": "- 90m Z2 HR <136bpm",
     "external_id": "claude-plan-2026-03-24"
   },
   {
     "category": "WORKOUT",
     "start_date_local": "2026-03-25T00:00:00",
-    "name": "Z2 Easy",
+    "name": "Sweetspot Climbing Sim 4x12m",
     "type": "Ride",
-    "description": "- 90m 65%",
+    "description": "- 10m 60%\n- 5m 65-76%\n\n3x\n- 12m 85%\n- 5m 57%\n\n- 10m 83%\n- 10m 53%",
     "external_id": "claude-plan-2026-03-25"
   },
   {
@@ -84,7 +84,7 @@
     "start_date_local": "2026-04-04T00:00:00",
     "name": "🏔 Challenge: Over the Mountains to the Sea",
     "type": "Ride",
-    "description": "- 540m Z2 HR\n214km / +2773m / Akhaltsikhe → Batumi\nPacing: HR <130 first 64km, <136 on main climb, <125 descent\nFueling: 60-80g carbs/hr from km 0",
+    "description": "- 540m Z2 HR\n214km / +2773m / Borjomi → Batumi\nTarget: 10h total (9h moving + 45min stops)\nPacing: HR <130 first 45km, <136 on main climb, <125 descent\nFueling: 60-80g carbs/hr from km 0",
     "external_id": "claude-plan-2026-04-04"
   }
 ]
