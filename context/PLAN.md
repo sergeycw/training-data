@@ -20,7 +20,7 @@
 | Чт 26 | Z2 endurance (Zwift) | 2ч | 157–184W | ~70 |
 | Пт 27 | Отдых | — | — | 0 |
 | Сб 28 | **Long ride outdoor (горный маршрут)** | 4ч30м–5ч | HR <133 bpm | ~150 |
-| Вс 29 | Z2 recovery (easy) | 1ч30м | 148–170W / HR <130 | ~40 |
+| Вс 29 | Z2 recovery (outdoor) | 1ч30м | HR <130 bpm | ~40 |
 
 **Итого: ~12–13ч / ~445 TSS**
 **Hard days: 1** (вт sweetspot) + 1 long ride (сб)
