@@ -1,132 +1,9 @@
 {
-  "generated_at": "2026-04-01T05:25:36.302689",
+  "generated_at": "2026-04-02T05:03:57.258275",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i134610329",
-      "date": "2026-03-25",
-      "type": "VirtualRide",
-      "name": "Zwift - Sweetspot Climbing Sim 4x12m",
-      "interval_summary": [
-        "3x 11m57s 223w",
-        "1x 9m56s 217w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 986,
-          "avg_power": 164,
-          "max_power": 222,
-          "avg_hr": 124,
-          "max_hr": 142,
-          "avg_cadence": 82.02081,
-          "zone": 2,
-          "training_load": 10.05926
-        },
-        {
-          "type": "WORK",
-          "label": "717s@223w72rpm",
-          "duration_secs": 717,
-          "avg_power": 223,
-          "max_power": 228,
-          "avg_hr": 152,
-          "max_hr": 158,
-          "avg_cadence": 71.76848,
-          "zone": 3,
-          "training_load": 14.319073,
-          "decoupling": 3.5559638
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 303,
-          "avg_power": 149,
-          "max_power": 234,
-          "avg_hr": 133,
-          "max_hr": 156,
-          "avg_cadence": 78.26733,
-          "zone": 2,
-          "training_load": 2.9234254,
-          "decoupling": -10.427271
-        },
-        {
-          "type": "WORK",
-          "label": "717s@223w72rpm",
-          "duration_secs": 716,
-          "avg_power": 223,
-          "max_power": 228,
-          "avg_hr": 150,
-          "max_hr": 157,
-          "avg_cadence": 75.11732,
-          "zone": 3,
-          "training_load": 14.299102,
-          "decoupling": 4.6575866
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 304,
-          "avg_power": 150,
-          "max_power": 223,
-          "avg_hr": 137,
-          "max_hr": 159,
-          "avg_cadence": 82.40131,
-          "zone": 2,
-          "training_load": 2.971042,
-          "decoupling": -14.168225
-        },
-        {
-          "type": "WORK",
-          "label": "717s@223w72rpm",
-          "duration_secs": 717,
-          "avg_power": 223,
-          "max_power": 232,
-          "avg_hr": 151,
-          "max_hr": 160,
-          "avg_cadence": 69.873085,
-          "zone": 3,
-          "training_load": 14.319073,
-          "decoupling": 5.111673
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 303,
-          "avg_power": 149,
-          "max_power": 224,
-          "avg_hr": 136,
-          "max_hr": 161,
-          "avg_cadence": 81.0231,
-          "zone": 2,
-          "training_load": 2.9234254,
-          "decoupling": -11.412391
-        },
-        {
-          "type": "WORK",
-          "label": "596s@217w69rpm",
-          "duration_secs": 596,
-          "avg_power": 217,
-          "max_power": 223,
-          "avg_hr": 149,
-          "max_hr": 157,
-          "avg_cadence": 68.832214,
-          "zone": 3,
-          "training_load": 11.167084,
-          "decoupling": 3.816467
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 617,
-          "avg_power": 135,
-          "max_power": 217,
-          "avg_hr": 128,
-          "max_hr": 155,
-          "avg_cadence": 79.73096,
-          "zone": 1,
-          "training_load": 4.8942337,
-          "decoupling": -7.9255867
-        }
-      ]
-    },
     {
       "activity_id": "i135076423",
       "date": "2026-03-27",
@@ -370,6 +247,25 @@
           "zone": 1,
           "training_load": 7.25918,
           "decoupling": -7.768534
+        }
+      ]
+    },
+    {
+      "activity_id": "i136363248",
+      "date": "2026-04-01",
+      "type": "Ride",
+      "name": "Cycling",
+      "interval_summary": [
+        "1x 1h47m 125bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "6462s@125bpm",
+          "duration_secs": 6462,
+          "avg_hr": 125,
+          "max_hr": 157,
+          "zone": 1
         }
       ]
     }
