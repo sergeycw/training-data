@@ -25,7 +25,13 @@
 | Type | Description |
 |------|-------------|
 | Primary | Cycling (Road / Gravel) |
-| Secondary | — |
+| Secondary | Trail Running / Ultra-Trail (опыт) |
+
+### Training Background
+
+Prior sport: running (6 days/week, 3 quality sessions). Structure: Wed threshold (ПАНО), Fri short intervals, Sat long with progression/inserts. All absorbed well. Transitioned to cycling — concentric load allows equal or higher quality session density. Data confirms: 3-4 hard days/week sustained in Build phase without recovery issues.
+
+**Running achievements:** полумарафон — 1:19:45; успешный опыт трейлраннинга, ультратрейлов, спидхайкинг-марафона. Высокая аэробная база и выносливость, подтверждённые на длинных дистанциях. Учитывать при планировании: атлет хорошо переносит объём и длительную работу, имеет развитую аэробную систему от бегового бэкграунда.
 
 ### Goals
 
@@ -66,6 +72,13 @@
 
 **Baseline:** 12 hours/week (± 2 hours)
 **Peak phases:** Up to 15 hours (requires RI ≥ 0.8, HRV within 10%)
+
+### Microcycle Principles
+
+- **Quality sessions:** 2-3 per week in Build phase (minimum 2, do not drop to 1 except taper/recovery)
+- **Long ride:** 1 per week (Saturday), counts as quality when >3h or includes structured work
+- **Hard:Easy ratio:** hard day → easy day or rest before next hard day
+- **Athlete tolerance:** 3 hard days/week well-absorbed (confirmed by running background + cycling data)
 
 ### Normal Weekly Schedule
 

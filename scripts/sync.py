@@ -3442,7 +3442,7 @@ class IntervalsSync:
         
         Triggers:
         - history.json missing → ALWAYS generate (bypass time gate, first-run scenario)
-        - history.json >28 days old → regenerate (time-gated to Sun/Mon midnight)
+        - history.json >7 days old → regenerate (time-gated to Sun/Mon midnight)
         
         Refresh runs only on Sundays (6) or Mondays (0), in the first two runs
         after midnight (00:00 and 00:15 UTC).
@@ -3474,7 +3474,7 @@ class IntervalsSync:
             gen_date = datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
             age_days = (datetime.now() - gen_date.replace(tzinfo=None)).days
             
-            if age_days > 28:
+            if age_days > 7:
                 if self.debug:
                     print(f"  history.json is {age_days} days old — will regenerate")
                 return True
