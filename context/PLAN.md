@@ -61,7 +61,7 @@ FTP development. Baseline: прошлая сессия 5×8м@260W. Прогре
 
 **TiZ: 40 мин @ threshold | IF ~0.82 | TSS ~85**
 
-### Сб 11 — Long Ride Outdoor с вставками (3ч30м–4ч)
+### Сб 11 — Long Ride Outdoor с вставками (4ч30м)
 
 Hilly маршрут, 800–1200м набора.
 

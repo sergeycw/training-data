@@ -85,6 +85,78 @@ cd /Users/sergeycw/Documents/projects/pets/training-data && git pull --quiet
 
 ---
 
+## Weekly Planning Workflow (при запросе "план на неделю")
+
+### Phase 1 — Data collection (параллельно)
+
+```
+git pull --quiet
+```
+
+Читать:
+- `data/latest.json`: readiness_decision, derived_metrics (RI, ACWR, monotony, stress_tolerance, phase_detection, capability), current_status (CTL/ATL/TSB/ramp_rate, FTP, вес), recent_activities, weekly_summary
+- `data/history.json` → `weekly_180d`: CTL slope за 4 недели, TSS тренды, phase history
+- `data/intervals.json`: compliance интервалов за прошлую неделю
+- `data/session_feedback.json`: RPE за quality sessions
+- `context/PLAN.md`: текущий план, прогрессия, заметки
+- `context/DOSSIER.md`: зоны, расписание, цели, оборудование
+- `context/SECTION_11.md`: пороги и правила (обязательно)
+
+### Phase 2 — Анализ (до разговора с атлетом)
+
+1. **Readiness**: `readiness_decision` как baseline → go/modify/skip + какие сигналы сработали
+2. **Load trajectory**: CTL slope, ramp rate (≤5-7/нед), ACWR (0.8–1.3), monotony (<2.5), stress tolerance (3–6)
+3. **Phase**: `phase_detection.phase` + confidence + `phase_duration_weeks` → нужен ли deload?
+4. **Capability**: durability/EF/TID drift trends
+5. **Ретро текущей недели**: план vs факт, RPE trending, какие типы работы выполнены
+6. **Прогрессия**: что прогрессировали на прошлой неделе? (Section 11B §5: один вектор/неделю)
+
+### Phase 3 — Уточняющие вопросы
+
+**Всегда:**
+- Расписание: какие дни заняты/свободны, изменения?
+- Indoor/Outdoor: какие дни? (определяет формат: power vs HR targets)
+- Long ride: день, маршрут/набор?
+
+**По ситуации:**
+
+| Триггер | Вопрос |
+|---------|--------|
+| readiness = modify/skip | Самочувствие? Внетренировочные факторы? (для override P2) |
+| RPE trending up | Накопление усталости? |
+| Build ≥ 3 недель | Нужен deload или можешь продолжать? |
+| TID drift / grey zone creep | Outdoor — удаётся Z2 или тянет в tempo? |
+| Quality session без RPE | Стандартный check-in |
+
+### Phase 4 — Решения (после ответов)
+
+1. **Характер недели**: standard build (2-3 quality) / modified build / deload / recovery
+2. **Типы quality sessions**: адаптация (SS/threshold/VO2max/climbing) — не повторять один тип два раза подряд
+3. **Прогрессия**: один вектор — intensity (+2-5% W) ИЛИ duration (+1 rep / +длительность) ИЛИ environmental. Два вектора — только при RI ≥ 0.8 + HRV within 10%
+4. **Распределение**: Hard:Easy чередование, long ride обычно Сб
+5. **Валидация Section 11B**:
+   - Поляризация ≥ 0.80 (Z1-Z2 ≥ 75%)
+   - Volume ±10% от baseline (~12ч)
+   - TSS — не более +10% от прошлой недели
+   - ACWR проекция ≤ 1.3
+   - Нет back-to-back hard days
+   - Grey zone минимизирован
+
+### Phase 5 — Генерация
+
+1. Таблица недели (день, сессия, длительность, интенсивность, TSS, итого)
+2. Quality sessions детально (warm-up → intervals → recovery → cool-down, ватты/каденс/TiZ/IF/TSS)
+3. Long ride — структура с вставками
+4. Заметки тренера (фокус, на что внимание, прогрессия vs прошлая неделя)
+
+### Phase 6 — Push
+
+1. Генерация `data/plan_events.json` (синтаксис см. ниже)
+2. Обновление `context/PLAN.md` (удалить прошедшие недели, добавить новую, ISO week)
+3. Предложить push → `python scripts/push_plan.py`
+
+---
+
 ## Форматы ответов
 
 ### Post-workout
