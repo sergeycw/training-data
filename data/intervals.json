@@ -1,32 +1,9 @@
 {
-  "generated_at": "2026-04-04T22:14:36.635176",
+  "generated_at": "2026-04-05T05:05:05.609984",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i135341409",
-      "date": "2026-03-28",
-      "type": "Ride",
-      "name": "Cycling",
-      "interval_summary": [
-        "1x 5h43m 124bpm"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 2
-        },
-        {
-          "type": "WORK",
-          "label": "20611s@124bpm",
-          "duration_secs": 20611,
-          "avg_hr": 124,
-          "max_hr": 161,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i135590189",
       "date": "2026-03-29",
@@ -281,6 +258,34 @@
           "avg_hr": 127,
           "max_hr": 163,
           "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i137295577",
+      "date": "2026-04-05",
+      "type": "Run",
+      "name": "Running",
+      "interval_summary": [
+        "1x 1h5m 131bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "3902s@131bpm79rpm",
+          "duration_secs": 3902,
+          "avg_hr": 131,
+          "max_hr": 147,
+          "avg_cadence": 79.1465,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 148,
+          "max_hr": 148,
+          "avg_cadence": 88.0,
+          "zone": 3
         }
       ]
     }
