@@ -1,57 +1,9 @@
 {
-  "generated_at": "2026-04-06T05:25:36.613290",
+  "generated_at": "2026-04-07T05:10:05.005066",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i135824092",
-      "date": "2026-03-30",
-      "type": "VirtualRide",
-      "name": "Zwift - Z2 Endurance",
-      "interval_summary": [
-        "1x 3m38s 199w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 2659,
-          "avg_power": 170,
-          "max_power": 405,
-          "avg_hr": 119,
-          "max_hr": 133,
-          "avg_cadence": 83.99536,
-          "zone": 2,
-          "training_load": 30.28514,
-          "decoupling": -0.8073945
-        },
-        {
-          "type": "WORK",
-          "label": "218s@199w90rpm",
-          "duration_secs": 218,
-          "avg_power": 199,
-          "max_power": 201,
-          "avg_hr": 128,
-          "max_hr": 135,
-          "avg_cadence": 90.13761,
-          "zone": 3,
-          "training_load": 3.4322023,
-          "decoupling": 4.2393136
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 2958,
-          "avg_power": 169,
-          "max_power": 201,
-          "avg_hr": 118,
-          "max_hr": 133,
-          "avg_cadence": 86.19256,
-          "zone": 2,
-          "training_load": 30.477446,
-          "decoupling": -0.09477312
-        }
-      ]
-    },
     {
       "activity_id": "i136071299",
       "date": "2026-03-31",
