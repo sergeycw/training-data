@@ -11,15 +11,15 @@
 | День | Сессия | Длит. | Интенсивность | TSS |
 |------|--------|-------|---------------|-----|
 | Вс 5 | Easy run (плоско) | 60м | HR <136 | ~30 |
-| Пн 6 | Easy run (плоско) | 60м | HR <136 | ~30 |
+| Пн 6 | **Rest** | — | — | 0 |
 | Вт 7 | **Climbing Sweetspot 4×12m** (Zwift) | 1ч30м | см. детали ниже | ~85 |
 | Ср 8 | Z2 endurance (Zwift) | 2ч | 157–184W | ~70 |
 | Чт 9 | **Threshold 5×8m** (Zwift) | 1ч20м | см. детали ниже | ~85 |
-| Пт 10 | Z1 recovery (Zwift) | 45м | <145W | ~15 |
+| Пт 10 | Easy Z1-Z2 (spin или run) | 60м | HR <130 / <165W | ~25 |
 | Сб 11 | **Long ride outdoor (hilly + inserts)** | 4ч30м | HR <133 + tempo на подъёмах | ~180 |
 | Вс 12 | Z2 recovery | 1ч30м | HR <130 / <160W | ~40 |
 
-**Итого: ~12ч15м / ~505 TSS | Quality: 3** (climbing SS + threshold + long w/ inserts)
+**Итого: ~11ч15м / ~485 TSS | Quality: 3** (climbing SS + threshold + long w/ inserts)
 
 ### Вт 7 — Climbing Sweetspot 4×12m (детально)
 

@@ -9,14 +9,6 @@
   },
   {
     "category": "WORKOUT",
-    "start_date_local": "2026-04-06T00:00:00",
-    "name": "Easy Run",
-    "type": "Run",
-    "description": "- 60m Z2 HR <136bpm\nFlat, easy pace.",
-    "external_id": "claude-plan-2026-04-06"
-  },
-  {
-    "category": "WORKOUT",
     "start_date_local": "2026-04-07T00:00:00",
     "name": "Climbing Sweetspot 4x12m",
     "type": "Ride",
@@ -42,9 +34,9 @@
   {
     "category": "WORKOUT",
     "start_date_local": "2026-04-10T00:00:00",
-    "name": "Z1 Recovery",
+    "name": "Easy Z1-Z2",
     "type": "Ride",
-    "description": "- 45m 55%",
+    "description": "- 60m 58%",
     "external_id": "claude-plan-2026-04-10"
   },
   {

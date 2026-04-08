@@ -1026,6 +1026,45 @@ Once duration and interval stability confirmed, controlled metabolic or thermore
 - Exposures must not exceed one per 7–10 days
 - Additional exposures require RI ≥ 0.85 and HRV within 10% of baseline
 
+#### *4 Low-Cadence Torque Training (Cadence Manipulation)
+
+Cadence selection during structured intervals is a validated training variable. Two distinct protocols are supported by recent evidence:
+
+**Protocol A — Low-Cadence Intervals (50–70 RPM):**
+
+Applying low cadence (50–70 RPM) to existing HIIT and SIT sessions within a polarized program produces greater aerobic adaptation than freely chosen cadence (>80 RPM).
+
+- Pmax: +8.1% (low cadence) vs +3.0% (free cadence)
+- VO₂max: +8.7% vs +4.6%
+- VT2 power: significant improvement only in low-cadence group
+
+*Hebisz R, Hebisz P (2024). PLOS ONE. doi:10.1371/journal.pone.0311833. RCT, n=24, 8 weeks, well-trained female cyclists.*
+
+Applicable to: Sweet Spot, Threshold, HIIT intervals. Progress gradually: start 65–75 RPM, reduce to 50–60 RPM over 4–6 weeks. Example: Climbing Sweet Spot 4×12 min @ 85–90% FTP, 65–75 RPM.
+
+**Protocol B — On-Bike Torque Training (40–50 RPM):**
+
+Short maximal-effort pedaling bouts at very low cadence (~43–48 RPM, 70% of Maximal Dynamic Force) serve as on-bike resistance training, replacing off-bike squats with comparable strength and performance gains.
+
+- Pedaling-specific MDF: +12 N (ES 0.67, p < 0.001)
+- Maximal Aerobic Power: +ES 0.37 (matched off-bike squats)
+- No spine stress or injury risk (unlike heavy squats)
+
+*Pallarés JG et al. (2025). Biology of Sport 42(3):185–195. RCT, n=37, 10 weeks, highly trained male cyclists (VO₂max ≥55).*
+
+Protocol: 5 sets × 7 pedal cycles at 70% MDF, 4 min inter-set rest, 2×/week, 72h between sessions. Not interval training — a distinct neuromuscular session.
+
+**AI Application Rules:**
+
+- Low-cadence intervals (Protocol A) count as hard days per existing zone ladder
+- On-bike torque sessions (Protocol B) count as hard days (neuromuscular load)
+- Maximum 2 low-cadence or torque sessions per week (combined)
+- Do not combine cadence <50 RPM with power >105% FTP — high torque + maximal intensity risks joint overload
+- Contraindications: knee pathology, recent joint injury. Monitor patellofemoral stress at <50 RPM
+- Readiness: same requirements as parent session type (RI ≥ 0.8, HRV within 10%)
+- Cadence targets must be included in plan events via `rpm` suffix (e.g., `- 12m 85% 65-75rpm`)
+- Progression vector: cadence manipulation counts as an intensity progression (not separate vector)
+
 ---
 
 ### Regression Rule (Safety Check)
