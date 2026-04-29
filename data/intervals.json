@@ -1,37 +1,9 @@
 {
-  "generated_at": "2026-04-28T06:08:08.715568",
+  "generated_at": "2026-04-29T05:55:33.320800",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i141842964",
-      "date": "2026-04-21",
-      "type": "TrailRun",
-      "name": "Trail Running",
-      "interval_summary": [
-        "1x 1h38m 127bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "5924s@127bpm65rpm",
-          "duration_secs": 5924,
-          "avg_hr": 127,
-          "max_hr": 153,
-          "avg_cadence": 64.51092,
-          "zone": 1
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1,
-          "avg_hr": 144,
-          "max_hr": 144,
-          "avg_cadence": 55.0,
-          "zone": 3
-        }
-      ]
-    },
     {
       "activity_id": "i141934932",
       "date": "2026-04-22",
@@ -442,6 +414,32 @@
           "duration_secs": 160,
           "avg_hr": 112,
           "max_hr": 126,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i143584347",
+      "date": "2026-04-28",
+      "type": "Ride",
+      "name": "Cycling",
+      "interval_summary": [
+        "1x 26m40s 120bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1600s@120bpm",
+          "duration_secs": 1600,
+          "avg_hr": 120,
+          "max_hr": 139,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 106,
+          "max_hr": 106,
           "zone": 1
         }
       ]
