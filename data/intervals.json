@@ -1,80 +1,9 @@
 {
-  "generated_at": "2026-04-30T06:06:22.768162",
+  "generated_at": "2026-05-01T06:17:02.079987",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i142208225",
-      "date": "2026-04-23",
-      "type": "Ride",
-      "name": "Cycling",
-      "interval_summary": [
-        "1x 37m54s 119bpm",
-        "3x 15m5s 159bpm",
-        "1x 7m4s 136bpm",
-        "1x 5m43s 136bpm",
-        "1x 1h33m 130bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "2274s@119bpm",
-          "duration_secs": 2274,
-          "avg_hr": 119,
-          "max_hr": 157,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "905s@159bpm",
-          "duration_secs": 904,
-          "avg_hr": 159,
-          "max_hr": 164,
-          "zone": 4
-        },
-        {
-          "type": "WORK",
-          "label": "424s@136bpm",
-          "duration_secs": 424,
-          "avg_hr": 136,
-          "max_hr": 160,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "905s@159bpm",
-          "duration_secs": 898,
-          "avg_hr": 161,
-          "max_hr": 166,
-          "zone": 5
-        },
-        {
-          "type": "WORK",
-          "label": "343s@136bpm",
-          "duration_secs": 343,
-          "avg_hr": 136,
-          "max_hr": 164,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "905s@159bpm",
-          "duration_secs": 913,
-          "avg_hr": 158,
-          "max_hr": 166,
-          "zone": 4
-        },
-        {
-          "type": "WORK",
-          "label": "5598s@130bpm",
-          "duration_secs": 5598,
-          "avg_hr": 130,
-          "max_hr": 164,
-          "zone": 2
-        }
-      ]
-    },
     {
       "activity_id": "i142766721",
       "date": "2026-04-25",
@@ -633,6 +562,25 @@
           "duration_secs": 7832,
           "avg_hr": 118,
           "max_hr": 159,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i144245285",
+      "date": "2026-04-30",
+      "type": "Ride",
+      "name": "Cycling",
+      "interval_summary": [
+        "1x 36m30s 128bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "2190s@128bpm",
+          "duration_secs": 2190,
+          "avg_hr": 128,
+          "max_hr": 147,
           "zone": 1
         }
       ]
