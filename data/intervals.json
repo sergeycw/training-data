@@ -1,28 +1,9 @@
 {
-  "generated_at": "2026-05-02T05:38:04.592834",
+  "generated_at": "2026-05-03T06:05:58.790705",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i142766721",
-      "date": "2026-04-25",
-      "type": "Ride",
-      "name": "Cycling",
-      "interval_summary": [
-        "1x 6h4m 125bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "21862s@125bpm",
-          "duration_secs": 21862,
-          "avg_hr": 125,
-          "max_hr": 162,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i142991689",
       "date": "2026-04-26",
@@ -600,6 +581,25 @@
           "duration_secs": 7397,
           "avg_hr": 113,
           "max_hr": 164,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i144742047",
+      "date": "2026-05-02",
+      "type": "Ride",
+      "name": "Cycling",
+      "interval_summary": [
+        "1x 3h23m 127bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "12211s@127bpm",
+          "duration_secs": 12211,
+          "avg_hr": 127,
+          "max_hr": 165,
           "zone": 1
         }
       ]
