@@ -1,8 +1,8 @@
 # Athlete Training Dossier & Performance Roadmap
 
-**Dossier Version:** v1.0
+**Dossier Version:** v1.2
 **Protocol Compatibility:** Section 11 v11.6+
-**Date:** 2026-03-17
+**Date:** 2026-05-01
 **Primary Source Systems:** Intervals.icu | Garmin
 
 ---
@@ -35,14 +35,18 @@ Prior sport: running (6 days/week, 3 quality sessions). Structure: Wed threshold
 
 ### Goals
 
-| Goal | Target Date |
-|------|-------------|
-| Reach 4+ W/kg | 2026 |
-| Increase FTP from 263W to 280W+ | 2026 |
-| Optimize weight (currently ~70 kg) | 2026 |
+| Goal | Target Date | Status |
+|------|-------------|--------|
+| **Top-10 на Strava-сегменте 11179676** (Тбилиси, ~16км/~820м, VAM 1020) | **31.08.2026 (Window 1) / 30.09.2026 (Window 2)** | Active — primary near-term |
+| FTP 295–300W (Quarq) | 31.07.2026 | In progress (282W as of 12.05) |
+| Weight 68 kg (from 70.6 kg) | 31.07.2026 | In progress |
+| W/kg 4.3+ at FTP | 31.07.2026 | 4.0 currently |
+| Reach 4+ W/kg | 2026 | ✅ Done (4.0 as of 12.05.2026) |
 
-**Current Phase:** Build (threshold + VO2max development)
-**Training Style:** High-volume polarized (~12h/week)
+**Top-10 threshold:** ~48:20 на сегменте (Rival G #10: 288W avg, 19.9 km/h, VAM 1020). Текущее лучшее время: 1:03:58 (casual, не attempt).
+
+**Current Phase:** Build → Threshold/TTE block (started W21, 18.05.2026)
+**Training Style:** High-volume polarized (~12h/week), shifting к threshold-specificity для long sustained climb
 
 ---
 
@@ -53,16 +57,20 @@ Prior sport: running (6 days/week, 3 quality sessions). Structure: Wed threshold
 | Component | Details |
 |-----------|---------|
 | Platform | Zwift |
-| Sensors | Smart trainer (power), HRM |
+| Trainer | Wahoo Kickr (resistance unit) |
+| Bike | Шоссейник на станке |
+| Power source | **Quarq spider PM** — primary, fit-запись через Garmin/Wahoo |
+| HRM | Garmin |
 
 ### Outdoor Setup
 
 | Component | Details |
 |-----------|---------|
-| Bike | Gravel bike (no power meter) |
+| Climbing road bike | **Quarq spider PM** — primary quality bike (тот же что indoor) |
+| Gravel bike | No PM — Z2/long на gravel (HR-based) |
 | HRM | Garmin |
 
-**Note:** Outdoor rides use HR-based intensity guidance only (no power data).
+**Power source:** Quarq — **единый PM для indoor и outdoor**. Все ватты в плане и зонах считаются от Quarq-FTP. Gravel остаётся HR-based (нет PM).
 
 ---
 
@@ -96,11 +104,11 @@ Prior sport: running (6 days/week, 3 quality sessions). Structure: Wed threshold
 
 | Session Type | Target Power/HR | Duration | Purpose |
 |--------------|-----------------|----------|---------|
-| VO2Max | 279-316W (106-120% FTP) | 1-1.5h | Aerobic capacity |
-| Threshold | 239-276W (91-105% FTP) | 1-1.5h | FTP development |
-| Sweetspot | 221-255W (84-97% FTP) | 1.5-2h | Time at intensity |
-| Endurance | 148-197W (56-75% FTP) | 1.5-4h | Aerobic base |
-| Recovery | <145W (<55% FTP) | 0.5-1h | Active recovery |
+| VO2Max | 299-338W (106-120% FTP) | 1-1.5h | Aerobic capacity |
+| Threshold | 257-296W (91-105% FTP) | 1-1.5h | FTP development |
+| Sweetspot | 237-274W (84-97% FTP) | 1.5-2h | Time at intensity |
+| Endurance | 158-212W (56-75% FTP) | 1.5-4h | Aerobic base |
+| Recovery | <155W (<55% FTP) | 0.5-1h | Active recovery |
 
 ### Recovery Protocol
 
@@ -114,20 +122,20 @@ Prior sport: running (6 days/week, 3 quality sessions). Structure: Wed threshold
 
 ## 4. Performance Metrics
 
-### Current Power Zones (FTP = 263W)
+### Current Power Zones (FTP = 282W)
 
 | Zone | % of FTP | Power (W) | Notes |
 |------|----------|-----------|-------|
-| Z1 | 0-55% | 0-145 | Active Recovery |
-| Z2 | 56-75% | 148-197 | Endurance (Base) |
-| Z3 | 76-90% | 200-237 | Tempo |
-| Z4 | 91-105% | 239-276 | Threshold |
-| Z5 | 106-120% | 279-316 | VO2max |
-| Z6 | 121-150% | 318-395 | Anaerobic |
-| Z7 | 151%+ | 397+ | Neuromuscular |
-| SS | 84-97% | 221-255 | Sweetspot |
+| Z1 | 0-55% | 0-155 | Active Recovery |
+| Z2 | 56-75% | 158-212 | Endurance (Base) |
+| Z3 | 76-90% | 214-254 | Tempo |
+| Z4 | 91-105% | 257-296 | Threshold |
+| Z5 | 106-120% | 299-338 | VO2max |
+| Z6 | 121-150% | 341-423 | Anaerobic |
+| Z7 | 151%+ | 426+ | Neuromuscular |
+| SS | 84-97% | 237-274 | Sweetspot |
 
-**Current FTP:** 263W (Indoor: 263W)
+**Current FTP:** 282W (Quarq-based, Ramp Test Lite 12.05.2026 — peak 1m ~373W → eFTP 282W; единый indoor/outdoor FTP)
 **Max HR:** 176 bpm
 **Threshold HR (LTHR):** 160 bpm
 **Resting HR:** 44 bpm
@@ -152,39 +160,89 @@ Prior sport: running (6 days/week, 3 quality sessions). Structure: Wed threshold
 
 ### Current Adaptation Focus
 
-- [ ] Raise FTP from 263W toward 280W+ (4+ W/kg target)
-- [ ] Maintain polarized distribution (80/20)
-- [ ] Improve VO2max power (target 290W+ intervals)
-- [ ] Optimize weight from ~70 kg toward 67-68 kg (without compromising power)
+- [ ] **Raise FTP from 282W → 295–300W** (specificity для 48-min sustained climb effort)
+- [ ] **Develop TTE at FTP** — target 45–50 мин sustained @ ≥95% FTP (sweetspot/threshold длинные блоки)
+- [ ] **Weight optimization 70.6 → 68 kg** (-0.3–0.4 кг/нед, без потери power)
+- [ ] Maintain polarized distribution (80/20) — quality дни не размывать
+- [ ] VO2max maintenance only (1× / 2 нед) — primary stimulus уходит в threshold
 
 ### Next-Phase Options
 
-Transition to outdoor season as weather improves. Use HR for outdoor intensity guidance since no outdoor power meter.
+W21 onward: shift с VO2-baseline (post-deload validation) на **threshold + TTE block** для специфики long sustained climb segment (~48 min sustained effort).
 
 ---
 
 ## 7. Outdoor Transition Plan
 
+### Bike Selection
+
+| Сессия | Велосипед | Метрика |
+|--------|-----------|---------|
+| Threshold / VO2max / SS | Шоссейник (Quarq) | Power primary, HR cross-check |
+| Long Z2 (дорога) | Шоссейник или gravel | Power (если шоссик) или HR (если gravel) |
+| Long Z2 (грунт/смешанный) | Gravel | HR |
+| Recovery / openers | Любой | HR |
+
+### Outdoor Quality Rules
+
+- **Quarq calibration:** zero offset перед каждым выездом, после 5 мин разогрева
+- **Pacing:** первая минута интервала -2-3% от таргета, доводить плавно (нет ERG)
+- **Terrain:** длинные подъёмы 5-10% или закрытая петля без перекрёстков для интервалов
+- **Power единый:** indoor и outdoor — один Quarq-FTP, без offset
+- **HR cross-check:** если power в таргете, но HR на 10+ bpm выше нормы — флаг (жара, обезвоживание, недовосстановление)
+
+### Weather Cutoffs (quality outdoor)
+
+| Условие | Threshold/VO2 | Z2/Long |
+|---------|--------------|---------|
+| Ветер порывы >25 км/ч | На Zwift | OK |
+| Дождь | На Zwift (исключение: closed loop) | OK |
+| <5°C | Warm-up 25+ мин или Zwift | OK |
+| >32°C | Утро/вечер или Zwift | Утро/вечер |
+
+**Правило переноса:** если погода блокирует quality outdoor — **тот же день на Zwift**, не сдвигать на другой день (ломает hard:easy).
+
 ### General Rules
 
-- Outdoor rides replace indoor 1:1
-- HR < 136 bpm (~85% of LTHR) = aerobic
-- Use HR to guide intensity (no outdoor power meter)
-- Indoor power sessions remain on Zwift for structured work
+- Outdoor quality replaces indoor 1:1 по TSS и TiZ
+- Indoor (Zwift) остаётся для плохой погоды и максимально точных протоколов
+- HR < 136 bpm (~85% of LTHR) = aerobic guideline (для gravel/no-power режима)
 
 ---
 
 ## 8. Long-Term Performance Roadmap
 
-### Primary Objective
+### Primary Objective (Near-term)
 
-Reach 4+ W/kg by end of 2026 season. Two levers: raise FTP (263W → 280W+) and optimize weight (~70 kg → 67-68 kg).
+**Top-10 на Strava-сегменте 11179676** (Тбилиси, ~16 км, ~820 м набора, VAM 1020). Top-10 граница ≈ 48:20 (288W avg, 19.9 km/h). Window 1: середина-конец августа 2026. Window 2 (fallback): конец сентября 2026.
+
+### Block Roadmap to August Attempt
+
+| Период | Недели | Focus | Quality sessions | Trial |
+|--------|--------|-------|------------------|-------|
+| **18.05–24.05** | W21 | Threshold introduction | SS 3×15m + Threshold 2×15m + Long w/ 40m SS | — |
+| **25.05–31.05** | W22 | TTE progression | VO2 maint 4×4m + Threshold 3×15m@97% + Long climb-sim | — |
+| **01.06–07.06** | W23 | Threshold continuation | SS 2×25m + Threshold 4×10m@99% + Long | **Trial #1** (Сб) |
+| **08.06–14.06** | W24 | Deload | Touch sessions | — |
+| **15.06–21.06** | W25 | Threshold peak | 2×20m@98% + 3×15m@97% + Long w/ 60m SS | — |
+| **22.06–28.06** | W26 | Specificity | Long climb sim @ 90% on segment terrain | **Trial #2** |
+| **29.06–05.07** | W27 | Mixed maintenance | Threshold + VO2 maint | — |
+| **06.07–12.07** | W28 | Specificity 2 | Long climb sim + 1×race-pace block | **Trial #3** |
+| **13.07–19.07** | W29 | Threshold final | 2×25m@95% + Long | — |
+| **20.07–26.07** | W30 | Pre-taper | Reduced volume, intensity maintain | — |
+| **27.07–02.08** | W31 | Taper | -40% volume, race-pace touches | — |
+| **03.08–09.08** | W32 | **Attempt window 1** | Recovery → Attempt → Recovery | **Attempt** |
+
+### Fallback Window 2 (если W32 не зашёл)
+
+Продолжить maintenance до **W37–W39 (07.09–27.09)**, второй attempt window — late September 2026.
 
 ### Progression Overview
 
 | Year | Focus | FTP Target | W/kg Target |
 |------|-------|------------|-------------|
-| 2026 | Threshold + VO2max development, weight optimization | 280W+ | 4.0+ |
+| 2026 H1 | Threshold/TTE block, weight optimization, segment attempt | 295–300W | 4.3+ |
+| 2026 H2 | Post-attempt: extend FTP, race calendar | 305W+ | 4.4+ |
 
 ---
 
@@ -205,6 +263,26 @@ Files: `data/latest.json`, `data/history.json`, `data/intervals.json`, `data/ftp
 ---
 
 ## Changelog
+
+### v1.4 (2026-05-12)
+- Primary near-term goal: Top-10 на Strava-сегменте 11179676 (Тбилиси), window 1 — август 2026
+- §1 Goals — переписана с приоритетом segment target + FTP/weight/W-per-kg deadlines
+- §6 Adaptation Focus — shift с VO2-baseline на Threshold/TTE block (specificity для 48-min climb)
+- §8 Long-Term Roadmap — block-by-block phase plan W21 → W32 с trial attempts на W23, W26, W28
+- Top-10 threshold метрики: 48:20, 288W avg, 19.9 km/h, VAM 1020
+
+### v1.3 (2026-05-12)
+- FTP updated: 263W (Kickr) → 282W (Quarq, Ramp Test Lite 12.05.2026, peak 1m ~373W)
+- Power zones recalculated for FTP 282W (единый Quarq-calibrated)
+- Session details (target power) обновлены под FTP 282W
+- ftp_history.json: 2026-05-12: 282 (indoor + outdoor)
+
+### v1.2 (2026-05-01)
+- Добавлен climbing road bike с мощемером — основной outdoor quality bike
+- Gravel bike остаётся без мощемера, используется для Z2/long на HR
+- Раздел 2 (Equipment) — пересобран под два outdoor байка
+- Раздел 7 (Outdoor Transition) — расширен: bike selection, quality rules, weather cutoffs, FTP test plan
+- Outdoor FTP — провизорно Indoor -5% (~250W) до теста
 
 ### v1.1 (2026-03-17)
 - FTP updated: 243W → 263W (Ramp Test 17.03)

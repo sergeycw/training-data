@@ -21,7 +21,11 @@ PLAN_EVENTS_FILE = Path(__file__).resolve().parent.parent / "data" / "plan_event
 
 
 def _api_request(method, url, auth, data=None):
-    headers = {"Authorization": f"Basic {auth}", "Accept": "application/json"}
+    headers = {
+        "Authorization": f"Basic {auth}",
+        "Accept": "application/json",
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    }
     body = None
     if data is not None:
         headers["Content-Type"] = "application/json"

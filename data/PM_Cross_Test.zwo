@@ -1,0 +1,18 @@
+<workout_file>
+    <author>Coach</author>
+    <name>PM Cross-Test 4-step + Cadence</name>
+    <description>Cross-comparison Aethos PM vs trainer PM. ERG OFF. Zero-offset both PMs after warm-up (stop pedaling 30s). Steps 5-6: same 75% power, different cadence — cadence sensitivity test.</description>
+    <sportType>bike</sportType>
+    <tags/>
+    <workout>
+        <Warmup Duration="600" PowerLow="0.50" PowerHigh="0.65" Cadence="88"/>
+        <SteadyState Duration="240" Power="0.60" Cadence="90"/>
+        <SteadyState Duration="240" Power="0.70" Cadence="90"/>
+        <SteadyState Duration="240" Power="0.80" Cadence="90"/>
+        <SteadyState Duration="240" Power="0.90" Cadence="95"/>
+        <SteadyState Duration="120" Power="0.50"/>
+        <SteadyState Duration="240" Power="0.75" Cadence="102"/>
+        <SteadyState Duration="240" Power="0.75" Cadence="72"/>
+        <Cooldown Duration="240" PowerLow="0.55" PowerHigh="0.55" Cadence="88"/>
+    </workout>
+</workout_file>

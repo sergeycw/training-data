@@ -115,7 +115,7 @@ git pull --quiet
 
 **Всегда:**
 - Расписание: какие дни заняты/свободны, изменения?
-- Indoor/Outdoor: какие дни? (определяет формат: power vs HR targets)
+- Indoor/Outdoor: какие дни? Если outdoor — какой байк (шоссейник с Quarq → power / gravel без PM → HR). Default outdoor quality = шоссейник с Quarq (см. DOSSIER §7)
 - Long ride: день, маршрут/набор?
 
 **По ситуации:**
@@ -201,12 +201,15 @@ git pull --quiet
 
 При создании или обновлении недельного плана → сгенерировать `data/plan_events.json` и предложить push.
 
-**Обязательно спросить** какие дни outdoor, какие indoor (Zwift). От этого зависит:
+**Обязательно спросить** какие дни outdoor / какие indoor (Zwift) **И на каком велосипеде outdoor** (есть PM или нет). От этого зависит target:
 
-| Тип сессии | category | target | Zwift |
-|-----------|----------|--------|-------|
-| Indoor (любая) | `WORKOUT` | %FTP | Да (structured workout) |
-| Outdoor (любая) | `WORKOUT` | bpm (HR-зоны) | Да (игнорировать в Zwift) |
+| Сценарий | category | target | Источник правды |
+|----------|----------|--------|-----------------|
+| Indoor (Zwift) | `WORKOUT` | `%FTP` | Quarq spider PM |
+| Outdoor шоссейник (с Quarq PM) | `WORKOUT` | `%FTP` (power primary, HR cross-check) | Quarq spider PM |
+| Outdoor gravel (no PM) | `WORKOUT` | `HR Z-зона` / `% LTHR` | HR monitor |
+
+**Default outdoor = power %FTP**, если в DOSSIER §2 Equipment / §7 Bike Selection не указано иное. HR-таргеты — только для байков без PM (gravel). НЕ применять «outdoor=HR» как общее правило — проверять DOSSIER на каждом плане.
 
 **Всегда `WORKOUT`** — `NOTE` ломает плановые weekly load/time в Intervals.icu.
 
@@ -216,10 +219,11 @@ git pull --quiet
 
 **Формат шага:** `- {duration} {target} [cadence]`
 
-**Power (indoor):** `- 10m 62%`, `- 5m 99%`, `- 120m 65%`
+**Power (indoor И outdoor с PM):** `- 10m 62%`, `- 5m 99%`, `- 120m 65%`
 - НЕ использовать диапазоны `60-70%` — могут не парситься. Указывать конкретный % или использовать ramp: `- 5m 70-82%` (от→до)
+- Для outdoor с PM добавлять HR cross-check ожидание в PLAN.md (не в description) — flag если HR ↑ при power в норме
 
-**HR (outdoor):** `- 120m Z2 HR`, `- 30m Z3 HR`, `- 60m 75-80% HR`, `- 20m 90% LTHR`
+**HR (только outdoor без PM, напр. gravel):** `- 120m Z2 HR`, `- 30m Z3 HR`, `- 60m 75-80% HR`, `- 20m 90% LTHR`
 - НЕ использовать абсолютные bpm (`128-143bpm`) — Intervals.icu их не парсит, тренировка создаётся без duration/load
 
 **Repeat-блоки:** ОБЯЗАТЕЛЬНО отделять пустыми строками
