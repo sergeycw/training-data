@@ -220,9 +220,9 @@ W21 onward: shift с VO2-baseline (post-deload validation) на **threshold + TT
 
 | Период | Недели | Focus | Quality sessions | Trial |
 |--------|--------|-------|------------------|-------|
-| **18.05–24.05** | W21 | Threshold introduction | SS 3×15m + Threshold 2×15m + Long w/ 40m SS | — |
-| **25.05–31.05** | W22 | TTE progression | VO2 maint 4×4m + Threshold 3×15m@97% + Long climb-sim | — |
-| **01.06–07.06** | W23 | Threshold continuation | SS 2×25m + Threshold 4×10m@99% + Long | **Trial #1** (Сб) |
+| **18.05–24.05** | W21 | Threshold introduction | Threshold 4×10m@99% + SS 3×15m + Long w/ 40m SS | — |
+| **25.05–31.05** | W22 | TTE progression | Threshold 2×20m@97% + VO2 maint 4×4m + Long climb-sim | — |
+| **01.06–07.06** | W23 | Threshold continuation | Threshold 2×25m@95% + SS 2×25m + Long | **Trial #1** (Сб) |
 | **08.06–14.06** | W24 | Deload | Touch sessions | — |
 | **15.06–21.06** | W25 | Threshold peak | 2×20m@98% + 3×15m@97% + Long w/ 60m SS | — |
 | **22.06–28.06** | W26 | Specificity | Long climb sim @ 90% on segment terrain | **Trial #2** |
