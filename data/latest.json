@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-05-25T07:05:38.440040",
+    "last_updated": "2026-05-25T07:15:15.549253",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.84"
@@ -305,10 +305,8 @@
     },
     "phase_detection": {
       "phase": "Build",
-      "confidence": "medium",
-      "reason_codes": [
-        "NO_PLANNED_WORKOUTS"
-      ],
+      "confidence": "high",
+      "reason_codes": [],
       "basis": {
         "stream_1": {
           "ctl_slope": 0.82,
@@ -317,11 +315,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
+          "planned_tss_delta": 0.88,
+          "hard_sessions_planned": 2,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
+          "plan_coverage_current_week": 1.2,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
@@ -333,9 +331,7 @@
       "dossier_agreement": null
     },
     "phase_detected": "Build",
-    "phase_triggers": [
-      "NO_PLANNED_WORKOUTS"
-    ],
+    "phase_triggers": [],
     "seasonal_context": "Build / Early Race Season",
     "benchmark_indoor": {
       "current_ftp": 282,
@@ -357,7 +353,7 @@
     "p_max": 856,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-05-25T07:05:38.438572",
+    "calculation_timestamp": "2026-05-25T07:15:15.548216",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -401,8 +397,8 @@
       "efficiency_factor": null,
       "hrrc": null,
       "elevation_m": 311.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 2,
+      "rpe": 2,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 3833,
@@ -446,8 +442,8 @@
       "efficiency_factor": null,
       "hrrc": 22,
       "elevation_m": 2613.0,
-      "feel": null,
-      "rpe": null,
+      "feel": 2,
+      "rpe": 7,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 20193,
@@ -792,14 +788,81 @@
       "vo2max": null
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 112135386,
+      "date": "2026-05-26",
+      "name": "Threshold 2x20m @ 97%",
+      "type": "WORKOUT",
+      "planned_tss": 103,
+      "duration_hours": 1.52,
+      "duration_formatted": "1h31m",
+      "workout_summary": "15m @169W | 5m @211W | 2\u00d720m @273W / 8m rec | 10m @183W | 5m @141W",
+      "description": "- 15m 60% 85-95rpm\n- 5m 65-85% 85-95rpm\n\n2x\n- 20m 97% 85-95rpm\n- 8m 55%\n\n- 10m 65% 85-95rpm\n- 5m 50% 80-85rpm"
+    },
+    {
+      "id": 112135387,
+      "date": "2026-05-27",
+      "name": "Z2 Endurance easy",
+      "type": "WORKOUT",
+      "planned_tss": 60,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description": "- 10m 55-65% 85-95rpm\n- 70m 65% 85-95rpm\n- 10m 50% 85-95rpm"
+    },
+    {
+      "id": 112135389,
+      "date": "2026-05-28",
+      "name": "VO2max 6x3m @ 113%",
+      "type": "WORKOUT",
+      "planned_tss": 91,
+      "duration_hours": 1.35,
+      "duration_formatted": "1h21m",
+      "workout_summary": "15m @169W | 5m @232W | 5m @183W | 6\u00d73m @318W / 3m rec | 15m @174W | 5m @141W",
+      "description": "- 15m 55-65% 85-95rpm\n- 5m 65-100% 95-100rpm\n- 5m 65% 85-90rpm\n\n6x\n- 3m 113% 95-100rpm\n- 3m 50%\n\n- 15m 62% 85-95rpm\n- 5m 50% 80-85rpm"
+    },
+    {
+      "id": 112135390,
+      "date": "2026-05-29",
+      "name": "Z2 Endurance easy",
+      "type": "WORKOUT",
+      "planned_tss": 60,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description": "- 10m 55-65% 85-95rpm\n- 70m 65% 85-95rpm\n- 10m 50% 85-95rpm"
+    },
+    {
+      "id": 112135391,
+      "date": "2026-05-30",
+      "name": "Long Z2 + 40m SS climb-sim",
+      "type": "WORKOUT",
+      "planned_tss": 215,
+      "duration_hours": 4.58,
+      "duration_formatted": "4h35m",
+      "workout_summary": null,
+      "description": "- 15m 50-62% 85-90rpm\n- 70m 65% 85-95rpm\n- 40m 88% 80-90rpm\n- 15m 55% 85-95rpm\n- 75m 65% 85-95rpm\n- 45m 62% 85-95rpm\n- 15m 50% 85-95rpm"
+    },
+    {
+      "id": 112135392,
+      "date": "2026-05-31",
+      "name": "Z2 Endurance",
+      "type": "WORKOUT",
+      "planned_tss": 53,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description": "- 15m 50-62% 85-95rpm\n- 60m 62% 85-95rpm\n- 15m 50% 85-95rpm"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 6,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 4
   },
   "weekly_summary": {
     "total_training_hours": 19.02,
