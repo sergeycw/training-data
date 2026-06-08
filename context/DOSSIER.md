@@ -1,6 +1,6 @@
 # Athlete Training Dossier & Performance Roadmap
 
-**Dossier Version:** v1.2
+**Dossier Version:** v1.5
 **Protocol Compatibility:** Section 11 v11.6+
 **Date:** 2026-05-01
 **Primary Source Systems:** Intervals.icu | Garmin
@@ -122,27 +122,27 @@ Prior sport: running (6 days/week, 3 quality sessions). Structure: Wed threshold
 
 ## 4. Performance Metrics
 
-### Current Power Zones (FTP = 282W)
+### Current Power Zones (FTP = 285W)
 
 | Zone | % of FTP | Power (W) | Notes |
 |------|----------|-----------|-------|
-| Z1 | 0-55% | 0-155 | Active Recovery |
-| Z2 | 56-75% | 158-212 | Endurance (Base) |
-| Z3 | 76-90% | 214-254 | Tempo |
-| Z4 | 91-105% | 257-296 | Threshold |
-| Z5 | 106-120% | 299-338 | VO2max |
-| Z6 | 121-150% | 341-423 | Anaerobic |
-| Z7 | 151%+ | 426+ | Neuromuscular |
-| SS | 84-97% | 237-274 | Sweetspot |
+| Z1 | 0-55% | 1-156 | Active Recovery |
+| Z2 | 56-75% | 157-213 | Endurance (Base) |
+| Z3 | 76-90% | 214-256 | Tempo |
+| Z4 | 91-105% | 257-299 | Threshold |
+| Z5 | 106-120% | 300-342 | VO2max |
+| Z6 | 121-150% | 343-427 | Anaerobic |
+| Z7 | 151%+ | 428+ | Neuromuscular |
+| SS | 84-97% | 239-276 | Sweetspot |
 
-**Current FTP:** 282W (Quarq-based, Ramp Test Lite 12.05.2026 — peak 1m ~373W → eFTP 282W; единый indoor/outdoor FTP)
-**Max HR:** 176 bpm
+**Current FTP:** 285W (Quarq-based, пассивный eFTP-апдейт по MLSS 03.06.2026, было 282W; единый indoor/outdoor FTP). Watch: TTE @ FTP = 53мин (02.06 climb 52:53@284W) → возможно занижен, кандидат на re-test после W24 deload.
+**Max HR:** 186 bpm
 **Threshold HR (LTHR):** 160 bpm
-**Resting HR:** 44 bpm
-**HRV:** 45
-**eFTP:** 263W
-**W':** 21.1 kJ
-**P-max:** 799W
+**Resting HR:** 44 bpm (baseline; динамика → latest.json)
+**HRV:** 44 (baseline; динамика → latest.json)
+**eFTP:** 285W
+**W':** 24.5 kJ
+**P-max:** 856W
 
 ### Current Fitness Markers
 
@@ -263,6 +263,13 @@ Files: `data/latest.json`, `data/history.json`, `data/intervals.json`, `data/ftp
 ---
 
 ## Changelog
+
+### v1.5 (2026-06-08)
+- §4 Performance Metrics синхронизированы под FTP 285W (eFTP-апдейт MLSS 03.06): power zones пересчитаны (Z1-Z7, SS), Current FTP 282→285
+- **Max HR 176 → 186 bpm** (исправлено по факту из Intervals.icu Sport Settings)
+- eFTP 263→285, W' 21.1→24.5 kJ, P-max 799→856 (из latest.json)
+- RHR/HRV помечены как baseline-снапшот (динамика → latest.json)
+- Watch-заметка: TTE @ FTP = 53мин (02.06 climb) → FTP возможно занижен, кандидат на re-test
 
 ### v1.4 (2026-05-12)
 - Primary near-term goal: Top-10 на Strava-сегменте 11179676 (Тбилиси), window 1 — август 2026
