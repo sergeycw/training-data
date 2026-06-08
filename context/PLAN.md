@@ -1,122 +1,100 @@
-# Training Plan — May 2026
+# Training Plan — June 2026
 
-**FTP:** 282W (Quarq-based, Ramp Test Lite 12.05.2026, peak 1m ~373W → eFTP 282W). Единый indoor/outdoor FTP. Quarq vs Kickr спред +7% (ожидали ~+15%, факт меньше).
+**FTP:** 285W (Quarq-based, пассивный eFTP-апдейт по MLSS 03.06.2026). Единый indoor/outdoor FTP. **Watch:** TTE @ FTP = 53мин (02.06 climb 52:53@284W, IF≈1.0) → FTP, вероятно, занижен, потолок выше. Кандидат на re-test после W24 deload.
 
 ---
 
-## Week 22: 25–31 мая 2026 — Threshold/TTE Block — TTE Progression
+## Week 24: 8–14 июня 2026 — Deload (intensity-maintained)
 
-**W21 retro:** Все 3 quality done. Threshold Вт 4×10@280W avg — execution perfect. SS Чт фрагментировался outdoor на рельефе (15+15+20 лап атлета, средние в SS-зоне — compliance OK). Сб long overran 2×: 10ч34м/489 TSS vs план 5ч/240 (атлет принял решение на месте). Недельный TSS 927 vs план 640 (+45%). На утро 25.05 — полное восстановление: HRV 49 (+14%), RHR 44, sleep score 90, TSB восстановился с -35.6 до -12, readiness P3 GO all green. ACWR 1.3 — warning, верхняя граница.
+**W23 retro:** Все quality done + запланированный челлендж. Ключевое — **Вт 02.06 был полу-trial на целевом сегменте 11179676: 52:53 @ 284W**, HR 167 (>LTHR), VAM 949, W/kg 4.05. (Прошлая запись «19.7мин@282W» была артефактом auto-detect Intervals.icu — реальный device-lap = 52:53 непрерывно. Настройка "Use Laps" включается, чтобы не повторялось.) Чт VO2 5×4m@111% done (RPE 7). Сб челлендж 10.7ч/235км/4376м/438 TSS, IF 0.64, RPE 8 — aerobic-managed. Острый ответ (HRV 48→29, sleep 6h46 на 07.06) снят одной ночью: на 08.06 HRV 48, sleep 9h17, RI 1.10, TSB −12.6, readiness 6/6 GO. НЕ overreaching.
 
-**W22 вектор прогрессии:** *threshold duration* (10m → 20m continuous blocks). Тот же TiZ 40m, но непрерывная работа = выше metabolic stress, выше TTE adaptation, ближе к специфике 48-мин sustained climb. VO2 — новый формат-touch (6×3m@113%, не повышение нагрузки vs W20 5×4m@110%). Long — снижение volume vs W21 overrun, 4-5ч + 40m SS climb-sim.
+**Почему deload:** 3 недели build (W21→W23) + челлендж + вчерашний HRV crash = накоплено. CTL 107, plان roadmap ставит W24 deload перед W25 threshold peak. Issurin: accumulation → recovery. Deload стратегический, не реактивный.
 
-**Volume:** ~12ч30м / ~660 TSS. Это reduce -28% vs W21 — цель TSB к -5/-10, ACWR к 1.0 перед Trial #1 на W23. Все quality outdoor (запрос атлета — Вт Threshold тоже outdoor на длинном подъёме, дополнительная specificity).
+**Вектор W24 (запрос атлета — intensity-maintained):** держим интенсивность (threshold 271W + VO2 322W), режем ОБЪЁМ (long убран, easy-дни короче, +rest день). Mujika taper-логика: усталость гонит объём, не интенсивность → ATL падает, острота держится, TSB растёт к суперкомпенсации W25. Target ~7.8ч / ~400 TSS (−38% часов vs baseline 12ч, −52% TSS vs W23 830).
 
-**Порядок quality:** Пн rest → Вт Threshold → Чт VO2 → Сб Long. Нет back-to-back hard.
-
-| День | Сессия | Длит. | Where | Интенсивность | TSS |
+| День | Сессия | Длит | Where | Интенсивность | TSS |
 |------|--------|-------|-------|---------------|-----|
-| Пн 25 | **REST** | — | — | — | 0 |
-| Вт 26 | **Threshold 2×20m @ 97%** | 1ч40м | Outdoor (шоссик/Quarq) | 274W (97%) | ~125 |
-| Ср 27 | Z2 Endurance easy | 1ч30м | Outdoor (шоссик) | 183W (65%) | ~63 |
-| Чт 28 | **VO2max 6×3m @ 113%** | 1ч30м | Outdoor (шоссик/Quarq) | 319W (113%) | ~100 |
-| Пт 29 | Z2 Endurance easy | 1ч30м | Outdoor (шоссик) | 183W (65%) | ~63 |
-| Сб 30 | **Long Z2 + 40m SS climb-sim** | 4–5ч | Outdoor (шоссик) | 183W + 248W (88%) | ~240 |
-| Вс 31 | Z2 Endurance | 1ч30м | Outdoor (шоссик) | 175W (62%) | ~65 |
+| Пн 08 | REST | — | — | — | 0 |
+| Вт 09 | **Threshold 2×15m @95%** | ~1.3ч | Outdoor подъём (шоссик/Quarq) | 271W (95%) | ~95 |
+| Ср 10 | Z2 Endurance easy | 1ч | Indoor/любой | 185W (65%) | ~42 |
+| Чт 11 | Recovery spin | 0.75ч | Любой | Z1 <157W | ~25 |
+| Пт 12 | **VO2max 6×3m @113%** | ~1.35ч | Indoor (Zwift ERG) | 322W (113%) | ~88 |
+| Сб 13 | Z2 moderate (НЕ long) | 2.25ч | Outdoor | 185W (65%) | ~100 |
+| Вс 14 | Z2 Endurance easy | 1.25ч | Indoor/любой | 177W (62%) | ~50 |
 
-**Cycling: ~12ч30м / ~660 TSS | Quality: 3** (Threshold + VO2 + Long w/ SS).
+**Quality: 2** (Вт threshold + Пт VO2). Hard:Easy: Пн rest → Вт hard → Ср easy → Чт easy → Пт hard → Сб mod → Вс easy. 2 easy дня между quality, нет back-to-back.
 
-Hard:Easy chain: Пн rest → Вт hard → Ср easy → Чт hard → Пт easy → Сб hard (long) → Вс easy. Нет back-to-back hard.
+### Вт 09 — Threshold 2×15m @95% (детально, outdoor шоссик Quarq, на подъёме)
 
-### Вт 26 — Threshold 2×20m @ 97% (детально, outdoor шоссик Quarq)
-
-Прогрессия от W21 4×10m@99% (40m TiZ кусками с recovery) → 2×20m@97% (40m TiZ continuous блоками). Тот же TiZ, но непрерывная работа = выше metabolic stress, выше TTE adaptation. Outdoor на длинном подъёме = прямая симуляция таргетного сегмента 11179676 (~48 мин climb).
+Sustained-формат (запрос атлета вместо over-unders). Каденс 85-90 — climbing specificity под целевой сегмент. 2 блока на длинном непрерывном подъёме, recovery на спуске/выкате.
 
 | Блок | Время | Power | Каденс |
 |------|-------|-------|--------|
-| Warm-up | 15 мин | 169W (60%) | 85–95 |
-| Build | 5 мин | 183→240W (65→85%) | 85–95 |
-| **Threshold Block 1** | **20 мин** | **274W (97%)** | **85–95** |
-| Recovery | 8 мин | 155W (55%) | свободный |
-| **Threshold Block 2** | **20 мин** | **274W (97%)** | **85–95** |
-| Z2 tail | 10 мин | 183W (65%) | 85–95 |
-| Cool-down | 5 мин | 141W (50%) | 80–85 |
+| Warm-up | 15 мин | 157→185W (55→65%) | 85–95 |
+| Bridge | 5 мин | 185W (65%) | 85–90 |
+| Openers (2×1m) | 6 мин | 1m @ 285W (100%) / 2m @ 157W | 90–95 |
+| Bridge | 3 мин | 185W (65%) | 85–90 |
+| **Block 1** | **15 мин** | **271W (95%)** | **85–90** |
+| Recovery | 5 мин | 157W (55%) | свободный |
+| **Block 2** | **15 мин** | **271W (95%)** | **85–90** |
+| Cool-down | 15 мин | 171→142W (60→50%) | 85–95 |
 
-**TiZ: 40 мин @ Threshold continuous | IF ~0.87 | TSS ~125**
+**TiZ: 30 мин @ threshold | IF ~0.82 | TSS ~95**
 
-**Outdoor rules:** zero offset Quarq после 5 мин. Каждый 20m блок на одном длинном подъёме (≥20 мин восхождение, ≥5-7% градиент) — идеально на сегменте 11179676. Pacing: первые 2 мин 260-265W (95%), доводить до 274W плавно. HR cross-check: 152-160 bpm на 1-м блоке, до 165 на 2-м.
+**Outdoor:** zero offset Quarq после 5 мин. Каждый 15m блок — на одном непрерывном подъёме. Если рельеф рвёт — копить кусками ≥7-8m в зоне 266–276W. HR cross-check: ожидаемо 158–168 bpm; если HR ↑ при power в норме — флаг (жара/недовосстановление). **Погодный fallback** (>25 км/ч ветер / дождь / <5°C): Zwift indoor тот же день, 2×15m@95% ERG.
 
-**Bail criterion:** 2-й блок avg power <260W (>5% падение) ИЛИ HR >170 в первые 5m — закончить на 15m. Если рельеф рвёт — копить 2×15m+10m кусками.
+### Пт 12 — VO2max 6×3m @113% (детально, indoor Zwift ERG)
 
-**Погодный fallback:** >25 км/ч ветер / дождь / <5°C — Zwift indoor 2×20m@97% ERG тот же день. На W23 → 2×25m@95% (вектор duration continuous).
-
-### Чт 28 — VO2max 6×3m @ 113% (детально, outdoor шоссик Quarq)
-
-Новый формат vs W16/W20 5×4m@110%. Power-progression (310→319W), короче duration (4m→3m) — выше intensity, меньше периферической усталости. Короткие 3m блоки терпимы к outdoor рельефу.
+6 повторений (запрос атлета — проверенный формат, делал 28.05 @113% RPE 7). % не поднят vs 28.05 (deload = поддержка). Каденс 95–100 — VO2 любит высокий. Indoor ERG для точности (40/20 outdoor сложно).
 
 | Блок | Время | Power | Каденс |
 |------|-------|-------|--------|
-| Warm-up | 15 мин | 155→183W (55→65%) | 85–95 |
-| Openers (3×30s) | 5 мин | 30s @ 282W (100%) / 60s @ 155W | 95–100 |
-| Z2 bridge | 5 мин | 183W (65%) | 85–90 |
-| **VO2 Block ×6** | **3 мин** | **319W (113%)** | **95–100** |
-| Recovery (между блоками) | 3 мин | 141W (50%) | свободный |
-| Z2 tail | 15 мин | 175W (62%) | 85–95 |
-| Cool-down | 5 мин | 141W (50%) | 80–85 |
+| Warm-up | 15 мин | 157→185W (55→65%) | 85–95 |
+| Bridge | 5 мин | 185W (65%) | 85–90 |
+| Openers (3×30s) | 6 мин | 30s @ 342W (120%) / 90s @ 157W | 95–100 |
+| Z2 bridge | 5 мин | 185W (65%) | 85–90 |
+| **VO2 Block ×6** | **3 мин** | **322W (113%)** | **95–100** |
+| Recovery (между) | 3 мин | 142W (50%) | свободный |
+| Cool-down | 15 мин | 177→142W (62→50%) | 80–95 |
 
-**TiZ: 18 мин @ VO2max | IF ~0.82 | TSS ~100**
+**TiZ: 18 мин @ VO2max | IF ~0.85 | TSS ~88**
 
-**Outdoor rules:** zero offset Quarq. Каждый 3m блок — на одном непрерывном подъёме. Если рельеф рвёт — пропустить, не делать 2×1.5m. Каденс 95-100 — VO2 любит высокий cadence. Pacing: первые 30s 305W, доводить до 319W к 1-й минуте.
+**Bail criterion:** 5-й блок avg <305W (>5% падение) ИЛИ HR не доходит до ~170 (недостимуляция/усталость) — закончить на 5. RPE 9 = норма. W'bal безопасен (28.05 drop 13.3kJ из ~20; сейчас W' 24.5kJ).
 
-**Bail criterion:** 4-й блок avg <300W (>6% падение) или HR не доходит до 170 (недостимуляция) — закончить на 5 блоках. RPE 9 = норма, RPE 10 в 1-м блоке = перебор по power.
+### Сб 13 — Z2 moderate (детально, outdoor ~2.25ч)
 
-### Сб 30 — Long Z2 + 40m SS climb-sim (детально, outdoor 4-5ч)
-
-Свободный outdoor — маршрут на месте. SS-вставка 40m на любом длинном непрерывном подъёме (≥7-8% градиент, ≥10-15 мин). После W21 10ч long — урезанный volume (ACWR на потолке). Climb-sim прогрессия: W25 → 60m, W26+ — full segment terrain simulation.
+Deload long — урезанный, **строго ≤2.5ч** (не повтори челлендж — иначе deload сломан). Чистый Z2, без вставок.
 
 | Блок | Время | Power | Каденс |
 |------|-------|-------|--------|
-| Warm-up | 15 мин | 141→175W (50→62%) | 85–90 |
-| Z2 base 1 | 60–75 мин | 183W (65%) | 85–95 |
-| **SS climb-sim** | **40 мин** | **248W (88%)** | **80–90** |
-| Z2 recovery | 15 мин | 155W (55%) | 85–95 |
-| Z2 base 2 | 60–90 мин | 183W (65%) | 85–95 |
-| Z2 base 3 | 30–60 мин | 175W (62%) | 85–95 |
-| Cool-down | 15 мин | 141W (50%) | 85–95 |
+| Warm-up | 15 мин | 142→177W (50→62%) | 85–90 |
+| Z2 base | 105 мин | 185W (65%) | 85–95 |
+| Cool-down | 15 мин | 157W (55%) | 85–95 |
 
-**TiZ: 40 мин @ SS | IF ~0.72-0.75 | TSS ~230-250** (для 4.5ч outdoor с рельефом)
-
-**Rules:** SS-блок в первой половине (до 2-го часа) — свежее ноги. На рельефе — копить 40m кусками ≥10m в SS-зоне (237-274W).
-
-**Fueling:** 70–90г CHO/час с 30-й минуты. Гидратация 600–800мл/час + электролиты.
-
-**HR cross-check:** Z2 ожидаемо 135–145 bpm, SS 145–152 bpm.
-
-**Bail volume:** если в Сб утром readiness просядет в P2 — режь до 3ч + 30m SS.
+**IF ~0.66 | TSS ~100.** Fueling 60г CHO/час. Если gravel (без PM) — HR Z2 (<145 bpm).
 
 ---
 
 ## Заметки
 
-- FTP 282W по Quarq (Ramp Test Lite 12.05.2026). Единый FTP indoor/outdoor
-- W22 vector прогрессии: **threshold duration continuous** (10m→20m). VO2 — новый формат-touch, не вектор. Long — снижение volume vs W21 overrun
-- TSS reduce 660 vs W21 927 (-28%) — целевое восстановление TSB к -5/-10, ACWR к 1.0 перед Trial #1 на W23
-- HRRc watch: 25.7 vs 28d 29.8 (declining). На Вт threshold HR на 2-м блоке >170 — это HRRc-сигнал, bail
-- Все quality outdoor (запрос атлета). Вт Threshold outdoor на длинном подъёме = bonus specificity под сегмент 11179676
-- Погодные блоки (>25 км/ч ветер, дождь, <5°C): тот же день на Zwift indoor, не сдвиг
-- Outdoor quality-блоки на рельефе могут фрагментироваться — копить time-in-zone кусками, не гнаться за жёсткими длительностями
-- Readiness check каждое утро: HRV drop >10% 2 дня подряд OR RHR ≥51 OR sleep score <70 — переход на modify
+- FTP 285W. Все %FTP авто-масштабируются. Re-test FTP — кандидат после deload (TTE 53мин намекает на занижение).
+- **Use Laps настройка:** включить в Intervals.icu Settings → Ride → под Power Zones → ☑ "Use Laps" + ☑ "Keep all laps". Иначе auto-detect дробит climb-эффорты (как вторник 02.06). Прошлые активности — поштучно Actions → Use Laps.
+- W24 вектор: intensity-maintained deload. Не прогрессия — разгрузка объёма при сохранении остроты.
+- Quality: Вт threshold 2×15 outdoor (на подъёме, climbing specificity) + Пт VO2 6×3 indoor ERG.
+- Readiness check каждое утро: HRV drop >10% 2 дня OR RHR ≥51 OR sleep score <70 — Вт/Пт quality → modify (срезать reps) или сдвиг.
+- **Trial #1** (отложен с W23) — дата TBD, кандидат W26 (specificity на реальном террейне). Обсудить отдельно: полный сегмент 11179676, погода, свежесть.
 
 ---
 
-## Block Roadmap (W21 → W32 Attempt)
+## Block Roadmap (W24 → W32 Attempt)
 
-Полная phase carta — см. `context/DOSSIER.md §8 Long-Term Performance Roadmap`. Кратко:
+Полная phase carta — см. `context/DOSSIER.md §8`. Кратко:
 
-- **W21–W23** Threshold introduction → progression. **Trial attempt #1 на W23 Сб**
-- **W24** Deload
-- **W25** Threshold peak (2×20@98%, 60m SS long)
-- **W26** Specificity — long climb sim on actual segment terrain. **Trial #2**
-- **W27–W29** Mixed maintenance + race-pace blocks. **Trial #3 на W28**
+- **W24** (тек.) Deload intensity-maintained
+- **W25** (15–21.06) Threshold peak — **2×20@98% + 3×15@97%** (твои 3×15 сюда) + Long w/ 60m SS
+- **W26** (22–28.06) Specificity — long climb sim на террейне сегмента. **Trial #1/#2** (кандидат дата)
+- **W27** (29.06–05.07) Mixed maintenance + race-pace
+- **W28** (06–12.07) Specificity 2 + race-pace block. **Trial #3**
+- **W29** (13–19.07) Threshold final
 - **W30–W31** Pre-taper → taper
 - **W32 (03.08–09.08)** **Attempt window 1**

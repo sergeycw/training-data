@@ -16,5 +16,36 @@
     "notes": "План 5x5m@290W. Первые 2 блока done на 290W (5m+4m). С 3-го блока ноги сдали — серия bail-out, перестроил в укороченные блоки 277-288W. HR держался норм (170+), периферическая усталость. 2-я подряд неудачная quality за неделю (после Вт threshold).",
     "objective_tss": 73,
     "objective_if": 0.84
+  },
+  {
+    "date": "2026-06-02",
+    "activity_id": "i153333212",
+    "activity_name": "Threshold/hard ride (W23 Вт)",
+    "rpe": 8,
+    "feel": 2,
+    "notes": "Outdoor hard ride, threshold/TTE день. Сустейнед 19.7мин @282W (≈FTP) + Z5-Z6 сёрджи. Execution OK, threshold-стимул недели закрыт здесь.",
+    "objective_tss": 145,
+    "objective_if": 0.91
+  },
+  {
+    "date": "2026-06-04",
+    "activity_id": "i154155061",
+    "activity_name": "VO2max 5×4m (W23 Чт)",
+    "rpe": 7,
+    "feel": 2,
+    "notes": "VO2 комплемент к threshold-вторнику. NP 221, max HR 174. Выполнено.",
+    "objective_tss": 120,
+    "objective_if": 0.78
+  },
+  {
+    "date": "2026-06-06",
+    "activity_id": "i154829074",
+    "activity_name": "Челлендж long ride (W23 Сб)",
+    "rpe": 8,
+    "feel": 3,
+    "legs": "к утру 08.06 почти полностью восстановились",
+    "notes": "Запланированный челлендж — хотелось покататься подольше. 10.7ч / 235км / 4376м набора, IF 0.64 (aerobic-managed). RPE 8 при таком объёме = эффорт под контролем. Острый ответ: HRV crash 48→29 на 07.06, sleep 6h46 — снято одной восстановительной ночью (08.06 HRV 48, sleep 9h17, RI 1.10). НЕ overreaching.",
+    "objective_tss": 438,
+    "objective_if": 0.64
   }
 ]
