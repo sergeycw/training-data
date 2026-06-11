@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-10T07:09:54.312906",
+  "generated_at": "2026-06-11T08:04:16.420324",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
@@ -592,6 +592,88 @@
           "duration_secs": 1725,
           "avg_hr": 96,
           "max_hr": 121,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i156259189",
+      "date": "2026-06-11",
+      "type": "MountainBikeRide",
+      "name": "Mountain Biking",
+      "interval_summary": [
+        "1x 20m55s 130bpm",
+        "1x 28m23s 131bpm",
+        "1x 34m38s 130bpm",
+        "1x 15m22s 114bpm",
+        "1x 9m13s 74bpm",
+        "1x 9m53s 63bpm",
+        "1x 12m56s 94bpm",
+        "1x 2m28s 66bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1255s@130bpm",
+          "duration_secs": 1255,
+          "avg_hr": 130,
+          "max_hr": 142,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "1703s@131bpm",
+          "duration_secs": 1703,
+          "avg_hr": 131,
+          "max_hr": 147,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "2078s@130bpm",
+          "duration_secs": 2078,
+          "avg_hr": 130,
+          "max_hr": 148,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "922s@114bpm",
+          "duration_secs": 922,
+          "avg_hr": 114,
+          "max_hr": 144,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "553s@74bpm",
+          "duration_secs": 553,
+          "avg_hr": 74,
+          "max_hr": 96,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "593s@63bpm",
+          "duration_secs": 593,
+          "avg_hr": 63,
+          "max_hr": 82,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "776s@94bpm",
+          "duration_secs": 776,
+          "avg_hr": 94,
+          "max_hr": 133,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "148s@66bpm",
+          "duration_secs": 148,
+          "avg_hr": 66,
+          "max_hr": 77,
           "zone": 1
         }
       ]
