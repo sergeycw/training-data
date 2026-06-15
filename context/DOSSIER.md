@@ -78,8 +78,10 @@ Prior sport: running (6 days/week, 3 quality sessions). Structure: Wed threshold
 
 ### Weekly Volume Target
 
-**Baseline:** 12 hours/week (± 2 hours)
-**Peak phases:** Up to 15 hours (requires RI ≥ 0.8, HRV within 10%)
+**Baseline (race-season build, 2026):** ~15 hours/week (13–16ч), **~780–850 TSS**. Подтверждено фактом май–июнь 2026 (CTL 103–109, HRV/RHR стабильны, FTP 263→285).
+**Peak weeks:** до 19ч / **~900–930 TSS** с моно-long 10ч+ (требует RI ≥ 0.8, HRV within 10%, и deload в пределах 3–4 недель).
+**Deload:** ~12ч / ~600 TSS.
+**ВАЖНО:** прежний «baseline 12ч/~600 TSS» (зима 2025/26) устарел — атлет прогрессировал на объёме. НЕ планировать build-недели <750 TSS без явного deload-триггера. План ≈ факт (атлет систематически делает больше планового).
 
 ### Microcycle Principles
 
@@ -92,7 +94,7 @@ Prior sport: running (6 days/week, 3 quality sessions). Structure: Wed threshold
 
 | Day | Primary Session | Duration |
 |-----|-----------------|----------|
-| Monday | Endurance Z2 (Zwift) | 1.5-2h |
+| Monday | **Rest (всегда)** | — |
 | Tuesday | VO2max intervals (Zwift) | 1-1.5h |
 | Wednesday | Endurance Z2 (Zwift) | 1.5-2h |
 | Thursday | Threshold / Sweetspot (Zwift) | 1-1.5h |
