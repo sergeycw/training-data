@@ -1,57 +1,9 @@
 {
-  "generated_at": "2026-06-21T08:00:55.897228",
+  "generated_at": "2026-06-22T09:10:49.597529",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i157103469",
-      "date": "2026-06-14",
-      "type": "Ride",
-      "name": "Road Cycling",
-      "interval_summary": [
-        "1x 3m16s 216w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 3380,
-          "avg_power": 195,
-          "max_power": 573,
-          "avg_hr": 129,
-          "max_hr": 147,
-          "avg_cadence": 92.10676,
-          "zone": 2,
-          "training_load": 46.126144,
-          "decoupling": -3.2558076
-        },
-        {
-          "type": "WORK",
-          "label": "196s@216w100rpm",
-          "duration_secs": 196,
-          "avg_power": 216,
-          "max_power": 377,
-          "avg_hr": 135,
-          "max_hr": 141,
-          "avg_cadence": 100.11735,
-          "zone": 3,
-          "training_load": 3.0696678,
-          "decoupling": 4.0104413
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1387,
-          "avg_power": 190,
-          "max_power": 514,
-          "avg_hr": 129,
-          "max_hr": 154,
-          "avg_cadence": 91.50685,
-          "zone": 2,
-          "training_load": 19.354723,
-          "decoupling": 1.4822096
-        }
-      ]
-    },
     {
       "activity_id": "i157657152",
       "date": "2026-06-16",
@@ -717,6 +669,26 @@
           "duration_secs": 4597,
           "avg_hr": 120,
           "max_hr": 136,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i159161939",
+      "date": "2026-06-21",
+      "type": "Run",
+      "name": "Running",
+      "interval_summary": [
+        "1x 28m2s 102bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1682s@102bpm72rpm",
+          "duration_secs": 1682,
+          "avg_hr": 102,
+          "max_hr": 123,
+          "avg_cadence": 72.1175,
           "zone": 1
         }
       ]
