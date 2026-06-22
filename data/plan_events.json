@@ -1,50 +1,50 @@
 [
   {
     "category": "WORKOUT",
-    "start_date_local": "2026-06-16T00:00:00",
-    "name": "Threshold 3x15m @97%",
+    "start_date_local": "2026-06-23T00:00:00",
+    "name": "Trial #1 — segment max + endur",
     "type": "Ride",
-    "description": "- 12m 50-65% 85-95rpm\n- 3m 65% 85-90rpm\n\n2x\n- 1m 100% 90-95rpm\n- 2m 55%\n\n- 3m 65% 85-90rpm\n\n3x\n- 15m 97% 85-90rpm\n- 5m 55%\n\n- 10m 60% 85-95rpm",
-    "external_id": "claude-plan-2026-06-16"
+    "description": "- 15m 50-68% 85-95rpm\n- 5m 60% 85-90rpm\n\n3x\n- 1m 102% 90-95rpm\n- 2m 55%\n\n- 50m 100% 80-90rpm\n\n- 70m 65% 85-95rpm\n- 12m 55% 85-95rpm",
+    "external_id": "claude-plan-2026-06-23"
   },
   {
     "category": "WORKOUT",
-    "start_date_local": "2026-06-17T00:00:00",
-    "name": "Z2 Endurance",
+    "start_date_local": "2026-06-24T00:00:00",
+    "name": "Z2 Endurance 3h",
     "type": "Ride",
-    "description": "- 20m 55-65% 85-95rpm\n- 110m 65% 85-95rpm\n- 20m 55% 85-95rpm",
-    "external_id": "claude-plan-2026-06-17"
+    "description": "- 15m 55-64% 85-95rpm\n- 150m 65% 85-95rpm\n- 15m 55% 85-95rpm",
+    "external_id": "claude-plan-2026-06-24"
   },
   {
     "category": "WORKOUT",
-    "start_date_local": "2026-06-18T00:00:00",
-    "name": "Threshold 2x20m @98%",
+    "start_date_local": "2026-06-25T00:00:00",
+    "name": "Over-under 3x9m thr/VO2 + endur",
     "type": "Ride",
-    "description": "- 12m 50-65% 85-95rpm\n- 3m 65% 85-90rpm\n\n2x\n- 1m 100% 90-95rpm\n- 2m 55%\n\n- 3m 65% 85-90rpm\n\n2x\n- 20m 98% 85-90rpm\n- 8m 53%\n\n- 10m 60% 85-95rpm",
-    "external_id": "claude-plan-2026-06-18"
+    "description": "- 12m 50-65% 85-95rpm\n- 3m 65% 85-90rpm\n\n2x\n- 1m 100% 90-95rpm\n- 2m 55%\n\n- 3m 65% 85-90rpm\n\n3x\n- 2m 97% 85-90rpm\n- 1m 112% 95-100rpm\n- 2m 97% 85-90rpm\n- 1m 112% 95-100rpm\n- 2m 97% 85-90rpm\n- 1m 112% 95-100rpm\n- 5m 55%\n\n- 40m 65% 85-95rpm\n- 10m 55% 85-95rpm",
+    "external_id": "claude-plan-2026-06-25"
   },
   {
     "category": "WORKOUT",
-    "start_date_local": "2026-06-19T00:00:00",
+    "start_date_local": "2026-06-26T00:00:00",
     "name": "Recovery spin",
     "type": "Ride",
     "description": "- 15m 50-55% 85-90rpm\n- 35m 55% 85-90rpm\n- 10m 50% 80-85rpm",
-    "external_id": "claude-plan-2026-06-19"
+    "external_id": "claude-plan-2026-06-26"
   },
   {
     "category": "WORKOUT",
-    "start_date_local": "2026-06-20T00:00:00",
-    "name": "Ultra MTB ~9h (mountain)",
+    "start_date_local": "2026-06-27T00:00:00",
+    "name": "Long горный MTB ~7h",
     "type": "MountainBikeRide",
-    "description": "- 30m Z1 HR\n- 480m Z2 HR\n- 30m Z1 HR",
-    "external_id": "claude-plan-2026-06-20"
+    "description": "- 30m Z1 HR\n- 360m Z2 HR\n- 30m Z1 HR",
+    "external_id": "claude-plan-2026-06-27"
   },
   {
     "category": "WORKOUT",
-    "start_date_local": "2026-06-21T00:00:00",
+    "start_date_local": "2026-06-28T00:00:00",
     "name": "Z2 easy",
     "type": "Ride",
-    "description": "- 15m 55-62% 85-95rpm\n- 65m 64% 85-95rpm\n- 10m 55% 85-95rpm",
-    "external_id": "claude-plan-2026-06-21"
+    "description": "- 15m 55-62% 85-95rpm\n- 75m 64% 85-95rpm\n- 10m 55% 85-95rpm",
+    "external_id": "claude-plan-2026-06-28"
   }
 ]
