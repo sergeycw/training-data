@@ -1,55 +1,9 @@
 {
-  "generated_at": "2026-07-19T05:53:29.175919",
+  "generated_at": "2026-07-20T06:18:36.086780",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i164969835",
-      "date": "2026-07-12",
-      "type": "Ride",
-      "name": "Road Cycling",
-      "interval_summary": [
-        "1x 7h 164w",
-        "1x 28m20s 50w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "25215s@164w61rpm",
-          "duration_secs": 25215,
-          "avg_power": 164,
-          "max_power": 782,
-          "avg_hr": 123,
-          "max_hr": 160,
-          "avg_cadence": 61.128067,
-          "zone": 2,
-          "training_load": 265.93204,
-          "decoupling": 6.513353
-        },
-        {
-          "type": "WORK",
-          "label": "1700s@50w27rpm",
-          "duration_secs": 1700,
-          "avg_power": 50,
-          "max_power": 585,
-          "avg_hr": 94,
-          "max_hr": 139,
-          "avg_cadence": 26.569504,
-          "zone": 1,
-          "training_load": 10.419716,
-          "decoupling": 3.41191
-        },
-        {
-          "type": "WORK",
-          "duration_secs": 2,
-          "avg_hr": 84,
-          "max_hr": 84,
-          "zone": 1,
-          "decoupling": "NaN"
-        }
-      ]
-    },
     {
       "activity_id": "i165349856",
       "date": "2026-07-13",
@@ -648,6 +602,25 @@
           "avg_hr": 150,
           "max_hr": 150,
           "avg_cadence": 79.0,
+          "zone": 3
+        }
+      ]
+    },
+    {
+      "activity_id": "i167166673",
+      "date": "2026-07-19",
+      "type": "Ride",
+      "name": "Moscow Cycling",
+      "interval_summary": [
+        "1x 5h57m 147bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "21438s@147bpm",
+          "duration_secs": 21438,
+          "avg_hr": 147,
+          "max_hr": 178,
           "zone": 3
         }
       ]
