@@ -1,29 +1,9 @@
 {
-  "generated_at": "2026-07-30T05:41:07.827644",
+  "generated_at": "2026-07-31T06:14:02.055144",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i168308528",
-      "date": "2026-07-23",
-      "type": "Run",
-      "name": "Karachevskiy rayon Running",
-      "interval_summary": [
-        "1x 1h36m 127bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "5785s@127bpm77rpm",
-          "duration_secs": 5785,
-          "avg_hr": 127,
-          "max_hr": 156,
-          "avg_cadence": 77.19097,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i168963323",
       "date": "2026-07-25",
