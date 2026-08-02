@@ -1,3 +1,5 @@
 .sync_config.json
 .idea/
 __pycache__/
+.DS_Store
+section11/
