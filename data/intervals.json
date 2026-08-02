@@ -1,37 +1,9 @@
 {
-  "generated_at": "2026-08-01T05:54:41.704908",
+  "generated_at": "2026-08-02T05:57:50.537376",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i168963323",
-      "date": "2026-07-25",
-      "type": "Run",
-      "name": "Karachevskiy rayon Running",
-      "interval_summary": [
-        "1x 14m42s 109bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "882s@109bpm77rpm",
-          "duration_secs": 882,
-          "avg_hr": 109,
-          "max_hr": 125,
-          "avg_cadence": 77.43348,
-          "zone": 1
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1,
-          "avg_hr": 125,
-          "max_hr": 125,
-          "avg_cadence": 80.0,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i171158359",
       "date": "2026-07-31",
@@ -192,6 +164,65 @@
           "avg_cadence": 38.0,
           "zone": 1,
           "training_load": 0.00065522024
+        }
+      ]
+    },
+    {
+      "activity_id": "i171373193",
+      "date": "2026-08-01",
+      "type": "Ride",
+      "name": "Road Cycling",
+      "interval_summary": [
+        "1x 4h43m 139w",
+        "1x 11m43s 218w",
+        "1x 31m44s 151w"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "16998s@139w68rpm",
+          "duration_secs": 16998,
+          "avg_power": 139,
+          "max_power": 830,
+          "avg_hr": 123,
+          "max_hr": 165,
+          "avg_cadence": 68.388954,
+          "zone": 1,
+          "training_load": 120.729065
+        },
+        {
+          "type": "WORK",
+          "label": "703s@218w94rpm",
+          "duration_secs": 703,
+          "avg_power": 218,
+          "max_power": 400,
+          "avg_hr": 156,
+          "max_hr": 164,
+          "avg_cadence": 94.34424,
+          "zone": 2,
+          "training_load": 11.515495,
+          "decoupling": 16.109922
+        },
+        {
+          "type": "WORK",
+          "label": "1904s@151w80rpm",
+          "duration_secs": 1904,
+          "avg_power": 151,
+          "max_power": 635,
+          "avg_hr": 151,
+          "max_hr": 169,
+          "avg_cadence": 80.33806,
+          "zone": 1,
+          "training_load": 18.2131,
+          "decoupling": 10.306508
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 112,
+          "max_hr": 112,
+          "zone": 1,
+          "training_load": 3.2356553e-07
         }
       ]
     }
