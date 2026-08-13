@@ -1,35 +1,9 @@
 {
-  "generated_at": "2026-08-12T04:46:23.028155",
+  "generated_at": "2026-08-13T04:49:48.896173",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i172602045",
-      "date": "2026-08-05",
-      "type": "Ride",
-      "name": "Road Cycling",
-      "interval_summary": [
-        "1x 3h18m 108bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "11910s@108bpm",
-          "duration_secs": 11910,
-          "avg_hr": 108,
-          "max_hr": 134,
-          "zone": 1
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1,
-          "avg_hr": 75,
-          "max_hr": 75,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i173131110",
       "date": "2026-08-06",
@@ -611,6 +585,50 @@
           "zone": 1,
           "training_load": 8.87605,
           "decoupling": -2.254583
+        }
+      ]
+    },
+    {
+      "activity_id": "i174992338",
+      "date": "2026-08-12",
+      "type": "Ride",
+      "name": "Road Cycling",
+      "interval_summary": [
+        "1x 1h44m 111bpm",
+        "1x 24m22s 84bpm",
+        "1x 42m26s 114bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "6287s@111bpm",
+          "duration_secs": 6287,
+          "avg_hr": 111,
+          "max_hr": 132,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "1462s@84bpm",
+          "duration_secs": 1462,
+          "avg_hr": 84,
+          "max_hr": 127,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "2546s@114bpm",
+          "duration_secs": 2546,
+          "avg_hr": 114,
+          "max_hr": 155,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 81,
+          "max_hr": 81,
+          "zone": 1
         }
       ]
     }
