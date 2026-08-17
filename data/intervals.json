@@ -1,83 +1,9 @@
 {
-  "generated_at": "2026-08-16T03:47:48.245110",
+  "generated_at": "2026-08-17T03:49:53.373242",
   "version": "3.84",
   "scan_hours": 72,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i173911342",
-      "date": "2026-08-09",
-      "type": "Ride",
-      "name": "Road Cycling",
-      "interval_summary": [
-        "1x 24s 636w",
-        "1x 11s 532w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 4239,
-          "avg_power": 144,
-          "max_power": 540,
-          "avg_hr": 102,
-          "max_hr": 123,
-          "avg_cadence": 63.223415,
-          "zone": 1,
-          "training_load": 37.806385,
-          "decoupling": -13.634275
-        },
-        {
-          "type": "WORK",
-          "label": "24s@636w101rpm",
-          "duration_secs": 24,
-          "avg_power": 636,
-          "max_power": 713,
-          "avg_hr": 107,
-          "max_hr": 112,
-          "avg_cadence": 100.541664,
-          "zone": 7,
-          "training_load": 1.3763779,
-          "decoupling": 4.818507
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 66,
-          "avg_power": 216,
-          "max_power": 547,
-          "avg_hr": 133,
-          "max_hr": 146,
-          "avg_cadence": 79.469696,
-          "zone": 2,
-          "training_load": 3.3827689,
-          "decoupling": 9.836374
-        },
-        {
-          "type": "WORK",
-          "label": "11s@532w91rpm",
-          "duration_secs": 11,
-          "avg_power": 532,
-          "max_power": 667,
-          "avg_hr": 144,
-          "max_hr": 145,
-          "avg_cadence": 91.36364,
-          "zone": 7,
-          "training_load": 0.25754878,
-          "decoupling": 20.120565
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 91,
-          "avg_power": 80,
-          "max_power": 420,
-          "avg_hr": 127,
-          "max_hr": 146,
-          "avg_cadence": 28.923077,
-          "zone": 1,
-          "training_load": 1.899639,
-          "decoupling": 100.0
-        }
-      ]
-    },
     {
       "activity_id": "i174805550",
       "date": "2026-08-11",
