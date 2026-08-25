@@ -8,20 +8,30 @@
     "readiness_decision_note": "The 'readiness_decision' block contains a pre-computed go/modify/skip recommendation with priority level (P0=safety, P1=overload, P2=fatigue, P3=green), individual signal statuses, phase-adjusted thresholds, and structured modification guidance. Use this as the baseline for pre-workout recommendations. Override with explanation in the coach note if the AI's contextual judgment disagrees.",
     "zone_preference": "default (power preferred, HR fallback)",
     "quick_stats": {
-      "total_training_hours": 10.11,
-      "total_training_formatted": "10h6m",
-      "total_activities": 5,
-      "total_tss": 491
+      "total_training_hours": 8.27,
+      "total_training_formatted": "8h15m",
+      "total_activities": 4,
+      "total_tss": 418
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-08-24T03:53:40.476000",
+    "last_updated": "2026-08-25T03:48:25.383776",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.84"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "metric": "acwr",
+      "value": 0.73,
+      "severity": "alarm",
+      "threshold": "0.75 / 1.35",
+      "context": "ACWR 0.73 outside safe range. Injury/overreach risk elevated.",
+      "persistence_days": null,
+      "tier": 2
+    }
+  ],
   "readiness_decision": {
     "recommendation": "go",
     "priority": 3,
@@ -29,13 +39,13 @@
       "hrv": {
         "status": "unavailable",
         "value": null,
-        "baseline_7d": 40.3,
+        "baseline_7d": 40.0,
         "delta_pct": null
       },
       "rhr": {
         "status": "unavailable",
         "value": null,
-        "baseline_7d": 44.7,
+        "baseline_7d": 44.8,
         "delta_bpm": null
       },
       "sleep": {
@@ -44,8 +54,8 @@
         "quality": null
       },
       "acwr": {
-        "status": "green",
-        "value": 0.86
+        "status": "amber",
+        "value": 0.73
       },
       "ri": {
         "status": "unavailable",
@@ -53,60 +63,60 @@
       },
       "tsb": {
         "status": "green",
-        "value": 17.7
+        "value": 25.5
       }
     },
     "signal_summary": {
-      "green": 2,
-      "amber": 0,
+      "green": 1,
+      "amber": 1,
       "red": 0,
       "unavailable": 4
     },
     "phase_context": {
-      "phase": "Deload",
-      "phase_week": 2,
-      "amber_threshold": 2,
-      "modifier_applied": "default"
+      "phase": "Build",
+      "phase_week": 0,
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 2 green, 0 amber (threshold 2), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 1 green, 1 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
     "alarm_refs": []
   },
   "history": {
     "available": true,
     "last_generated": "2026-08-02",
-    "age_days": 21,
+    "age_days": 22,
     "total_months": 35,
     "history_confidence": "high"
   },
   "summary": {
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
-    "total_duration_decimal_hours": 10.11,
-    "total_activities": 5,
+    "total_duration_decimal_hours": 8.27,
+    "total_activities": 4,
     "by_activity_type": {
       "Ride": {
-        "duration_decimal_hours": 10.11,
-        "count": 5,
-        "tss": 491,
-        "distance_km": 250.3
+        "duration_decimal_hours": 8.27,
+        "count": 4,
+        "tss": 418,
+        "distance_km": 216.9
       }
     }
   },
   "current_status": {
     "fitness": {
-      "ctl": 92.56,
-      "atl": 74.84,
-      "tsb": 17.72,
-      "ramp_rate": -3.98,
-      "fitness_source": "From Intervals.icu API (reflects completed workouts)"
+      "ctl": 90.39,
+      "atl": 64.88,
+      "tsb": 25.51,
+      "ramp_rate": -3.89,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
-      "eftp": 283.8,
-      "w_prime": 24072,
-      "w_prime_kj": 24.1,
-      "p_max": 875,
+      "eftp": 283.5,
+      "w_prime": 24048,
+      "w_prime_kj": 24.0,
+      "p_max": 874,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -136,7 +146,7 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 70.699,
+      "weight_kg": 71.9,
       "resting_hr": 47,
       "hrv": null,
       "sleep_quality": null,
@@ -146,60 +156,60 @@
   },
   "derived_metrics": {
     "recovery_index": null,
-    "hrv_baseline_7d": 40.3,
-    "rhr_baseline_7d": 44.7,
+    "hrv_baseline_7d": 40.0,
+    "rhr_baseline_7d": 44.8,
     "hrv_baseline_28d": 42.5,
     "rhr_baseline_28d": 44.7,
     "latest_hrv": null,
     "latest_rhr": null,
-    "acwr": 0.86,
-    "acwr_interpretation": "optimal",
-    "monotony": 0.76,
+    "acwr": 0.73,
+    "acwr_interpretation": "undertraining",
+    "monotony": 0.62,
     "monotony_interpretation": "normal",
     "primary_sport": "cycling",
-    "primary_sport_monotony": 0.76,
-    "primary_sport_tss_7d": 491.0,
-    "effective_monotony": 0.76,
+    "primary_sport_monotony": 0.62,
+    "primary_sport_tss_7d": 418.0,
+    "effective_monotony": 0.62,
     "multi_sport_detected": false,
-    "strain": 373.0,
-    "stress_tolerance": 4.9,
+    "strain": 259.0,
+    "stress_tolerance": 4.2,
     "load_recovery_ratio": null,
-    "tss_7d_total": 491.0,
+    "tss_7d_total": 418.0,
     "tss_28d_total": 2295.0,
     "zone_distribution_7d": {
-      "z1_hours": 4.37,
-      "z2_hours": 3.04,
-      "z3_hours": 1.48,
-      "z4_plus_hours": 1.21,
-      "total_hours": 10.11,
+      "z1_hours": 3.58,
+      "z2_hours": 2.17,
+      "z3_hours": 1.39,
+      "z4_plus_hours": 1.13,
+      "total_hours": 8.27,
       "zone_basis": "mixed"
     },
-    "grey_zone_percentage": 14.6,
+    "grey_zone_percentage": 16.8,
     "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
-    "quality_intensity_percentage": 12.0,
+    "quality_intensity_percentage": 13.7,
     "quality_intensity_note": "Quality Intensity % (Z4+/threshold+) - target ~20% in polarized training",
-    "polarisation_index": 0.73,
+    "polarisation_index": 0.69,
     "polarisation_note": "Easy time (Z1+Z2) / Total - target ~80% in polarized training",
     "hard_days_this_week": 2,
     "hard_days_note": "Power ladder: z3+ >= 30min, z4+ >= 10min, z5+ >= 5min, z6+ >= 2min, z7 >= 1min. HR fallback (when no power): z4+ >= 10min, z5+ >= 5min. Per Seiler 3-zone model + Foster. HR-based days flagged with intensity_basis: hr",
     "seiler_tid_7d": {
-      "z1_seconds": 26704,
-      "z2_seconds": 5316,
-      "z3_seconds": 4366,
-      "z1_pct": 73.4,
-      "z2_pct": 14.6,
-      "z3_pct": 12.0,
+      "z1_seconds": 20674,
+      "z2_seconds": 5004,
+      "z3_seconds": 4085,
+      "z1_pct": 69.5,
+      "z2_pct": 16.8,
+      "z3_pct": 13.7,
       "polarization_index": null,
       "classification": "Pyramidal",
       "zone_basis": "mixed"
     },
     "seiler_tid_7d_primary": {
-      "z1_seconds": 26704,
-      "z2_seconds": 5316,
-      "z3_seconds": 4366,
-      "z1_pct": 73.4,
-      "z2_pct": 14.6,
-      "z3_pct": 12.0,
+      "z1_seconds": 20674,
+      "z2_seconds": 5004,
+      "z3_seconds": 4085,
+      "z1_pct": 69.5,
+      "z2_pct": 16.8,
+      "z3_pct": 13.7,
       "polarization_index": null,
       "classification": "Pyramidal",
       "zone_basis": "mixed",
@@ -248,9 +258,9 @@
         "note": "Steady-state cycling sessions only (VI <= 1.05, VI > 0, >= 20min, power+HR data). Rising EF = improving aerobic efficiency. Compare like-for-like sessions only \u2014 EF varies with intensity. Trend compares 7d vs 28d mean (+/-0.03 = stable)."
       },
       "hrrc": {
-        "mean_hrrc_7d": 38.2,
+        "mean_hrrc_7d": 39.7,
         "mean_hrrc_28d": 38.2,
-        "qualifying_sessions_7d": 4,
+        "qualifying_sessions_7d": 3,
         "qualifying_sessions_28d": 12,
         "trend": "stable",
         "note": "HRRc = heart rate recovery (largest 60s HR drop in bpm after exceeding threshold HR for >1 min). Higher = better parasympathetic recovery. Null when threshold not reached, recording stopped before cooldown, or no HR data. Trend: 7d mean vs 28d mean, >10% = meaningful (min 1 session/7d, 3 sessions/28d). Display only \u2014 not wired into readiness_decision signals."
@@ -265,20 +275,19 @@
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
       }
     },
-    "consistency_index": 0.8,
+    "consistency_index": 0.6,
     "consistency_details": {
       "planned_days": 5,
-      "completed_days": 5,
-      "matched_days": 4,
+      "completed_days": 4,
+      "matched_days": 3,
       "planned_dates": [
-        "2026-08-18",
         "2026-08-19",
         "2026-08-20",
         "2026-08-21",
-        "2026-08-22"
+        "2026-08-22",
+        "2026-08-25"
       ],
       "completed_dates": [
-        "2026-08-18",
         "2026-08-19",
         "2026-08-21",
         "2026-08-22",
@@ -286,10 +295,10 @@
       ]
     },
     "phase_detection": {
-      "phase": "Deload",
+      "phase": "Build",
       "confidence": "medium",
       "reason_codes": [
-        "PLAN_GAP_NEXT_WEEK"
+        "BUILD_RESUMING_AFTER_DELOAD"
       ],
       "basis": {
         "stream_1": {
@@ -299,24 +308,24 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": null,
-          "hard_sessions_planned": 0,
+          "planned_tss_delta": 1.5,
+          "hard_sessions_planned": 2,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 0.0,
+          "plan_coverage_current_week": 1.2,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
         "stream_agreement": null
       },
       "previous_phase": "Deload",
-      "phase_duration_weeks": 2,
+      "phase_duration_weeks": 0,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Deload",
+    "phase_detected": "Build",
     "phase_triggers": [
-      "PLAN_GAP_NEXT_WEEK"
+      "BUILD_RESUMING_AFTER_DELOAD"
     ],
     "seasonal_context": "Peak Race Season",
     "benchmark_indoor": {
@@ -333,17 +342,17 @@
       "benchmark_percentage": "+0.0%",
       "seasonal_expected": false
     },
-    "eftp": 283.8,
-    "w_prime": 24072,
-    "w_prime_kj": 24.1,
-    "p_max": 875,
+    "eftp": 283.5,
+    "w_prime": 24048,
+    "w_prime_kj": 24.0,
+    "p_max": 874,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-08-24T03:53:39.963971",
+    "calculation_timestamp": "2026-08-25T03:48:25.382753",
     "data_quality": {
-      "hrv_data_points": 6,
-      "rhr_data_points": 6,
-      "activities_7d": 5,
+      "hrv_data_points": 5,
+      "rhr_data_points": 5,
+      "activities_7d": 4,
       "activities_28d": 23,
       "planned_workouts_7d": 6,
       "ftp_history_days": {
@@ -559,79 +568,9 @@
         }
       },
       "has_intervals": true
-    },
-    {
-      "id": "i177001418",
-      "date": "2026-08-18T07:17:44",
-      "type": "Ride",
-      "name": "Training Session",
-      "duration_hours": 1.84,
-      "distance_km": 33.36,
-      "tss": 73,
-      "intensity_factor": 62.798634,
-      "avg_power": 138,
-      "normalized_power": 184,
-      "avg_hr": 114,
-      "max_hr": 160,
-      "avg_cadence": 71.888664,
-      "avg_speed": 17.7,
-      "max_speed": 70.5,
-      "avg_pace": null,
-      "avg_temp": 20.502577,
-      "weather": null,
-      "humidity": null,
-      "wind_speed": null,
-      "work_kj": 942.9,
-      "calories": 1099,
-      "carbs_used": 289,
-      "carbs_ingested": null,
-      "variability_index": 1.3333334,
-      "decoupling": 14.865937,
-      "efficiency_factor": 1.6140351,
-      "hrrc": 34,
-      "elevation_m": 907.0,
-      "feel": 2,
-      "rpe": 3,
-      "zone_distribution": {
-        "hr_zones": {
-          "z1_time": 4638,
-          "z2_time": 1734,
-          "z3_time": 129,
-          "z4_time": 193,
-          "z5_time": 14,
-          "z6_time": 0,
-          "z7_time": 0
-        },
-        "power_zones": {
-          "z1_time": 2867,
-          "z2_time": 3163,
-          "z3_time": 312,
-          "z4_time": 230,
-          "z5_time": 29,
-          "z6_time": 5,
-          "z7_time": 17
-        }
-      },
-      "has_intervals": true
     }
   ],
   "wellness_data": [
-    {
-      "date": "2026-08-18",
-      "weight_kg": null,
-      "resting_hr": 44,
-      "hrv_rmssd": 42.0,
-      "hrv_sdnn": null,
-      "sleep_hours": 8.12,
-      "sleep_formatted": "8h7m",
-      "sleep_quality": 1,
-      "sleep_score": 90.0,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
     {
       "date": "2026-08-19",
       "weight_kg": null,
@@ -650,7 +589,7 @@
     },
     {
       "date": "2026-08-20",
-      "weight_kg": null,
+      "weight_kg": 71.9,
       "resting_hr": 45,
       "hrv_rmssd": 41.0,
       "hrv_sdnn": null,
@@ -666,7 +605,7 @@
     },
     {
       "date": "2026-08-21",
-      "weight_kg": null,
+      "weight_kg": 70.599,
       "resting_hr": 42,
       "hrv_rmssd": 44.0,
       "hrv_sdnn": null,
@@ -727,24 +666,107 @@
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
+    },
+    {
+      "date": "2026-08-25",
+      "weight_kg": 71.9,
+      "resting_hr": null,
+      "hrv_rmssd": null,
+      "hrv_sdnn": null,
+      "sleep_hours": null,
+      "sleep_formatted": null,
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
-  "planned_workouts": [],
+  "planned_workouts": [
+    {
+      "id": 131328535,
+      "date": "2026-08-25",
+      "name": "Z2 endurance 2h @185W (GATED)",
+      "type": "WORKOUT",
+      "planned_tss": 75,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description": "D+2 \u043f\u043e\u0441\u043b\u0435 \u0433\u043e\u043d\u043a\u0438 160 \u043a\u043c. \u0421\u0415\u0421\u0421\u0418\u042f \u0413\u0415\u0419\u0422\u0418\u0420\u041e\u0412\u0410\u041d\u041d\u0410\u042f.\n\u0413\u0415\u0419\u0422 \u0423\u0422\u0420\u041e\u041c: HRV \u0432 \u043f\u0440\u0435\u0434\u0435\u043b\u0430\u0445 -10% \u043e\u0442 \u0431\u0430\u0437\u044b 42.5 \u0438 \u043d\u043e\u0433\u0438 \u043d\u0435 \u0434\u0435\u0440\u0435\u0432\u044f\u043d\u043d\u044b\u0435 -> \u0435\u0434\u0435\u043c \u043a\u0430\u043a \u043d\u0430\u043f\u0438\u0441\u0430\u043d\u043e. HRV \u043d\u0438\u0436\u0435 37 \u0432\u0442\u043e\u0440\u043e\u0439 \u0434\u0435\u043d\u044c \u043f\u043e\u0434\u0440\u044f\u0434 \u0418\u041b\u0418 \u043d\u043e\u0433\u0438 \u043c\u0451\u0440\u0442\u0432\u044b\u0435 -> 1 \u0447 Z1 <=160 \u0412\u0442 \u0438 \u0432\u0441\u0451.\n\n\u0428\u043e\u0441\u0441\u0435\u0439\u043d\u0438\u043a, Quarq. POWER PRIMARY, \u0427\u0421\u0421 \u2014 cross-check \u043d\u0430 \u043d\u0435\u0434\u043e\u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435.\n\u0415\u0441\u043b\u0438 \u043d\u0430 185 \u0412\u0442 \u043f\u0443\u043b\u044c\u0441 \u043b\u0435\u0437\u0435\u0442 \u0432\u044b\u0448\u0435 140 \u2014 \u041d\u0415 \u0422\u0415\u0420\u041f\u0415\u0422\u042c, \u0441\u0440\u0435\u0437\u0430\u0442\u044c \u0434\u043e 170 \u0412\u0442. \u042d\u0442\u043e \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u0430\u044f \u043d\u0435\u0434\u0435\u043b\u044f \u043f\u043e \u0438\u043d\u0442\u0435\u043d\u0441\u0438\u0432\u043d\u043e\u0441\u0442\u0438, \u043e\u0431\u044a\u0451\u043c \u043d\u0430\u0431\u0438\u0440\u0430\u0435\u043c \u043f\u043e\u0437\u0436\u0435.\n\n- 15m 50-60% 85-95rpm\n\n- 95m 63% 78-84% LTHR 85-95rpm\n\n- 10m 50% 85-95rpm"
+    },
+    {
+      "id": 131328536,
+      "date": "2026-08-26",
+      "name": "Q1 B10 self-paced 6x5 + 2h Z2 tail",
+      "type": "WORKOUT",
+      "planned_tss": 162,
+      "duration_hours": 3.25,
+      "duration_formatted": "3h15m",
+      "workout_summary": "20m @161W | 6\u00d75m @278W / 2m30s rec | 2h @190W | 10m @146W",
+      "description": "\u041a\u0412\u0410\u041b\u0418\u0422\u0418 #1. session_template: B10 (self-paced, Appelhans/Ronnestad 2025, PMID 40328438).\n\n\u0413\u041b\u0410\u0412\u041d\u041e\u0415 \u0418 \u0415\u0414\u0418\u041d\u0421\u0422\u0412\u0415\u041d\u041d\u041e\u0415 \u041f\u0420\u0410\u0412\u0418\u041b\u041e: \u0422\u0410\u0420\u0413\u0415\u0422\u0410 \u0412 \u0412\u0410\u0422\u0422\u0410\u0425 \u041d\u0415\u0422.\n\u0426\u0438\u0444\u0440\u0430 95% \u0432 \u0448\u0430\u0433\u0430\u0445 \u043d\u0438\u0436\u0435 \u2014 \u0417\u0410\u0413\u041b\u0423\u0428\u041a\u0410, \u0447\u0442\u043e\u0431\u044b Intervals.icu \u043f\u043e\u0441\u0447\u0438\u0442\u0430\u043b \u043d\u0430\u0433\u0440\u0443\u0437\u043a\u0443. \u042d\u0442\u043e \u041d\u0415 \u0442\u0430\u0440\u0433\u0435\u0442.\n\u0415\u0434\u0435\u0448\u044c \u043f\u043e \u043e\u0449\u0443\u0449\u0435\u043d\u0438\u044e: \u043c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u043e\u0435 \u0443\u0441\u0438\u043b\u0438\u0435, \u043a\u043e\u0442\u043e\u0440\u043e\u0435 \u0434\u043e\u0442\u044f\u043d\u0435\u0448\u044c \u0420\u041e\u0412\u041d\u041e \u0434\u043e \u043a\u043e\u043d\u0446\u0430 \u0448\u0435\u0441\u0442\u043e\u0433\u043e \u043f\u043e\u0432\u0442\u043e\u0440\u0430. \u042d\u043a\u0440\u0430\u043d \u043f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u043d\u0430 \u0432\u0440\u0435\u043c\u044f, \u043d\u0430 \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u044c \u0432\u043e \u0432\u0440\u0435\u043c\u044f \u0441\u0435\u0441\u0441\u0438\u0438 \u043d\u0435 \u0441\u043c\u043e\u0442\u0440\u0435\u0442\u044c.\n\n\u0417\u0410\u0427\u0415\u041c: \u0432\u0441\u0435 \u043a\u0432\u0430\u043b\u0438\u0442\u0438 \u0437\u0430 \u0448\u0435\u0441\u0442\u044c \u043c\u0435\u0441\u044f\u0446\u0435\u0432 \u0431\u044b\u043b\u0438 \u043d\u0430 \u0444\u0438\u043a\u0441\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u043e\u043c \u0432\u0430\u0442\u0442-\u0442\u0430\u0440\u0433\u0435\u0442\u0435. \u041f\u043e \u0434\u0430\u043d\u043d\u044b\u043c \u044d\u0442\u043e\u0439 \u0440\u0430\u0431\u043e\u0442\u044b \u0444\u0438\u043a\u0441\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0442\u0430\u0440\u0433\u0435\u0442 \u0434\u0430\u0451\u0442 \u0432\u0440\u0435\u043c\u044f \u0432\u044b\u0448\u0435 90% VO2max 178+-159 \u0441, \u0441\u0430\u043c\u043e\u0442\u0435\u043c\u043f\u043e\u0432\u043e\u0435 \u2014 1016+-312 \u0441. \u0412 5.7 \u0440\u0430\u0437\u0430 \u043f\u0440\u0438 \u0442\u043e\u043c \u0436\u0435 \u0444\u043e\u0440\u043c\u0430\u0442\u0435.\n\n\u0426\u0415\u041d\u0410: \u044d\u0442\u043e \u043f\u043e\u043b\u043d\u043e\u0446\u0435\u043d\u043d\u0430\u044f \u0442\u044f\u0436\u0451\u043b\u0430\u044f \u0441\u0435\u0441\u0441\u0438\u044f, \u0430 \u043d\u0435 \"\u0442\u043e \u0436\u0435 \u0441\u0430\u043c\u043e\u0435, \u043d\u043e \u043b\u0443\u0447\u0448\u0435\". \u0424\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u044c \u0432\u044b\u0439\u0434\u0435\u0442 \u0432\u044b\u0448\u0435 \u043f\u043b\u0430\u043d\u043e\u0432\u043e\u0439 \u2014 \u044d\u0442\u043e \u043e\u0436\u0438\u0434\u0430\u0435\u043c\u043e \u0438 \u043f\u0440\u0430\u0432\u0438\u043b\u044c\u043d\u043e.\n\n\u0420\u0410\u0417\u0411\u041e\u0420 \u041f\u041e\u0421\u041b\u0415: \u043f\u0430\u0434\u0435\u043d\u0438\u0435 \u0441 1-\u0433\u043e \u043f\u043e\u0432\u0442\u043e\u0440\u0430 \u043a 6-\u043c\u0443 \u0431\u043e\u043b\u044c\u0448\u0435 8% = \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u0430\u043b \u0441\u043b\u0438\u0448\u043a\u043e\u043c \u0432\u044b\u0441\u043e\u043a\u043e, \u0432 \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0438\u0439 \u0440\u0430\u0437 \u0441\u0434\u0435\u0440\u0436\u0430\u043d\u043d\u0435\u0435. \u0420\u043e\u0441\u0442 \u043e\u0442 1-\u0433\u043e \u043a 6-\u043c\u0443 = \u043d\u0435\u0434\u043e\u0442\u0435\u0440\u043f\u0435\u043b, \u0435\u0441\u0442\u044c \u0437\u0430\u043f\u0430\u0441.\n\n\u0425\u0432\u043e\u0441\u0442 \u0441\u0442\u0440\u043e\u0433\u043e Z2 190 \u0412\u0442, \u0427\u0421\u0421 <140. \u0415\u0441\u043b\u0438 \u0427\u0421\u0421 \u043d\u0430 \u0445\u0432\u043e\u0441\u0442\u0435 \u0432\u044b\u0448\u0435 140 \u2014 \u0441\u0440\u0435\u0437\u0430\u0442\u044c, \u0445\u0432\u043e\u0441\u0442 \u0438\u0434\u0451\u0442 \u0432 \u0441\u0447\u0451\u0442 \u0441\u0443\u0431\u0431\u043e\u0442\u044b, \u0430 \u043d\u0435 \u043f\u0440\u043e\u0442\u0438\u0432 \u043d\u0435\u0451.\n\n- 20m 55% 85-95rpm\n\n6x\n- 5m 95%\n- 2m30s 51%\n\n- 120m 65% 78-87% LTHR 85-95rpm\n\n- 10m 50% 85-95rpm"
+    },
+    {
+      "id": 131328537,
+      "date": "2026-08-27",
+      "name": "Z2 endurance 2h @190W",
+      "type": "WORKOUT",
+      "planned_tss": 79,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description": "\u041e\u0431\u044a\u0451\u043c, \u043d\u043e\u043b\u044c \u0438\u043d\u0442\u0435\u043d\u0441\u0438\u0432\u043d\u043e\u0441\u0442\u0438. \u0428\u043e\u0441\u0441\u0435\u0439\u043d\u0438\u043a, Quarq.\nPOWER PRIMARY 190 \u0412\u0442. \u0427\u0421\u0421 <140 \u2014 cross-check \u043d\u0430 \u0436\u0430\u0440\u0443 \u0438 \u043d\u0435\u0434\u043e\u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435, \u0432\u0430\u0442\u0442\u044b \u043f\u043e \u043d\u0435\u043c\u0443 \u043d\u0435 \u0441\u0440\u0435\u0437\u0430\u0442\u044c \u0431\u0435\u0437 \u043d\u0443\u0436\u0434\u044b.\n\u0414\u0435\u043d\u044c \u043c\u0435\u0436\u0434\u0443 \u0434\u0432\u0443\u043c\u044f \u043a\u0432\u0430\u043b\u0438\u0442\u0438: \u0434\u0435\u0440\u0436\u0438\u043c \u0430\u044d\u0440\u043e\u0431\u043d\u044b\u0439 \u043e\u0431\u044a\u0451\u043c, \u043d\u043e\u0433\u0438 \u043d\u0435 \u0433\u0440\u0443\u0437\u0438\u043c.\n\n- 15m 50-60% 85-95rpm\n\n- 95m 65% 78-87% LTHR 85-95rpm\n\n- 10m 50% 85-95rpm"
+    },
+    {
+      "id": 131328538,
+      "date": "2026-08-28",
+      "name": "Q2 B1 Norwegian 25x1 @100-102% + 40m Z2",
+      "type": "WORKOUT",
+      "planned_tss": 98,
+      "duration_hours": 1.79,
+      "duration_formatted": "1h47m30s",
+      "workout_summary": "20m @161W | 25\u00d71m @293W / 30s rec | 40m @184W | 10m @146W",
+      "description": "\u041a\u0412\u0410\u041b\u0418\u0422\u0418 #2. session_template: B1 (Norwegian short-rep, \u0444\u0440\u0430\u043a\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u0441\u0443\u0431-\u043f\u043e\u0440\u043e\u0433).\n\n\u041f\u041e\u0427\u0415\u041c\u0423 \u0418\u041c\u0415\u041d\u041d\u041e \u042d\u0422\u041e\u0422 \u0424\u041e\u0420\u041c\u0410\u0422 \u0417\u0410 \u0414\u0415\u041d\u042c \u0414\u041e \u0414\u041b\u0418\u041d\u041d\u041e\u0419: \u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435 \u043f\u0430\u0443\u0437\u044b \u0434\u0435\u0440\u0436\u0430\u0442 \u0430\u0431\u0441\u043e\u043b\u044e\u0442\u043d\u0443\u044e \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u044c \u043d\u0430 \u043f\u043e\u0440\u043e\u0433\u0435 \u043f\u0440\u0438 \u043c\u0438\u043d\u0438\u043c\u0430\u043b\u044c\u043d\u043e\u043c \u043d\u0430\u043a\u043e\u043f\u043b\u0435\u043d\u0438\u0438 \u043b\u0430\u043a\u0442\u0430\u0442\u0430. \u0421\u0430\u043c\u0430\u044f \u0434\u0435\u0448\u0451\u0432\u0430\u044f \u043f\u043e \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044e \u043a\u0432\u0430\u043b\u0438\u0442\u0438 \u0432 \u0431\u0438\u0431\u043b\u0438\u043e\u0442\u0435\u043a\u0435 \u2014 \u0435\u0434\u0438\u043d\u0441\u0442\u0432\u0435\u043d\u043d\u0430\u044f, \u043a\u043e\u0442\u043e\u0440\u0443\u044e \u043c\u043e\u0436\u043d\u043e \u043f\u043e\u0441\u0442\u0430\u0432\u0438\u0442\u044c \u043f\u0435\u0440\u0435\u0434 \u043a\u043b\u044e\u0447\u0435\u0432\u043e\u0439 \u0441\u0435\u0441\u0441\u0438\u0435\u0439 \u043d\u0435\u0434\u0435\u043b\u0438 \u0438 \u043d\u0435 \u0443\u0431\u0438\u0442\u044c \u0435\u0451.\n\n\u042d\u0422\u041e \u041d\u0415 \u0421\u0415\u0421\u0421\u0418\u042f \u041d\u0410 \u0420\u0410\u0417\u0420\u042b\u0412. \u041e\u0449\u0443\u0449\u0435\u043d\u0438\u0435 \u0434\u043e\u043b\u0436\u043d\u043e \u0431\u044b\u0442\u044c \"\u043c\u043d\u043e\u0433\u043e, \u043d\u043e \u043d\u0435 \u0442\u044f\u0436\u0435\u043b\u043e\". \u0415\u0441\u043b\u0438 \u043a 15-\u043c\u0443 \u043f\u043e\u0432\u0442\u043e\u0440\u0443 \u0434\u044b\u0445\u0430\u043d\u0438\u0435 \u043d\u0435 \u0443\u0441\u043f\u0435\u0432\u0430\u0435\u0442 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u0430\u0432\u043b\u0438\u0432\u0430\u0442\u044c\u0441\u044f \u0437\u0430 30 \u0441 \u2014 \u0441\u043d\u044f\u0442\u044c 10 \u0412\u0442. \u0417\u0430\u0432\u0442\u0440\u0430 \u0434\u043b\u0438\u043d\u043d\u0430\u044f 6:15, \u0437\u0434\u0435\u0441\u044c \u043d\u0435\u0447\u0435\u0433\u043e \u0434\u043e\u043a\u0430\u0437\u044b\u0432\u0430\u0442\u044c.\n\n\u041d\u0423\u0416\u041d\u0410 \u0420\u041e\u0412\u041d\u0410\u042f \u0414\u041e\u0420\u041e\u0413\u0410. \u041d\u0430 \u043f\u043e\u0434\u044a\u0451\u043c\u0435 30-\u0441\u0435\u043a\u0443\u043d\u0434\u043d\u044b\u0435 \u043f\u0430\u0443\u0437\u044b \u043b\u043e\u043c\u0430\u044e\u0442 \u0442\u0435\u043c\u043f \u0438 \u0444\u043e\u0440\u043c\u0430\u0442 \u0432\u044b\u0440\u043e\u0436\u0434\u0430\u0435\u0442\u0441\u044f. \u041d\u0435\u0442 \u0440\u043e\u0432\u043d\u043e\u0433\u043e \u0443\u0447\u0430\u0441\u0442\u043a\u0430 \u043d\u0430 40 \u043c\u0438\u043d\u0443\u0442 \u2014 \u043d\u0435 \u0432\u044b\u043a\u0440\u0443\u0447\u0438\u0432\u0430\u0442\u044c\u0441\u044f, \u043d\u0430\u043f\u0438\u0441\u0430\u0442\u044c \u0442\u0440\u0435\u043d\u0435\u0440\u0443, \u0437\u0430\u043c\u0435\u043d\u0438\u043c \u043d\u0430 B3 (fast-start 5x8), \u043e\u043d \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442 \u043d\u0430 \u0440\u0435\u043b\u044c\u0435\u0444\u0435.\n\n- 20m 55% 85-95rpm\n\n25x\n- 1m 100% 90-100rpm\n- 30s 60%\n\n- 40m 63% 78-87% LTHR 85-95rpm\n\n- 10m 50% 85-95rpm"
+    },
+    {
+      "id": 131328539,
+      "date": "2026-08-29",
+      "name": "LONG 6:15 @190W \u2014 \u0441\u0442\u0443\u043f\u0435\u043d\u044c 1 \u043b\u0435\u0441\u0442\u043d\u0438\u0446\u044b, \u0441\u0442\u0430\u0440\u0442 07:00",
+      "type": "WORKOUT",
+      "planned_tss": 246,
+      "duration_hours": 6.25,
+      "duration_formatted": "6h15m",
+      "workout_summary": null,
+      "description": "\u0413\u041b\u0410\u0412\u041d\u0410\u042f \u0421\u0415\u0421\u0421\u0418\u042f \u041d\u0415\u0414\u0415\u041b\u0418. \u041f\u0435\u0440\u0432\u0430\u044f \u0441\u0442\u0443\u043f\u0435\u043d\u044c \u043b\u0435\u0441\u0442\u043d\u0438\u0446\u044b \u0434\u043b\u0438\u043d\u043d\u044b\u0445 \u043f\u043e\u0441\u043b\u0435 \u0442\u0440\u0451\u0445 \u043d\u0435\u0434\u0435\u043b\u044c \u0431\u0435\u0437 \u043d\u0435\u0451.\n\n\u0421\u0422\u0423\u041f\u0415\u041d\u042c \u041f\u041e\u0421\u0427\u0418\u0422\u0410\u041d\u0410, \u041d\u0415 \u0412\u042b\u0411\u0420\u0410\u041d\u0410: \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u044f\u044f \u0444\u0430\u043a\u0442\u0438\u0447\u0435\u0441\u043a\u0430\u044f \u0434\u043b\u0438\u043d\u043d\u0430\u044f 5:27 (08.08) x 1.15 = 6:17. \u042d\u0442\u043e \u043f\u043e\u0442\u043e\u043b\u043e\u043a \u043f\u0440\u0430\u0432\u0438\u043b\u0430 \u043f\u0440\u043e\u0433\u0440\u0435\u0441\u0441\u0438\u0438 \u2014 \u0435\u0434\u0438\u043d\u0441\u0442\u0432\u0435\u043d\u043d\u043e\u0433\u043e \u043f\u0440\u0430\u0432\u0438\u043b\u0430 \u043d\u0430\u0433\u0440\u0443\u0437\u043a\u0438 \u0441 \u043a\u043e\u0433\u043e\u0440\u0442\u043d\u043e\u0439 \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u043e\u0439. \u0413\u043e\u043d\u043a\u0430 23.08 (4:49) \u0441\u0442\u0443\u043f\u0435\u043d\u044c\u044e \u043d\u0435 \u0441\u0447\u0438\u0442\u0430\u0435\u0442\u0441\u044f. \u0415\u0445\u0430\u0442\u044c \u0434\u043e\u043b\u044c\u0448\u0435 6:20 \u041d\u0415\u041b\u042c\u0417\u042f, \u0434\u0430\u0436\u0435 \u0435\u0441\u043b\u0438 \u0435\u0434\u0435\u0442\u0441\u044f \u043b\u0435\u0433\u043a\u043e: \u0441\u043b\u043e\u043c\u0430\u0435\u0442\u0441\u044f \u0432\u0441\u044f \u0441\u0435\u043d\u0442\u044f\u0431\u0440\u044c\u0441\u043a\u0430\u044f \u043b\u0435\u0441\u0442\u043d\u0438\u0446\u0430.\n\n\u0421\u0422\u0410\u0420\u0422 07:00. \u0424\u0438\u043d\u0438\u0448 ~13:15, \u043f\u043e\u0441\u043b\u0435\u0434\u043d\u0438\u0435 \u0434\u0432\u0430 \u0447\u0430\u0441\u0430 \u043f\u043e\u043f\u0430\u0434\u0430\u044e\u0442 \u0432 30 C+. \u0422\u0435\u043f\u043b\u043e\u0432\u043e\u0439 \u0441\u0442\u0438\u043c\u0443\u043b \u043d\u0435\u0434\u0435\u043b\u0438 \u0431\u0435\u0440\u0451\u043c \u043e\u0442\u0441\u044e\u0434\u0430, \u043e\u0442\u0434\u0435\u043b\u044c\u043d\u044b\u0445 \u0442\u0435\u0440\u043c\u043e\u0431\u043b\u043e\u043a\u043e\u0432 \u043d\u0435\u0442.\n\n\u0412\u0410\u0422\u0422\u042b \u041f\u0415\u0420\u0412\u0418\u0427\u041d\u042b, \u0427\u0421\u0421 \u2014 \u0422\u041e\u041b\u042c\u041a\u041e ABORT. \u041d\u0430 3 \u0447+ \u043f\u0443\u043b\u044c\u0441 \u043f\u043e\u043b\u0437\u0451\u0442 \u043f\u0440\u0438 \u043f\u043e\u0441\u0442\u043e\u044f\u043d\u043d\u043e\u043c \u0443\u0441\u0438\u043b\u0438\u0438 \u0438 \u043f\u0435\u0439\u0441\u0438\u043d\u0433\u043e\u0432\u044b\u043c \u043e\u0440\u0438\u0435\u043d\u0442\u0438\u0440\u043e\u043c \u043d\u0435 \u044f\u0432\u043b\u044f\u0435\u0442\u0441\u044f (Section 11, Session-Type Modification Rules).\nABORT-\u041f\u041e\u0420\u041e\u0413: \u0427\u0421\u0421 \u0434\u0435\u0440\u0436\u0438\u0442\u0441\u044f \u0432\u044b\u0448\u0435 155 \u043f\u0440\u0438 185 \u0412\u0442 \u0434\u043e\u043b\u044c\u0448\u0435 20 \u043c\u0438\u043d\u0443\u0442 -> \u0437\u0430\u043a\u0430\u043d\u0447\u0438\u0432\u0430\u0442\u044c. \u042d\u0442\u043e \u043d\u0435 \u0442\u043e\u0442 \u0434\u0435\u043d\u044c, \u043d\u0435 \u0433\u0435\u0440\u043e\u0439\u0441\u0442\u0432\u043e\u0432\u0430\u0442\u044c.\n\n\u0426\u0415\u041b\u042c \u0421\u0422\u0423\u041f\u0415\u041d\u0418 \u2014 \u041d\u0415 \u0427\u0410\u0421\u042b, \u0410 \u041a\u041e\u041d\u0422\u0410\u041a\u0422\u042b \u0418 \u0416\u041a\u0422. \u041d\u043e\u0433\u0438 \u0437\u0434\u0435\u0441\u044c \u043d\u0435 \u043b\u0438\u043c\u0438\u0442\u0435\u0440.\n\u041f\u0418\u0422\u0410\u041d\u0418\u0415 90-100 \u0433/\u0447 \u0421\u0422\u0420\u041e\u0413\u041e \u041f\u041e \u0422\u0410\u0419\u041c\u0415\u0420\u0423, \u043d\u0435 \u043f\u043e \u0433\u043e\u043b\u043e\u0434\u0443. \u0413\u043b\u044e\u043a\u043e\u0437\u0430:\u0444\u0440\u0443\u043a\u0442\u043e\u0437\u0430 ~1:0.8. \u041d\u0430\u0442\u0440\u0438\u0439 700-1000 \u043c\u0433/\u0447, \u043d\u0430 \u0436\u0430\u0440\u0435 +300-500. \u0416\u0438\u0434\u043a\u043e\u0441\u0442\u044c 750-1000 \u043c\u043b/\u0447. \u041d\u0418\u0427\u0415\u0413\u041e \u041d\u041e\u0412\u041e\u0413\u041e \u043d\u0435 \u043f\u0440\u043e\u0431\u043e\u0432\u0430\u0442\u044c \u2014 \u043a\u0430\u0436\u0434\u044b\u0439 \u043f\u0440\u043e\u0434\u0443\u043a\u0442 \u043e\u0431\u043a\u0430\u0442\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u0430 \u0441\u0442\u0443\u043f\u0435\u043d\u0438 \u043d\u0438\u0436\u0435.\n\u041d\u0430 \u0433\u043e\u043d\u043a\u0435 23.08 \u0441\u043e\u0436\u0436\u0435\u043d\u043e 691 \u0433 \u0437\u0430 4:49; \u0437\u0434\u0435\u0441\u044c \u0434\u0438\u0441\u0442\u0430\u043d\u0446\u0438\u044f \u0434\u043b\u0438\u043d\u043d\u0435\u0435, \u043d\u043e \u0442\u0435\u043c\u043f \u043d\u0438\u0436\u0435 \u2014 \u0434\u0435\u0444\u0438\u0446\u0438\u0442 \u0437\u0430\u043a\u0440\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043b\u0435\u0433\u0447\u0435.\n\n\u0417\u0410\u041f\u0418\u0421\u0410\u0422\u042c \u041f\u041e\u0421\u041b\u0415: \u0441\u0435\u0434\u043b\u043e/\u043a\u0438\u0441\u0442\u0438/\u0441\u0442\u043e\u043f\u044b \u043d\u0430 5-\u043c \u0438 6-\u043c \u0447\u0430\u0441\u0443, \u0416\u041a\u0422, \u0441\u043a\u043e\u043b\u044c\u043a\u043e \u0440\u0435\u0430\u043b\u044c\u043d\u043e \u0437\u0430\u0448\u043b\u043e \u0433/\u0447.\n\n- 20m 55% 85-95rpm\n\n- 180m 65% 78-87% LTHR 85-95rpm\n\n- 150m 63% 78-87% LTHR 85-95rpm\n\n- 25m 50% 85-95rpm"
+    },
+    {
+      "id": 131328540,
+      "date": "2026-08-30",
+      "name": "Recovery Z1 2h @165W",
+      "type": "WORKOUT",
+      "planned_tss": 62,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description": "\u0412\u041e\u0421\u0421\u0422\u0410\u041d\u041e\u0412\u041b\u0415\u041d\u0418\u0415, \u043d\u0435 Z2. \u041f\u043e\u0441\u043b\u0435 \u0434\u043b\u0438\u043d\u043d\u043e\u0439 \u0432\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u044c\u0435 \u0432 \u043e\u0431\u044a\u0451\u043c\u043d\u043e\u043c \u0431\u043b\u043e\u043a\u0435 \u2014 \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0434\u0435\u043d\u044c, \u0430 \u043d\u0435 \u0432\u0442\u043e\u0440\u043e\u0439 \u043e\u0431\u044a\u0451\u043c\u043d\u044b\u0439.\n165-170 \u0412\u0442, \u0427\u0421\u0421 <125. \u0415\u0441\u043b\u0438 \u0442\u044f\u043d\u0435\u0442 \u0435\u0445\u0430\u0442\u044c \u0431\u044b\u0441\u0442\u0440\u0435\u0435 \u2014 \u043d\u0435 \u0435\u0445\u0430\u0442\u044c. \u041d\u0435\u0434\u0435\u043b\u044f \u0437\u0430\u043a\u0440\u044b\u0442\u0430, \u0441\u043b\u0435\u0434\u0443\u044e\u0449\u0430\u044f \u0441\u0442\u0443\u043f\u0435\u043d\u044c 7:10.\n\n- 15m 50% 85-95rpm\n\n- 95m 57% 70-78% LTHR 85-95rpm\n\n- 10m 50% 85-95rpm"
+    }
+  ],
   "workout_summary_stats": {
-    "attempted": 0,
-    "success": 0,
-    "patternA": 0,
+    "attempted": 6,
+    "success": 2,
+    "patternA": 2,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 0
+    "bail_no_match": 4
   },
   "weekly_summary": {
-    "total_training_hours": 10.11,
-    "total_training_formatted": "10h6m",
-    "total_tss": 491,
-    "activities_count": 5,
-    "avg_hrv": 40.3,
-    "avg_resting_hr": 44.7
+    "total_training_hours": 8.27,
+    "total_training_formatted": "8h15m",
+    "total_tss": 418,
+    "activities_count": 4,
+    "avg_hrv": 40.0,
+    "avg_resting_hr": 44.8
   },
   "race_calendar": {
     "next_race": null,
