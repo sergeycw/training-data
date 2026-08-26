@@ -2,8 +2,10 @@ name: Auto-Sync Intervals.icu Data
 
 on:
   schedule:
-    # Daily at 03:00 UTC (07:00 Tbilisi)
+    # Morning, 03:00 UTC (07:00 Tbilisi) — wellness/HRV before the session
     - cron: '0 3 * * *'
+    # Evening, 16:00 UTC (20:00 Tbilisi) — picks up the same day's ride
+    - cron: '0 16 * * *'
   workflow_dispatch:  # Allow manual trigger
 
 permissions:

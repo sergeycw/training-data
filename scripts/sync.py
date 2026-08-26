@@ -3441,30 +3441,22 @@ class IntervalsSync:
         Determine if history.json needs to be (re)generated.
         
         Triggers:
-        - history.json missing → ALWAYS generate (bypass time gate, first-run scenario)
-        - history.json >7 days old → regenerate (time-gated to Sun/Mon midnight)
-        
-        Refresh runs only on Sundays (6) or Mondays (0), in the first two runs
-        after midnight (00:00 and 00:15 UTC).
+        - history.json missing → ALWAYS generate (first-run scenario)
+        - history.json >=6 days old → regenerate
+
+        Age is the only gate. Upstream additionally requires a Sunday/Monday run
+        landing in the 00:00-00:30 UTC window, which assumes the upstream cron of
+        */15. This repo runs a single daily cron at 03:00 UTC, so that window is
+        never hit and history.json never refreshes. A pure age gate fires at most
+        once per 6 days and self-heals after a skipped run.
         """
         history_path = self.data_dir / self.HISTORY_FILE
         
-        # If history.json doesn't exist, ALWAYS generate (bypass time gate)
+        # If history.json doesn't exist, ALWAYS generate
         if not history_path.exists():
             if self.debug:
                 print("  history.json missing — will generate (first run)")
             return True
-        
-        # For REFRESH of existing history, apply the time gate
-        now = datetime.now()
-        
-        # Only on Sundays (6) or Mondays (0)
-        if now.weekday() not in [0, 6]:
-            return False
-        
-        # Only in the first two runs after midnight (00:00-00:30)
-        if now.hour > 0 or (now.hour == 0 and now.minute > 30):
-            return False
         
         # Check age of existing file
         try:
@@ -3474,7 +3466,7 @@ class IntervalsSync:
             gen_date = datetime.fromisoformat(generated_at.replace("Z", "+00:00"))
             age_days = (datetime.now() - gen_date.replace(tzinfo=None)).days
             
-            if age_days > 7:
+            if age_days >= 6:
                 if self.debug:
                     print(f"  history.json is {age_days} days old — will regenerate")
                 return True
@@ -6366,7 +6358,7 @@ def main():
             except Exception as e:
                 print(f"   ⚠️ ftp_history.json push failed (non-critical): {e}")
 
-        # === AUTO HISTORY GENERATION (Sundays/Mondays, first two runs after midnight) ===
+        # === AUTO HISTORY GENERATION (age-gated, at most once per 6 days) ===
         if sync.should_generate_history():
             try:
                 print("\n📊 Auto-generating history.json...")
