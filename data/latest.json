@@ -16,10 +16,10 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-09-20T13:02:04.107860",
+    "last_updated": "2026-09-20T13:17:45.071128",
     "data_range_days": 7,
     "extended_range_days": 28,
-    "version": "3.84"
+    "version": "3.85"
   },
   "alerts": [],
   "readiness_decision": {
@@ -64,7 +64,7 @@
     },
     "phase_context": {
       "phase": "Build",
-      "phase_week": 0,
+      "phase_week": 1,
       "amber_threshold": 3,
       "modifier_applied": "build_loosened"
     },
@@ -75,8 +75,8 @@
   },
   "history": {
     "available": true,
-    "last_generated": "2026-09-08",
-    "age_days": 11,
+    "last_generated": "2026-09-20",
+    "age_days": 0,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -294,19 +294,17 @@
     },
     "phase_detection": {
       "phase": "Build",
-      "confidence": "low",
-      "reason_codes": [
-        "BUILD_RESUMING_AFTER_DELOAD_TENTATIVE"
-      ],
+      "confidence": "medium",
+      "reason_codes": [],
       "basis": {
         "stream_1": {
-          "ctl_slope": 0.88,
-          "acwr_trend": "falling",
-          "hard_day_pattern": 2.2,
+          "ctl_slope": 0.52,
+          "acwr_trend": "stable",
+          "hard_day_pattern": 3.2,
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.93,
+          "planned_tss_delta": 1.54,
           "hard_sessions_planned": 0,
           "race_proximity": null,
           "next_week_load": null,
@@ -316,15 +314,13 @@
         "data_quality": "good",
         "stream_agreement": null
       },
-      "previous_phase": "Deload",
-      "phase_duration_weeks": 0,
+      "previous_phase": "Build",
+      "phase_duration_weeks": 1,
       "dossier_declared": null,
       "dossier_agreement": null
     },
     "phase_detected": "Build",
-    "phase_triggers": [
-      "BUILD_RESUMING_AFTER_DELOAD_TENTATIVE"
-    ],
+    "phase_triggers": [],
     "seasonal_context": "Late Season / Transition",
     "benchmark_indoor": {
       "current_ftp": 285,
@@ -346,7 +342,7 @@
     "p_max": 949,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-09-20T13:02:02.015621",
+    "calculation_timestamp": "2026-09-20T13:17:43.548005",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -679,7 +675,7 @@
       "hrrc": null,
       "elevation_m": 19.82431,
       "feel": 2,
-      "rpe": 7,
+      "rpe": 9,
       "zone_distribution": {
         "hr_zones": {
           "z1_time": 77,
@@ -790,7 +786,7 @@
           "z7_time": 7
         }
       },
-      "has_intervals": false
+      "has_intervals": true
     },
     {
       "id": "i186997383",
@@ -835,7 +831,7 @@
           "z7_time": 0
         }
       },
-      "has_intervals": false
+      "has_intervals": true
     },
     {
       "id": "i186821257",
@@ -889,7 +885,7 @@
           "z7_time": 60
         }
       },
-      "has_intervals": false,
+      "has_intervals": true,
       "chat_notes": [
         "\u0432\u044b\u0441\u043f\u0430\u043b\u0441\u044f. \u0438, \u043a\u0430\u0436\u0435\u0442\u0441\u044f, \u043f\u043e\u043b\u043d\u043e\u0441\u0442\u044c\u044e \u0432\u043e\u0441\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b\u0441\u044f \u043f\u043e\u0441\u043b\u0435 \u0431\u043e\u043b\u0435\u0437\u043d\u0438. \u0442\u0440\u0435\u043d\u0438\u0440\u043e\u0432\u043a\u0430 \u0437\u0430\u0448\u043b\u0430 \u0445\u043e\u0440\u043e\u0448\u043e \u043e \u0447\u0435\u043c \u0433\u043e\u0432\u043e\u0440\u0438\u0442 \u043e\u0442\u043d\u043e\u0441\u0438\u0442\u0435\u043b\u044c\u043d\u043e \u043d\u0435\u0432\u044b\u0441\u043e\u043a\u0438\u0439 \u043f\u0443\u043b\u044c\u0441"
       ]
@@ -937,7 +933,7 @@
           "z7_time": 0
         }
       },
-      "has_intervals": false
+      "has_intervals": true
     }
   ],
   "wellness_data": [
