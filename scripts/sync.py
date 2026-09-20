@@ -93,15 +93,15 @@ class IntervalsSync:
     HISTORY_FILE = "history.json"
     UPSTREAM_REPO = "CrankAddict/section-11"
     CHANGELOG_FILE = "changelog.json"
-    VERSION = "3.84"
+    VERSION = "3.85"
     INTERVALS_FILE = "intervals.json"
 
     # Sport families eligible for interval-level data extraction.
     # Only structured sessions in these families are worth fetching
     # per-interval detail for. Walk, strength, yoga, other excluded.
     INTERVAL_SPORT_FAMILIES = {"cycling", "run", "ski", "rowing", "swim"}
-    INTERVAL_SCAN_HOURS = 72    # Only scan recent activities for new intervals
-    INTERVAL_RETENTION_DAYS = 7  # Keep cached intervals for 7 days
+    INTERVAL_SCAN_HOURS = 72    # Deprecated: scanning now spans the retention window
+    INTERVAL_RETENTION_DAYS = 7  # Keep cached intervals for 7 days; also the scan window
 
     # Sport family mapping for per-sport monotony calculation
     # Multi-sport athletes get inflated total monotony when cross-training
@@ -203,8 +203,10 @@ class IntervalsSync:
         """
         Generate intervals.json with incremental caching.
         
-        First run (no cache): scans full retention window (7 days) to backfill.
-        Subsequent runs: scans recent activities (72h) for new sessions only.
+        Scans the full retention window (7 days) on every run, so gaps in a
+        stale cache heal themselves. Deduplication against cached activity IDs
+        means the wider window costs no extra API calls — only activities
+        genuinely missing from the cache are fetched.
         Fetches per-interval data for new qualifying activities, merges
         with cached data, and purges entries older than 7 days.
         
@@ -227,12 +229,13 @@ class IntervalsSync:
                 cached = {"activities": []}
                 first_run = True
         
-        # First run: backfill full retention window (7 days). Subsequent: scan 72h only.
+        # Always scan the full retention window. A 72h window cannot backfill a
+        # cache that fell behind — an activity older than 72h but newer than the
+        # retention cutoff would stay missing forever. This happened on 20.09.2026
+        # when a manual sync overwrote a cache holding the bot's 14-16.09 entries.
+        scan_cutoff = retention_cutoff
         if first_run:
-            scan_cutoff = retention_cutoff
             print("    First run — scanning 7 days for interval data...")
-        else:
-            scan_cutoff = (now - timedelta(hours=self.INTERVAL_SCAN_HOURS)).strftime("%Y-%m-%d")
         
         cached_ids = {a["activity_id"] for a in cached.get("activities", [])}
         
@@ -304,7 +307,7 @@ class IntervalsSync:
         self._intervals_data = {
             "generated_at": now.isoformat(),
             "version": self.VERSION,
-            "scan_hours": self.INTERVAL_SCAN_HOURS,
+            "scan_hours": self.INTERVAL_RETENTION_DAYS * 24,
             "retention_days": self.INTERVAL_RETENTION_DAYS,
             "activities": all_entries
         }
