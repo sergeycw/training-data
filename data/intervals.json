@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T08:17:26.495922",
+  "generated_at": "2026-09-22T19:19:58.967586",
   "version": "3.85",
   "scan_hours": 168,
   "retention_days": 7,
@@ -776,6 +776,26 @@
           "avg_cadence": 20.0,
           "zone": 1,
           "training_load": 0.00015660572
+        }
+      ]
+    },
+    {
+      "activity_id": "i189261988",
+      "date": "2026-09-22",
+      "type": "Run",
+      "name": "Running",
+      "interval_summary": [
+        "1x 41m41s 127bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "2501s@127bpm77rpm",
+          "duration_secs": 2501,
+          "avg_hr": 127,
+          "max_hr": 143,
+          "avg_cadence": 77.044785,
+          "zone": 1
         }
       ]
     }
