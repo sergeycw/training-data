@@ -1,88 +1,9 @@
 {
-  "generated_at": "2026-10-06T20:37:30.152589",
+  "generated_at": "2026-10-07T09:54:56.720090",
   "version": "3.85",
   "scan_hours": 168,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i191419430",
-      "date": "2026-09-29",
-      "type": "Ride",
-      "name": "Road Cycling",
-      "interval_summary": [
-        "1x 23m35s 116w",
-        "1x 51m 297w",
-        "1x 58m43s 88w"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1415s@116w54rpm",
-          "duration_secs": 1415,
-          "avg_power": 116,
-          "max_power": 536,
-          "avg_hr": 99,
-          "max_hr": 143,
-          "avg_cadence": 53.555195,
-          "zone": 1,
-          "training_load": 14.730981,
-          "decoupling": -21.730015
-        },
-        {
-          "type": "WORK",
-          "label": "3060s@297w92rpm",
-          "duration_secs": 3060,
-          "avg_power": 297,
-          "max_power": 638,
-          "avg_hr": 159,
-          "max_hr": 169,
-          "avg_cadence": 91.60555,
-          "zone": 4,
-          "training_load": 89.705,
-          "decoupling": 5.196294
-        },
-        {
-          "type": "WORK",
-          "label": "3523s@88w45rpm",
-          "duration_secs": 3523,
-          "avg_power": 88,
-          "max_power": 799,
-          "avg_hr": 104,
-          "max_hr": 152,
-          "avg_cadence": 44.803112,
-          "zone": 1,
-          "training_load": 20.646717,
-          "decoupling": -2.602527
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1,
-          "avg_hr": 125,
-          "max_hr": 125,
-          "zone": 1
-        }
-      ]
-    },
-    {
-      "activity_id": "i191584540",
-      "date": "2026-09-29",
-      "type": "Run",
-      "name": "Running",
-      "interval_summary": [
-        "1x 40m2s 126bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "2402s@126bpm75rpm",
-          "duration_secs": 2402,
-          "avg_hr": 126,
-          "max_hr": 142,
-          "avg_cadence": 74.983765,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i191759054",
       "date": "2026-09-30",
@@ -409,6 +330,78 @@
           "max_hr": 168,
           "avg_cadence": 73.61651,
           "zone": 2
+        }
+      ]
+    },
+    {
+      "activity_id": "i194524371",
+      "date": "2026-10-07",
+      "type": "MountainBikeRide",
+      "name": "Mountain Biking",
+      "interval_summary": [
+        "2x 32m7s 106bpm",
+        "1x 37m34s 119bpm",
+        "1x 9m13s 69bpm",
+        "1x 6m15s 77bpm",
+        "1x 18m2s 85bpm",
+        "1x 30s 63bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1927s@106bpm",
+          "duration_secs": 1880,
+          "avg_hr": 103,
+          "max_hr": 136,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "1927s@106bpm",
+          "duration_secs": 1974,
+          "avg_hr": 108,
+          "max_hr": 124,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "2254s@119bpm",
+          "duration_secs": 2254,
+          "avg_hr": 119,
+          "max_hr": 154,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "553s@69bpm",
+          "duration_secs": 553,
+          "avg_hr": 69,
+          "max_hr": 99,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "375s@77bpm",
+          "duration_secs": 375,
+          "avg_hr": 77,
+          "max_hr": 110,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "1082s@85bpm",
+          "duration_secs": 1082,
+          "avg_hr": 85,
+          "max_hr": 111,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "30s@63bpm",
+          "duration_secs": 30,
+          "avg_hr": 63,
+          "max_hr": 66,
+          "zone": 1
         }
       ]
     }
