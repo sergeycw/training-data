@@ -1,162 +1,9 @@
 {
-  "generated_at": "2026-10-20T19:41:26.049024",
+  "generated_at": "2026-10-21T08:18:42.821832",
   "version": "3.85",
   "scan_hours": 168,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i196674598",
-      "date": "2026-10-13",
-      "type": "Run",
-      "name": "Track Running",
-      "interval_summary": [
-        "1x 16m28s 122bpm",
-        "1x 20s 114bpm",
-        "3x 32s 141bpm",
-        "3x 22s 142bpm",
-        "1x 2m14s 137bpm",
-        "3x 7m44s 158bpm",
-        "2x 3m11s 146bpm",
-        "1x 11m32s 132bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "988s@122bpm77rpm",
-          "duration_secs": 988,
-          "avg_hr": 122,
-          "max_hr": 143,
-          "avg_cadence": 77.3857,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "20s@114bpm84rpm",
-          "duration_secs": 20,
-          "avg_hr": 114,
-          "max_hr": 126,
-          "avg_cadence": 83.6,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "32s@141bpm78rpm",
-          "duration_secs": 32,
-          "avg_hr": 134,
-          "max_hr": 136,
-          "avg_cadence": 77.96875,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "22s@142bpm81rpm",
-          "duration_secs": 23,
-          "avg_hr": 137,
-          "max_hr": 141,
-          "avg_cadence": 80.608696,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "32s@141bpm78rpm",
-          "duration_secs": 34,
-          "avg_hr": 143,
-          "max_hr": 147,
-          "avg_cadence": 77.47059,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "22s@142bpm81rpm",
-          "duration_secs": 21,
-          "avg_hr": 142,
-          "max_hr": 146,
-          "avg_cadence": 80.38095,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "32s@141bpm78rpm",
-          "duration_secs": 31,
-          "avg_hr": 147,
-          "max_hr": 148,
-          "avg_cadence": 78.32258,
-          "zone": 3
-        },
-        {
-          "type": "WORK",
-          "label": "22s@142bpm81rpm",
-          "duration_secs": 22,
-          "avg_hr": 146,
-          "max_hr": 148,
-          "avg_cadence": 81.22727,
-          "zone": 3
-        },
-        {
-          "type": "WORK",
-          "label": "134s@137bpm55rpm",
-          "duration_secs": 134,
-          "avg_hr": 137,
-          "max_hr": 149,
-          "avg_cadence": 55.26829,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "464s@158bpm81rpm",
-          "duration_secs": 460,
-          "avg_hr": 153,
-          "max_hr": 168,
-          "avg_cadence": 80.8,
-          "zone": 4
-        },
-        {
-          "type": "WORK",
-          "label": "191s@146bpm78rpm",
-          "duration_secs": 181,
-          "avg_hr": 142,
-          "max_hr": 167,
-          "avg_cadence": 77.67956,
-          "zone": 2
-        },
-        {
-          "type": "WORK",
-          "label": "464s@158bpm81rpm",
-          "duration_secs": 463,
-          "avg_hr": 155,
-          "max_hr": 172,
-          "avg_cadence": 81.12095,
-          "zone": 4
-        },
-        {
-          "type": "WORK",
-          "label": "191s@146bpm78rpm",
-          "duration_secs": 200,
-          "avg_hr": 150,
-          "max_hr": 170,
-          "avg_cadence": 79.14,
-          "zone": 3
-        },
-        {
-          "type": "WORK",
-          "label": "464s@158bpm81rpm",
-          "duration_secs": 468,
-          "avg_hr": 166,
-          "max_hr": 173,
-          "avg_cadence": 82.416664,
-          "zone": 6
-        },
-        {
-          "type": "WORK",
-          "label": "692s@132bpm76rpm",
-          "duration_secs": 692,
-          "avg_hr": 132,
-          "max_hr": 170,
-          "avg_cadence": 76.09107,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i197059620",
       "date": "2026-10-14",
@@ -611,6 +458,85 @@
           "max_hr": 155,
           "avg_cadence": 78.0,
           "zone": 4
+        }
+      ]
+    },
+    {
+      "activity_id": "i199815613",
+      "date": "2026-10-21",
+      "type": "MountainBikeRide",
+      "name": "Mountain Biking",
+      "interval_summary": [
+        "1x 25m41s 108bpm",
+        "2x 30m37s 114bpm",
+        "1x 11m22s 69bpm",
+        "1x 7m26s 60bpm",
+        "1x 10m46s 83bpm",
+        "1x 6m49s 90bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1541s@108bpm",
+          "duration_secs": 1541,
+          "avg_hr": 108,
+          "max_hr": 125,
+          "zone": 1
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 96,
+          "max_hr": 96,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "1837s@114bpm",
+          "duration_secs": 1783,
+          "avg_hr": 109,
+          "max_hr": 132,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "1837s@114bpm",
+          "duration_secs": 1890,
+          "avg_hr": 119,
+          "max_hr": 136,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "682s@69bpm",
+          "duration_secs": 682,
+          "avg_hr": 69,
+          "max_hr": 104,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "446s@60bpm",
+          "duration_secs": 446,
+          "avg_hr": 60,
+          "max_hr": 92,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "646s@83bpm",
+          "duration_secs": 646,
+          "avg_hr": 83,
+          "max_hr": 120,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "409s@90bpm",
+          "duration_secs": 409,
+          "avg_hr": 90,
+          "max_hr": 122,
+          "zone": 1
         }
       ]
     }
