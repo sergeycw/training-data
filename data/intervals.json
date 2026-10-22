@@ -1,81 +1,9 @@
 {
-  "generated_at": "2026-10-21T19:44:42.660982",
+  "generated_at": "2026-10-22T08:20:52.778602",
   "version": "3.85",
   "scan_hours": 168,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i197059620",
-      "date": "2026-10-14",
-      "type": "MountainBikeRide",
-      "name": "Mountain Biking",
-      "interval_summary": [
-        "1x 27m44s 99bpm",
-        "1x 31m10s 103bpm",
-        "1x 37m18s 104bpm",
-        "1x 11m46s 84bpm",
-        "1x 7m4s 66bpm",
-        "2x 8m39s 85bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1664s@99bpm",
-          "duration_secs": 1664,
-          "avg_hr": 99,
-          "max_hr": 119,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "1870s@103bpm",
-          "duration_secs": 1870,
-          "avg_hr": 103,
-          "max_hr": 124,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "2238s@104bpm",
-          "duration_secs": 2238,
-          "avg_hr": 104,
-          "max_hr": 124,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "706s@84bpm",
-          "duration_secs": 706,
-          "avg_hr": 84,
-          "max_hr": 127,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "424s@66bpm",
-          "duration_secs": 424,
-          "avg_hr": 66,
-          "max_hr": 101,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "519s@85bpm",
-          "duration_secs": 535,
-          "avg_hr": 82,
-          "max_hr": 120,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "519s@85bpm",
-          "duration_secs": 502,
-          "avg_hr": 88,
-          "max_hr": 119,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i197444446",
       "date": "2026-10-15",
