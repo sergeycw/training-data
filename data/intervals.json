@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T08:09:02.018195",
+  "generated_at": "2026-10-25T18:35:41.039780",
   "version": "3.85",
   "scan_hours": 168,
   "retention_days": 7,
@@ -847,6 +847,77 @@
           "avg_hr": 133,
           "max_hr": 162,
           "avg_cadence": 78.29316,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i201362576",
+      "date": "2026-10-25",
+      "type": "MountainBikeRide",
+      "name": "Mountain Biking",
+      "interval_summary": [
+        "1x 31m6s 131bpm",
+        "1x 41m58s 137bpm",
+        "1x 53m7s 125bpm",
+        "1x 25m37s 109bpm",
+        "1x 19m22s 114bpm",
+        "1x 10m 120bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "1866s@131bpm",
+          "duration_secs": 1866,
+          "avg_hr": 131,
+          "max_hr": 162,
+          "zone": 2
+        },
+        {
+          "type": "RECOVERY",
+          "duration_secs": 1,
+          "avg_hr": 160,
+          "max_hr": 160,
+          "zone": 5
+        },
+        {
+          "type": "WORK",
+          "label": "2518s@137bpm",
+          "duration_secs": 2518,
+          "avg_hr": 137,
+          "max_hr": 167,
+          "zone": 2
+        },
+        {
+          "type": "WORK",
+          "label": "3187s@125bpm",
+          "duration_secs": 3187,
+          "avg_hr": 125,
+          "max_hr": 155,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "1537s@109bpm",
+          "duration_secs": 1537,
+          "avg_hr": 109,
+          "max_hr": 134,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "1162s@114bpm",
+          "duration_secs": 1162,
+          "avg_hr": 114,
+          "max_hr": 148,
+          "zone": 1
+        },
+        {
+          "type": "WORK",
+          "label": "600s@120bpm",
+          "duration_secs": 600,
+          "avg_hr": 120,
+          "max_hr": 151,
           "zone": 1
         }
       ]
