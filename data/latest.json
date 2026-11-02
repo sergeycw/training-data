@@ -16,7 +16,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-02T10:37:26.242005",
+    "last_updated": "2026-11-02T23:14:38.700630",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.85"
@@ -63,20 +63,20 @@
       "unavailable": 0
     },
     "phase_context": {
-      "phase": "Deload",
-      "phase_week": 1,
-      "amber_threshold": 2,
-      "modifier_applied": "default"
+      "phase": "Build",
+      "phase_week": 2,
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 6 green, 0 amber (threshold 2), 0 red.",
+    "reason": "P3 green light. 6 green, 0 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
     "available": true,
-    "last_generated": "2026-10-27",
-    "age_days": 6,
+    "last_generated": "2026-11-02",
+    "age_days": 0,
     "total_months": 35,
     "history_confidence": "high"
   },
@@ -279,17 +279,17 @@
       "note": "No planned workouts in period"
     },
     "phase_detection": {
-      "phase": "Deload",
+      "phase": "Build",
       "confidence": "medium",
       "reason_codes": [
         "HR_ONLY_MAJORITY",
-        "PLAN_GAP_NEXT_WEEK"
+        "NO_PLANNED_WORKOUTS"
       ],
       "basis": {
         "stream_1": {
-          "ctl_slope": -3.18,
-          "acwr_trend": "falling",
-          "hard_day_pattern": 2.8,
+          "ctl_slope": -3.32,
+          "acwr_trend": "rising",
+          "hard_day_pattern": 3,
           "weeks_available": 4
         },
         "stream_2": {
@@ -303,15 +303,15 @@
         "data_quality": "mixed",
         "stream_agreement": null
       },
-      "previous_phase": "Deload",
-      "phase_duration_weeks": 1,
+      "previous_phase": "Build",
+      "phase_duration_weeks": 2,
       "dossier_declared": null,
       "dossier_agreement": null
     },
-    "phase_detected": "Deload",
+    "phase_detected": "Build",
     "phase_triggers": [
       "HR_ONLY_MAJORITY",
-      "PLAN_GAP_NEXT_WEEK"
+      "NO_PLANNED_WORKOUTS"
     ],
     "seasonal_context": "Off-season / Transition",
     "benchmark_indoor": {
@@ -334,7 +334,7 @@
     "p_max": 924,
     "power_model_source": "wellness.sportInfo",
     "vo2max": 59.0,
-    "calculation_timestamp": "2026-11-02T10:37:26.045633",
+    "calculation_timestamp": "2026-11-02T23:14:38.699587",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
