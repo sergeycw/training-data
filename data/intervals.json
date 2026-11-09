@@ -1,57 +1,9 @@
 {
-  "generated_at": "2026-11-08T20:01:21.271865",
+  "generated_at": "2026-11-09T10:58:13.175508",
   "version": "3.85",
   "scan_hours": 168,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i204336603",
-      "date": "2026-11-01",
-      "type": "Ride",
-      "name": "Road Cycling",
-      "interval_summary": [
-        "1x 3m30s 230w"
-      ],
-      "intervals": [
-        {
-          "type": "RECOVERY",
-          "duration_secs": 10273,
-          "avg_power": 165,
-          "max_power": 385,
-          "avg_hr": 128,
-          "max_hr": 152,
-          "avg_cadence": 67.127464,
-          "zone": 2,
-          "training_load": 91.208305,
-          "decoupling": -0.77838194
-        },
-        {
-          "type": "WORK",
-          "label": "210s@230w79rpm",
-          "duration_secs": 210,
-          "avg_power": 230,
-          "max_power": 342,
-          "avg_hr": 141,
-          "max_hr": 145,
-          "avg_cadence": 79.00952,
-          "zone": 3,
-          "training_load": 3.625814,
-          "decoupling": 0.25177607
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 7326,
-          "avg_power": 76,
-          "max_power": 489,
-          "avg_hr": 98,
-          "max_hr": 143,
-          "avg_cadence": 36.473316,
-          "zone": 1,
-          "training_load": 25.632675,
-          "decoupling": 23.96036
-        }
-      ]
-    },
     {
       "activity_id": "i204649217",
       "date": "2026-11-02",
