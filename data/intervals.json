@@ -1,29 +1,9 @@
 {
-  "generated_at": "2026-11-13T21:42:45.818321",
+  "generated_at": "2026-11-14T09:51:22.748861",
   "version": "3.85",
   "scan_hours": 168,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i206429145",
-      "date": "2026-11-06",
-      "type": "Run",
-      "name": "Running",
-      "interval_summary": [
-        "1x 1h8m 131bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "4123s@131bpm79rpm",
-          "duration_secs": 4123,
-          "avg_hr": 131,
-          "max_hr": 151,
-          "avg_cadence": 79.22799,
-          "zone": 1
-        }
-      ]
-    },
     {
       "activity_id": "i206834858",
       "date": "2026-11-07",
