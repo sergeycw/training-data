@@ -77,7 +77,7 @@
 
 ---
 
-## Сегмент — цель №1, попытка Сб 03.10 или Вс 04.10
+## Сегмент — цель №1, попытка Сб 10.10 или Вс 11.10
 
 **Потолок на 48 минут посчитан, но сама модель под вопросом.** CP = 294 Вт,
 W′ = 6.84 кДж (DOSSIER §4). Средняя за 48 мин может превысить CP максимум
@@ -230,173 +230,213 @@ TSB +17.7 — не форма, а недобор. `phase_detection` показа
 
 ---
 
-## Week 37: 07–13.09 — закрыта. Факт **516 TSS / 10ч51м** против плана 706 / 17.0 ч
+## Week 38: 14–20.09 — закрыта. Факт **827 TSS / 17ч25м** против плана 749
 
-**Середину недели выбила болезнь — слабость и лёгкая боль в горле, без температуры.
-Выходные выполнены целиком, Сб и Вс поменяны местами по инициативе атлета.**
+**Состав переписан атлетом.** Вело 13:28 / 598 (план 17:00 / 711, −113). Бег 3:58 / 229
+при 46 км и шести пробежках (план 1:00 / 38, **+191**).
 
-| День | План | Факт | |
-|---|---|---|---|
-| Пн 07 | rest | rest | ✅ |
-| Вт 08 | `B4` 2:19 / 136 | 1:51 / **128** | Рабочий блок сделан: 15×40с @339–344, 16×60с @261–263, 4×2:30 @265. Срезан только Z2-хвост |
-| Ср 09 | Z2 3ч / 132 | **пропуск** | первый день болезни |
-| Чт 10 | `B10` 2:13 / 133 | 0:56 / **64** | аборт на 4/6 |
-| Пт 11 | recovery 2ч / 52 | 1:43 / 31 | ✅ |
-| **Сб 12** | *(своп)* | 2:04 / **95** | 196 Вт @ЧСС 131, 23.1 °C |
-| **Вс 13** | длинная 4ч / 156 | **4:39 / 198** | 143 км, 1033 м, 28.8 °C, RPE 6 |
+Причина его словами: «ты слишком мало бега ставил, поэтому я начал его сам добавлять».
+Он прав — 1 ч/нед не держит даже текущую беговую форму. Правило «+10 %/нед от 28 минут»
+было написано под вход после болезни и механически перенесено дальше без пересчёта под цель.
 
-**Выходные дали 293 TSS против плановых 234.** Вся потеря — Ср и Чт, около 200 TSS.
-
-### Возврат подтверждён цифрами, не ощущениями
-
-Поправка DOSSIER §7 (28.8 °C → мощность −4.7 %, ЧСС +6 bpm):
-
-| | Факт | Эквивалент при 13 °C |
+| День | План | Факт |
 |---|---|---|
-| Сб 12.09, основной блок 1:52 | 196 Вт @ ЧСС 131 (23.1 °C) | ~201 Вт @ ЧСС ~127 |
-| Вс 13.09, основной блок 3:52 | 191 Вт @ ЧСС 132 (28.8 °C) | ~200 Вт @ ЧСС ~126 |
+| Пн 14 | rest | бег 0:42 / 37 |
+| Вт 15 | `B3` 2:22 / 136 | **вело 2:27 / 161** ✅ + бег 0:31 / 23 |
+| Ср 16 | Z2 3ч / 113 + бег | **вело 2:52 / 117** ✅, бега нет |
+| Чт 17 | `B8` MIT 2:26 / 147 | **вело нет.** Три бега 0:46 / 69 — внутри тест 5 км |
+| Пт 18 | recovery 2ч / 52 | вело 1:25 / 22 + бег 0:40 / 28 |
+| Сб 19 | длинная 4ч / 156 | бег 1:19 / 72 + вело 2:30 / 126 |
+| Вс 20 | Z2 3ч / 107 + бег | **вело 4:13 / 172** |
 
-Одинаковый выход при вдвое большей длительности. Аэробика вернулась полностью.
+### `B3` — выполнена полностью и дешевле плана
 
-### Три вещи, которые легко прочитать неправильно
+| Повтор | 1 | 2 | 3 | 4 | 5 | План |
+|---|---|---|---|---|---|---|
+| Старт 1:30 | 323 | 327 | 325 | 321 | 316 | 316 Вт |
+| Хвост 6:30 | 266 | 283 | 285 | 280 | 278 | 275 Вт |
+| ЧСС хвоста | 146 | 153 | 153 | 153 | 151 | ожидал 152–162 |
 
-**decoupling 23.1 % в воскресенье — не durability.** VI 1.085 против гейта ≤1.05, плюс 28.8 °C.
-ЧСС просидела 68 минут в Z3/Z4 при мощности в Z2/Z3 — термический дрейф на 4.5 часах, не fade.
-Суббота (VI **1.0529**) тоже гейт не прошла, на волосок. **Чистого замера durability нет
-с 11.08, пятая неделя.** Закрывается в Ср W38, это единственная задача того дня.
+Ноль fade, ЧСС ровная и в **нижнем** крае коридора. Запись атлета: «выспался, кажется
+полностью восстановился после болезни, тренировка зашла хорошо о чём говорит относительно
+невысокий пульс» — подтверждается лапами, а не только ощущением.
 
-**Мощность в болезнь не падала.** 10.09, четвёртый день, больной: первый повтор **320 Вт**
-против 306 на здоровом `B10` 26.08. Отказала переносимость, не выход. Не читать как потерю формы.
+### Durability — пятинедельная дырка закрыта
 
-**Перефит CP/W′ не состоялся.** 5-минутная максимальная точка должна была прийти с `B10` 10.09 —
-аборт. Модель `W′ 6.84 кДж` по-прежнему несовместима с измеренным: 331 Вт × 5 мин = 11.1 кДж
-выше CP одним повтором. Переносится в W39.
+Ср 16.09, основная лапа **2:30:01 @186 Вт при ЧСС 120, decoupling 2.8 %, VI 1.0447**.
+Гейт ≤1.05 пройден, `qualifying_sessions_7d = 1` впервые с 11.08. Сработал ровный маршрут:
+95.6 км при 350 м набора. **Нужна вторая точка** — одна серию не делает, схема повторяется в W39.
 
-**Метрики на 13.09:** CTL 96.7 · ATL 97.8 · TSB −1.2 · ramp −3.29 · ACWR 0.80 · RI 0.96 ·
-monotony 1.02 · stress tolerance 5.2 · TID 7д пирамидальный 80/11/9 · HRV 40.0 (база 7д 40.7 /
-28д 42.6) · RHR 46 · consistency 0.83.
+### Тест 5 км — 18:34
+
+Чт 17.09, стадион, вместо `B8` MIT. Атлет: «бегал тестовую пятерку, чтобы понять за сколько
+смогу сбегать 10/7 в ноябре на экидене». **18:34 при ЧСС 163 средн / 176 макс** = 3:43/км.
+
+Проекции Riegel: 7 км **26:30**, 10 км **38:45**. Против цели 35:50–36:20 разрыв 2:00–2:30.
+
+**Читать как пол, не потолок.** Тест не на свежести (в ногах Пн пробежка, Вт `B3` + вечерний
+бег, Ср 2:52 в седле). ЧСС 163 при max 176 — это 92 %, на выжатой пятёрке ждут 94–97 %.
+Беговая база нулевая: две недели назад была одна пробежка на 28 минут.
+
+**`B8` MIT не состоялась**, вытеснена тестом. Размен принят. MIT сделан один раз за всё время — 11.08.
+
+**Метрики:** CTL 96.7 → **99.78** · ATL 114.67 · TSB −14.89 · ramp +3.56 · ACWR 1.14 ·
+monotony 1.75 (мультиспортивная 1.13) · strain 1447 · stress tolerance 8.3 · hard days 4 ·
+TID пирамидальный 83/10/7 · consistency 0.83. **HRV выросла:** база 7д 40.7 → **44.0**,
+28д 42.6 → 43.4. RHR 46 при базе 44. RI 0.93. Алертов ноль.
+
+**Суставы** (спрошено прямо): «пока все в норме, я стараюсь бегать в мягкой обуви и по грунту».
+**Сон:** 6.82 ч единственный amber, сбился только в день замера.
 
 ---
 
-## Арка пересобрана 13.09 — попытка сдвинута на 10–11.10
+## Арка до попытки
 
 | Неделя | Задача | Сессии |
 |---|---|---|
-| **W38 · 14–20.09** | Потолок + вход в специфику | Вт `B3` · Чт `B8` |
-| W39 · 21–27.09 | Специфика + **перефит CP/W′** | Вт `B7` · Чт `B10` |
+| **W39 · 21–27.09** | Специфика вело + вход в беговой порог | Вт `B7` · Чт беговые пороговые |
 | W40 · 28.09–04.10 | **Репетиция** `B9` — полные 48 мин | |
 | W41 · 05–11.10 | Тейпер | **попытка Сб 10.10 / Вс 11.10** |
+| после 11.10 | Бег становится первым | ~4.5 недели до экидена ~15.11 |
 
-**Почему сдвинули.** В сжатой версии специфика и полная 48-минутная репетиция сели бы
-в одну неделю. `B9` на несвежих ногах измерил бы не распад мощности, а недовосстановление,
-и выдал бы негодный пейсинг-таргет. Неделя сдвига стоит дёшево, испорченная репетиция — дорого.
-Побочно: перефит CP/W′ успевает вернуться в W39 и задать `B9` числа, с которыми он и должен ехать.
+**Цели разведены по времени, а не делят неделю.** До 11.10 велосипед первый, бег идёт объёмом
+и одним квалити. После — велосипед падает до поддержки. Две пиковые подводки в одну неделю
+не помещаются, и попытка развести их «поровну» стоила бы обеих.
+
+**`B10` и перефит CP/W′ выпали окончательно** — четверг отдан бегу. На `B9` в W40 идём
+со старой моделью, пейсинг-таргет даст сама репетиция, а не расчёт.
 
 ---
 
-## Week 38: 14–20.09 — **711 TSS / 17.0 ч**, потолок и вход в специфику
+## Week 39: 21–27.09 — **710 TSS по полам**, специфика
 
-| День | Сессия | Шаблон | Байк | Длит | IF | TSS |
-|---|---|---|---|---|---|---|
-| Пн 14 | **Rest** | — | — | — | — | 0 |
-| Вт 15 | **Q1** убывающая мощность 5×8 | `B3` | шоссе/Quarq | 2:22 | 0.76 | **136** |
-| Ср 16 | Z2 + **замер durability** | — | шоссе/Quarq | 3:00 | 0.61 | **113** |
-| Чт 17 | **Q2** MIT 5×12 | `B8` | шоссе/Quarq | 2:26 | 0.78 | **147** |
-| Пт 18 | Recovery Z1 | — | любой | 2:00 | 0.51 | **52** |
-| Сб 19 | Длинная Z2 | — | шоссе/Quarq | 4:00 | 0.63 | **156** |
-| Вс 20 | Z2 | — | шоссе/Quarq | 3:00 | 0.60 | **107** |
-| Ср 16 · вечер | **БЕГ #3** 30 мин очень легко | — | бег | 0:30 | — | **19** |
-| Вс 20 · вечер | **БЕГ #4** 30 мин очень легко | — | бег | 0:30 | — | **19** |
+| День | Вело | Бег |
+|---|---|---|
+| Пн 21 | — | **60 мин** очень легко / 38 |
+| Вт 22 | **Q1 `B7` 2–3×20 на подъёме** 1:23 / 98 | вечером **40 мин** / 25 |
+| Ср 23 | Z2 3:00 / 113 — ровно, если по пути | — |
+| Чт 24 | — | **Q2 короткие 10–14×400** 1:00 / 52 |
+| Пт 25 | recovery 2:00 / 52 | вечером **40 мин** / 25 |
+| Сб 26 | Z2 3:00 / 113 | **90 мин** / 56 |
+| Вс 27 | **лонг 4:30 / 176** | — |
 
-**Вело 17:00 / 711 · бег 1:00 / 38 · итого 749.** Будни 9:48 из доступных 12:00 (потолок
-про велосипед, вечерний бег к нему не относится) · выходные 7:00 · hard days 2 · Пн rest.
-TSS по расчёту Intervals.icu после пуша. Бег по факту идёт дороже плана — Intervals считает
-его как Z1 и даёт 19, реально выходит около 28. Неделя сядет ближе к **765**.
-Прогнозный ACWR ~1.10, CTL держится около 97.
+**Вело 13:53 / 552 · бег 4:51 / 158 · итого 710 по полам.**
 
-### Бег — блок возобновляется
+Цифры по расчёту Intervals.icu. Бег он считает как Z1 и занижает: по факту W38 вышло
+0.96 TSS/мин, то есть 295 минут дадут около **280**, а не 212. Реальная неделя сядет
+ближе к **840**, при обоих потолках квалити — к **890**.
 
-**#1 03.09 (28 мин) — единственная состоявшаяся. #2 не сложился, #3 и #4 съела болезнь.**
-Две недели паузы, поэтому **не наращиваем**: обе по 30 мин, ровно как стояло в W37.
-Прибавка объёма (+10 % в неделю) начинается с W39.
+**Правка 22.09 — четверг переписан на короткие отрезки.** По предложению атлета:
+«хочется поставить больше повторений, короче и выше скорости… потому что скорость это то,
+чего у меня сейчас нету и надо развивать». Он прав, и это записано в досье прямым текстом:
+лимитер — скорость и экономичность, не выносливость, объём добавит мало. Пороговые 4–5×8
+сняты, вместо них 10–14×400 на 84–88 с. Таргет 3:30–3:40/км выбран атлетом, старт
+с медленной границы с разгоном к концу.
 
-Ноль скоростной работы, темп разговорный, ЧСС <140. **Записывать на следующее утро
-ахиллы, голени и стопы** — главный маркер блока, не темп.
+Intervals оценил сессию в 52 TSS против 68 у пороговой — это артефакт подсчёта: короткие
+отрезки он считает по зонам ЧСС, а та на 400-метровых запаздывает. Реальная цена выше
+плановой, и по факту неделя сядет ближе к **790**, а не к 710.
 
-Поставлены на Ср и Вс: не на Вт/Чт, чтобы не догружать квалити, и не на Сб перед 4-часовой.
-Гейты в карточках: если Вт `B3` дался тяжело — #3 не бежать, перенести на Пт; если после
-среды связки дали о себе знать — #4 снять до W39.
+**Правка 21.09 — снят Z2-хвост во вторнике.** По решению атлета: «я ж бегаю ещё вечером,
+кажется тут уже хватит аэробной нагрузки». Он прав — 70 минут @185 Вт были добором объёма,
+а не стимулом, всю работу в `B7` делают повторы. Аэробный объём недели живёт в среду,
+субботу и воскресенье, плюс вечерняя пробежка того же дня. Минус 49 TSS, стимул не тронут.
 
-**Вектор — потолок, не порог и не объём.** `B10` закрыт правилом разнообразия
-(дважды за 15 дней: 26.08 + аборт 10.09), возвращается в W39 под перефит. `B4` отработан 08.09.
-Оба выбранных шаблона — из неиспользованных, и они разной природы: `B3` тянет VO2 сверху,
-`B8` заводит специфику под 48 минут.
+**Уровень держим, не срезаем.** W38 закрылась на 827, триггеров на снижение нет ни одного:
+HRV выросла, RHR стабилен, RI 0.93, алертов ноль. Разгрузка уже заложена в W40 (репетиция)
+и W41 (тейпер) — срезать ещё и W39 значит уйти в снижение за три недели вместо двух.
+Это прямое нарушение правила «не разгружать заранее, если разгрузка стоит на W+1».
 
-### Вт 15.09 — Q1 `session_template: B3` убывающая мощность (fast start)
+**Бег +20 % к W38** (3:58 → 4:55), пять пробежек. Прибавка ушла в лёгкие минуты и пятую
+пробежку, квалити остаётся один — так растёт объём без роста ударной цены.
+
+### Вилки на квалити — стандарт с 20.09
+
+**По прямой просьбе атлета: каждая quality-сессия задаётся вилкой «пол–потолок» по числу
+повторов, а не одним числом.** В календарь кладётся пол, потолок живёт в описании
+с измеримым гейтом. Решение принимает атлет в процессе.
+
+### Вт 22.09 — Q1 `session_template: B7` race-simulation
 
 | Блок | Время | Power | Каденс |
 |---|---|---|---|
 | Warm-up | 20 мин | 161 Вт | 85–95 |
-| **Повторы ×5** | | | |
-| — старт | 1:30 | **316 Вт** | 90–95 |
-| — хвост | 6:30 | **275 Вт** | 85–95 |
-| Recovery ×4 | 3 мин | 147 Вт | свободный |
-| Z2-хвост | 60 мин | 185 Вт | 85–95 |
-| Cool-down | 10 мин | 147 Вт | 85–95 |
+| **Повторы 2–3×** | **20 мин** | **287–293 Вт** (98–100 % FTP) | 80–90 |
+| — смена сидя/стоя | каждые 5 мин | | |
+| Recovery | 8 мин | 147 Вт | свободный |
+| Cool-down | 15 мин | 147 Вт | 85–95 |
 
-**2.37 ч · TSS 136 · ЧСС в работе 152–162.**
+**1:23 / 98 по полу · 1:51 / ~125 по потолку · ЧСС в работе 160–166.**
+Съехал с горы, заминка, домой. Вечером 40 мин бега.
 
-Rønnestad 2020: DEC дал пик **98.2±2.1 % VO2peak против 95.4±3.1 %** и средний 87.6 vs 86.1 %,
-при **более низком RPE (16.1 vs 16.5)**, все p<0.05, при одинаковой средней мощности.
-Двойная польза — прямая репетиция стартового отрезка подъёма.
+**Третий едешь, если** на втором ЧСС не выше 166 и ватты держатся без сползания к концу.
+**Снимаешь, если** на втором ватты падают ниже 280 при ЧСС уже за 166.
 
-**Оговорка для самой попытки:** fast start здесь тренировочный приём, не гоночная тактика.
-В заходе на сегмент он сожжёт W′ и будет стоить минуты.
+Carlsson 2024 (Front Sports Act Living 6:1395415), 10 элитных велосипедистов: повторные
+переходы сидя↔стоя дали значимо более низкий пост-лактат при отсутствии различий в VO2,
+метаболической мощности и валовой эффективности. На 48-минутном подъёме это прямая экономия.
 
-**Первая квалити после болезни.** Если первые два повтора идут тяжелее ожидаемого при ЧСС
-выше 162 — снять 5-й, остальное доехать как есть.
+### Чт 24.09 — Q2 короткие отрезки 10–14×400, стадион
 
-### Чт 17.09 — Q2 `session_template: B8` MIT 5×12
+| Блок | Объём | Гейт | Отдых |
+|---|---|---|---|
+| Разминка | 15 мин легко | ЧСС <140 | |
+| Strides | 4×20 с | быстро, без натуги | 60 с |
+| **Отрезки 10–14×** | **400 м** | **84–88 с** (3:30–3:40/км) | 200 м трусцой, ~100 с |
+| Заминка | 10 мин | ЧСС <140 | |
 
-| Блок | Время | ЧСС (первично) | Power (проверка) | Каденс |
-|---|---|---|---|---|
-| Warm-up | 20 мин | — | 161 Вт | 85–95 |
-| **Повторы ×5** | **12 мин** | **154–162** | **272 Вт** | 85–92 |
-| Recovery ×4 | 4 мин | — | 150 Вт | свободный |
-| Z2-хвост | 40 мин | <140 | 185 Вт | 85–95 |
-| Cool-down | 10 мин | — | 147 Вт | 85–95 |
+**1:00 / 52 по полу · ~1:12 по потолку · 4.0–5.6 км работы.**
 
-**2.43 ч · TSS 147.**
+**Гейт — секундомер круга, не пульс.** На 400-метровых отрезках ЧСС запаздывает, первые
+повторы лягут в Z2. Зоны в шагах события стоят только чтобы Intervals посчитал нагрузку.
 
-**ЧСС первична, ватты проверочные.** Цель — ~2.8 ммоль, а это пульсовая мишень.
-При расхождении приоритет у ЧСС.
+**Исполнение — от медленной границы к быстрой.** Старт с 88 с, разгон к 84. Первые три круга
+должны казаться лёгкими. Это его почерк: на `B10` 26.08 он выдал 306/306/302/312/323/331 Вт
+с монотонным ростом к шестому повтору.
 
-**272 Вт — консервативный пол, не таргет.** 11.08 он сделал 5×12 @271–276 Вт при ЧСС
-**151–156**, то есть в нижний край коридора. Зелёный свет достроить до 276–280, если утром
-readiness зелёный и первые два повтора идут при ЧСС ниже 156. Автогуляция после недели болезни.
+**Бежишь дальше, если** круги держатся в 84–88 без натуживания.
+**Останавливаешься, если** любой круг уполз больше чем на 3 с от предыдущего — этот последний.
+Отрезки, которые распадаются по темпу, тренируют усталость, а не скорость.
 
-Mølmen 2025 (MSSE, n=30, VO2max 70.5, кроссовер, TRIMP уравнен): мощность на 4 ммоль
-**+4.0±4.4 % против −1.3±3.7 %, p<0.01**; POVO2max +2.5 % против −0.7 %, p<0.01.
-Rønnestad 2025: MIT против HIT **+4.5 % vs +2.1 %, p=0.03**.
+**Откуда 84–88.** Пятёрка 17.09 — 18:34 (3:43/км), но недожата: ЧСС 163 при максимуме 176 =
+92 %, на выжатой ждут 94–97 %. Реальный темп пятёрки где-то 3:36–3:40. Отрезки по 400 под
+развитие скорости бегут на темпе 3–5 км, отсюда 84–88 с. Уходить на 80 (темп мили) первой же
+сессией смысла нет: цена связками выше, адаптация та же.
 
-### Ср 16.09 — Z2 3 ч, замер durability
+**Что теряем.** Пороговую калибровку — темп на ЧСС 155 остался бы недостающей точкой.
+Взамен получаем более прямую: круги по 400 сразу показывают, где скорость сейчас. Размен
+равноценный, и он в сторону лимитера.
 
-WU 15 мин @161 → 150 мин @**185 Вт** (ЧСС <138) → CD 15 мин @147. **TSS 113.**
+**Системно дешевле порога:** ~17 минут быстрого бега против 32 минут порога, меньше гликогена
+и меньше центральной усталости. Перед воскресной 4.5-часовой это плюс.
 
-**Единственная задача дня — ровный час.** Нужен кусок 60+ минут с VI ≤1.05: закрытая петля
-или ровный участок без светофоров и спусков. Разнорельеф метрику убивает, и к попытке
-она останется пустой пятую неделю подряд. Пульс выше 142 на 185 Вт → срезать до 170 и доехать объём.
+**Ударная цена реальна.** Вторая неделя бега после почти нуля. Досье: «мотор разрешит бежать
+быстрее, чем выдержат ахилл, голень и стопа». Отсюда старт с 88, а не с 80.
 
-### Пт 18.09 / Сб 19.09 / Вс 20.09
+**Записать:** круги по лапам устройства, все до одного, плюс ахиллы, голени и стопы наутро.
 
-**Пт:** 2 ч @150 Вт, ЧСС <125, потолок жёсткий. **TSS 52.**
+### Ср / Пт / Сб / Вс
 
-**Сб:** 4 ч — WU 20 @161, основной 200 мин @**188 Вт** (ЧСС <145), CD 20 @147. **TSS 156.**
-Ватты первичны, ЧСС — abort: выше 152 при 188 Вт дольше 20 минут → заканчивать.
-Старт утром, 13.09 было 28.8 °C при потолке quality 32 °C. Питание 80–90 г/ч.
+**Ср:** WU 15 @161 → 150 мин @**185 Вт** (ЧСС <138) → CD 15 @147. **113.** **Бега нет**,
+под стадион нужны свежие ноги.
 
-**Вс:** 3 ч @180 Вт, ЧСС <138. **TSS 107.** Ноги тяжёлые после субботы → срезать до 2 ч,
-ватты не поднимать.
+*Ровный маршрут — бонус, не обязаловка (правка 21.09).* Замер durability уже снят 16.09.
+Вторая точка дала бы тренд вместо одного числа, но решения перед попыткой не меняет:
+2.8 % это «держится», второе такое же будет «держится». **Настоящий замер — `B9` в W40**,
+полные 48 минут на самом сегменте, пейсинг-таргет берётся оттуда. Ровная дорога по пути —
+получим точку бесплатно. Не по пути — езжай как удобно, ничего не теряем.
+
+**Пт:** 2 ч @150 Вт, ЧСС <125. **52.** Вечером 40 мин бега — не разгоняться на вело.
+
+**Сб:** утром 90 мин бега, затем 3 ч @185 Вт (ЧСС <138). **113 + 56.** Порядок именно такой.
+Ноги тяжёлые после четверга → вело срезать до 2 ч, ватты не поднимать.
+
+**Вс:** 4.5 ч — WU 20 @161, основной 230 мин @**188 Вт** (ЧСС <145), CD 20 @147. **176.**
+Abort: ЧСС выше 152 при 188 Вт дольше 20 минут. Ступень 4.5 ч против 4:39 максимума
+за 30 дней — внутри правила +10–15 %. Питание 80–90 г/ч.
+
+**Порядок отмены бега при сигнале от связок:** первой снимается пятничная пробежка,
+второй режется субботняя, квалити трогаем последним.
 
 ## Открыто — нужно от атлета
 
@@ -487,8 +527,8 @@ WU 15 мин @161 → 150 мин @**185 Вт** (ЧСС <138) → CD 15 мин @1
 {
   "data_source_fetched": true,
   "json_fetch_status": "success",
-  "plan_version": "2026-09-13a",
-  "phase": "LT2 / ceiling block — week 1 of a 4-week arc to the segment attempt, rebuilt 13.09 after illness cost the middle of W37",
+  "plan_version": "2026-09-20a",
+  "phase": "specificity — week 2 of the arc to the segment attempt; running promoted to a co-primary block after W38",
   "phase_detection_override": {
     "reported": "Build, confidence low, BUILD_RESUMING_AFTER_DELOAD_TENTATIVE",
     "accepted": true,
@@ -497,34 +537,80 @@ WU 15 мин @161 → 150 мин @**185 Вт** (ЧСС <138) → CD 15 мин @1
   "primary_goal": "segment 11179676 Top-10 — attempt Sat 10.10 or Sun 11.10 (ISO W41), moved one week on 13.09",
   "secondary_goal": "fast 10 km in November, target 35:50-36:20; running block resumes in W38 at 2x30 min after a two-week gap",
   "cancelled_goal": "single continuous long ride 12-20h — withdrawn by the athlete 02.09",
-  "week": 38,
-  "load_target_TSS": 749,
+  "week": 39,
+  "load_target_TSS": 710,
   "volume_hours": 17.0,
   "long_ride_h": 4.0,
   "weekday_ceiling_h": { "mon": 0, "tue": 3, "wed": 3, "thu": 3, "fri": 3, "source": "athlete, fixed 07.09.2026, recorded in DOSSIER 3", "note": "hard cap — the athlete works. Weekends are free. Do not breach it to reach a weekly TSS number; the 750 floor is unreachable in an ordinary work week." },
   "progression_vector": "aerobic power / ceiling, not threshold and not volume",
-  "session_templates": { "W38_tue": "B3", "W38_thu": "B8" },
-  "arc_to_attempt": { "W38": "ceiling + entry to specificity (B3, B8)", "W39": "specificity + CP/W-prime refit (B7, B10)", "W40": "B9 full 48-min rehearsal", "W41": "taper + attempt 10-11.10" },
+  "session_templates": { "W39_tue": "B7", "W39_thu": "run speed 10-14x400 (no library id — running)" },
+  "arc_to_attempt": { "W39": "specificity (B7) + entry to running threshold", "W40": "B9 full 48-min rehearsal", "W41": "taper + attempt 10-11.10", "after_11.10": "running becomes primary, ~4.5 weeks to the ekiden ~15.11" },
   "quality_sessions": 2,
-  "running_sessions": 2,
+  "running_sessions": 5,
   "load_variance": false,
   "confidence": "high",
   "ctl_context": {
-    "ctl": 96.67,
-    "atl": 97.84,
-    "tsb": -1.17,
-    "ramp_rate": -3.29,
-    "acwr": 0.80,
-    "monotony": 1.02,
-    "stress_tolerance": 5.2,
-    "recovery_index": 0.96,
-    "note": "monotony cleared on its own — 2.37 to 1.02 — because the illness week was anything but uniform. ACWR 0.80 is detraining from the missing midweek, not risk; the alert dropped from alarm to warning once Sunday synced. Nothing here gates the week."
+    "ctl": 99.78,
+    "atl": 114.67,
+    "tsb": -14.89,
+    "ramp_rate": 3.56,
+    "acwr": 1.14,
+    "monotony": 1.75,
+    "effective_monotony_multisport": 1.13,
+    "stress_tolerance": 8.3,
+    "recovery_index": 0.93,
+    "hrv_baseline_7d": 44.0,
+    "note": "HRV rose over the week (7d base 40.7 -> 44.0), RHR steady at 46 against a base of 44, zero alerts, readiness go. Nothing here argues for a step down."
   },
   "corridor_check": {
-    "planned": "711 cycling + 38 running = 749",
-    "schedule_ceiling": "~700 cycling with a 3 h weekday cap and a 4 h long ride; the cap governs riding, evening runs sit outside it",
-    "verdict": "711 sits at the schedule ceiling, not under it. Against W37 planned (706) it is flat; against W37 actual (516) it is +33%. The block floor of 750 is unreachable in an ordinary work week and is not applied — it was written for the volume block cancelled on 02.09.",
-    "action_required": "DOSSIER 3 corridor still describes the cancelled volume block. It needs rewriting — flagged again, not done in this revision."
+    "planned": "552 cycling + 158 running = 710 at the floors after the 21.09 tail cut and the 22.09 Thursday rewrite; Intervals underscores both easy running (scored as Z1) and short reps (HR lags on 400s), so the real week lands near 790",
+    "verdict": "holds W38 actual (827) rather than stepping down. No deload trigger exists and the unload is already scheduled in W40 (rehearsal) and W41 (taper). Cutting W39 too would mean three weeks of decline before the attempt — a direct breach of the SKILL rule against pre-emptive unloading when a deload sits at W+1.",
+    "planner_error_corrected": "the first two W39 drafts came in at 756 and 820, both below W38 actual, and both were challenged by the athlete. The reduction had no basis; it was carried over from a habit of trimming ahead of a rehearsal week."
+  },
+  "revision_2026-09-20": {
+    "trigger": "weekly planning, Sun 20.09 — athlete asked for a W38 retro and a W39 plan",
+    "week_38_actual": {
+      "planned": "749 TSS",
+      "actual": "827 TSS / 17h25m, 12 activities",
+      "composition": "cycling 13:28 / 598 against 17:00 / 711 planned; running 3:58 / 229 over 46 km and six runs against 1:00 / 38 planned",
+      "why": "athlete added the running himself: 'ты слишком мало бега ставил, поэтому я начал его сам добавлять'. He was right — see memory feedback_running_volume."
+    },
+    "delivered": [
+      "B3 in full and cheaper than budgeted — starts 323/327/325/321/316 W against a 316 target, tails 266/283/285/280/278 against 275, tail HR 146/153/153/153/151 flat and in the LOWER half of the expected 152-162 band",
+      "durability gate passed for the first time since 11.08 — Wed main lap 2:30:01 at 186 W, HR 120, decoupling 2.8%, VI 1.0447 on a flat 95.6 km / 350 m route. Second point still needed; the same route shape repeats in W39"
+    ],
+    "not_delivered": "B8 MIT — displaced by the athlete's own 5 km test. Trade accepted. MIT has been run once ever, 11.08, and now drops out of the arc entirely since Thursdays belong to running.",
+    "run_test": {
+      "what": "5 km on a track, Thu 17.09 — 18:34 at HR 163 avg / 176 max, 3:43/km",
+      "purpose": "athlete's words: to find out what he can run for the 10 or 7 km leg of an ekiden around 15.11",
+      "projections": "Riegel: 7 km 26:30, 10 km 38:45 against a 35:50-36:20 target — a gap of 2:00-2:30",
+      "read_as": "a floor, not a ceiling. Not run fresh (Mon run, Tue B3 plus an evening run, Wed 2:52 on the bike in the legs), and HR 163 against a 176 max is 92% where a maximal 5 km would sit at 94-97%."
+    },
+    "pace_prescription_error": {
+      "what": "the first Thursday draft prescribed 3:58-4:02/km for threshold reps",
+      "why_wrong": "anchored on the submaximal 5 km test alone and then added a further 15-20 s/km, discounting twice. The dossier's own race history — sub-38 10 km repeatedly, sub-1:20 half — puts threshold at 3:45-3:50, some 15 s/km faster.",
+      "fix": "no pace is prescribed. The session gates on HR 152-158 (95-99% of run LTHR 160) and the resulting pace becomes the missing calibration point. 3:45-4:00 is stated as a sanity frame, not a target.",
+      "rule_broken": "memory feedback_conflicting_evidence — divergent sources must be recorded as a range with the reasoning, not silently resolved to one number."
+    },
+    "quality_fork_standard": {
+      "requested_by": "athlete, 20.09, verbatim: 'давай ты всегда когда будешь давать качетсвенные будешь обозначать верхнюю и нижнюю границу... например 4-5 по 8 минут'",
+      "rule": "every quality session, bike and run, is written as a floor-ceiling fork in reps. The floor goes in the calendar for load accounting; the ceiling lives in the description behind a measurable gate. The athlete decides mid-session.",
+      "w39_instances": ["Tue B7 2-3x20 — third rep if HR stays under 166 on the second and watts hold; drop if watts fall under 280 with HR already past 166", "Thu run 10-14x400 — keep going while laps hold 84-88 s without strain; stop when any lap drifts more than 3 s off the previous one"],
+      "recorded_in": "memory feedback_threshold_autoregulation, generalised from threshold-only to all quality sessions"
+    },
+    "running_block": {
+      "w39_volume": "4:55 across five runs, +20% on W38's 3:58",
+      "where_the_growth_went": "easy minutes and a fifth run; quality stays at one session, so volume rises without raising impact cost",
+      "tissue_caveat": "46 km last week came off a base of one 28-minute run. Tissue response to a jump like that lands a week to ten days later — inside W39. Joints are clean today and he runs on dirt in soft shoes, so the step is prescribed, with a stated abort order: Friday run first, Saturday run second, quality last.",
+      "athlete_report": "'пока все в норме, я стараюсь бегать в мягкой обуви и по грунту'"
+    },
+    "dropped_from_arc": "B10 and the CP/W-prime refit. Thursdays now belong to running, and there is no second bike quality slot before the attempt. B9 in W40 goes in on the old model; the rehearsal itself will produce the pacing target instead of the calculation.",
+    "push": "10 events pushed to Intervals.icu 20.09; all ten parsed with duration and load. Re-pushed 21.09 after two athlete-driven edits. Floors now 552 cycling + 212 running = 764.",
+    "edits_2026-09-21": {
+      "b7_tail_removed": "athlete: 'я ж бегаю ещё вечером, кажется тут уже хватит аэробной нагрузки'. Correct — the 70-minute Z2 tail at 185 W was volume padding, not stimulus; the reps carry the session. The week's aerobic volume lives on Wed, Sat and Sun plus the same evening's run. Session drops from 2:28/147 to 1:23/98, floor to ceiling 1:51/~125.",
+      "thursday_rewritten_22.09": "athlete proposed short fast reps over threshold: 'хочется поставить больше повторений, короче и выше скорости... потому что скорость это то чего у меня сейчас нету и надо развивать'. He is right and the dossier says it outright — the limiter is speed and economy, not endurance, and volume adds little. 4-5x8 threshold replaced by 10-14x400 at 84-88 s. He set the 3:30-3:40/km band himself and will start at the slow end and build. My only correction was against going to 80 s (mile pace) on a first session: same adaptation, higher tissue cost. Trade-off accepted: the threshold calibration point at HR 155 is lost, the 400 splits give a more direct speed benchmark instead.",
+      "wednesday_downgraded": "athlete: 'так мы же замеряли уже'. He was right and I had oversold it. The durability measurement was taken on 16.09 (2.8% at VI 1.0447); a second point would give a trend instead of a single number but changes no decision before the attempt. The real measurement is B9 in W40. The flat route is now stated as a free bonus if it is on the way, not a requirement, and the event was renamed accordingly."
+    }
   },
   "revision_2026-09-13": {
     "trigger": "weekly planning, Sun 13.09 — athlete asked for a W37 retro and a W38 plan",
