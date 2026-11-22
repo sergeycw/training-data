@@ -1,94 +1,9 @@
 {
-  "generated_at": "2026-11-21T21:15:36.825112",
+  "generated_at": "2026-11-22T10:47:10.524868",
   "version": "3.85",
   "scan_hours": 168,
   "retention_days": 7,
   "activities": [
-    {
-      "activity_id": "i209858665",
-      "date": "2026-11-14",
-      "type": "Run",
-      "name": "Running",
-      "interval_summary": [
-        "1x 19m1s 135bpm",
-        "3x 42s 155bpm",
-        "1x 52s 156bpm",
-        "1x 59s 157bpm",
-        "1x 5m58s 144bpm"
-      ],
-      "intervals": [
-        {
-          "type": "WORK",
-          "label": "1141s@135bpm77rpm",
-          "duration_secs": 1141,
-          "avg_hr": 135,
-          "max_hr": 150,
-          "avg_cadence": 76.879036,
-          "zone": 1
-        },
-        {
-          "type": "WORK",
-          "label": "42s@155bpm84rpm",
-          "duration_secs": 41,
-          "avg_hr": 153,
-          "max_hr": 157,
-          "avg_cadence": 85.14634,
-          "zone": 4
-        },
-        {
-          "type": "WORK",
-          "label": "52s@156bpm77rpm",
-          "duration_secs": 52,
-          "avg_hr": 156,
-          "max_hr": 160,
-          "avg_cadence": 76.61539,
-          "zone": 4
-        },
-        {
-          "type": "WORK",
-          "label": "42s@155bpm84rpm",
-          "duration_secs": 42,
-          "avg_hr": 154,
-          "max_hr": 158,
-          "avg_cadence": 83.35714,
-          "zone": 4
-        },
-        {
-          "type": "WORK",
-          "label": "59s@157bpm77rpm",
-          "duration_secs": 59,
-          "avg_hr": 157,
-          "max_hr": 161,
-          "avg_cadence": 76.76271,
-          "zone": 4
-        },
-        {
-          "type": "WORK",
-          "label": "42s@155bpm84rpm",
-          "duration_secs": 43,
-          "avg_hr": 158,
-          "max_hr": 162,
-          "avg_cadence": 83.88372,
-          "zone": 4
-        },
-        {
-          "type": "WORK",
-          "label": "358s@144bpm76rpm",
-          "duration_secs": 358,
-          "avg_hr": 144,
-          "max_hr": 164,
-          "avg_cadence": 76.21508,
-          "zone": 3
-        },
-        {
-          "type": "RECOVERY",
-          "duration_secs": 1,
-          "avg_hr": 140,
-          "max_hr": 140,
-          "zone": 2
-        }
-      ]
-    },
     {
       "activity_id": "i210201890",
       "date": "2026-11-15",
@@ -581,6 +496,25 @@
           "duration_secs": 6235,
           "avg_hr": 122,
           "max_hr": 161,
+          "zone": 1
+        }
+      ]
+    },
+    {
+      "activity_id": "i213105389",
+      "date": "2026-11-22",
+      "type": "Ride",
+      "name": "Road Cycling",
+      "interval_summary": [
+        "1x 3h37m 118bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "13040s@118bpm",
+          "duration_secs": 13040,
+          "avg_hr": 118,
+          "max_hr": 155,
           "zone": 1
         }
       ]
