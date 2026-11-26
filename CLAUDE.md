@@ -44,6 +44,7 @@
 | `section11/` | Апстрим-репо протокола (CrankAddict/section-11), не в git | Обновление протокола: `python3 scripts/sync.py --update` |
 | `scripts/sync.py` | Синк данных из Intervals.icu | Автоматизация |
 | `scripts/push_plan.py` | Push plan_events.json → Intervals.icu | `--dry-run` / `--clear FROM TO` |
+| `scripts/garmin_login.py` | Разовый вход в Garmin Connect, токены в `~/.garminconnect` (вне репо) | `.venv-garmin/bin/python scripts/garmin_login.py`, пароль вводит атлет |
 
 ## Иерархия источников данных
 
