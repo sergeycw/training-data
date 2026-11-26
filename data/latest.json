@@ -8,52 +8,62 @@
     "readiness_decision_note": "The 'readiness_decision' block contains a pre-computed go/modify/skip recommendation with priority level (P0=safety, P1=overload, P2=fatigue, P3=green), individual signal statuses, phase-adjusted thresholds, and structured modification guidance. Use this as the baseline for pre-workout recommendations. Override with explanation in the coach note if the AI's contextual judgment disagrees.",
     "zone_preference": "default (power preferred, HR fallback)",
     "quick_stats": {
-      "total_training_hours": 12.33,
-      "total_training_formatted": "12h19m",
-      "total_activities": 7,
-      "total_tss": 585
+      "total_training_hours": 12.56,
+      "total_training_formatted": "12h33m",
+      "total_activities": 8,
+      "total_tss": 607
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-11-25T23:51:09.044101",
+    "last_updated": "2026-11-26T11:56:54.563812",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.85"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "metric": "tid_distribution",
+      "value": "Polarized",
+      "severity": "warning",
+      "threshold": "7d/28d classification mismatch",
+      "context": "TID shift: 7d Polarized vs 28d Pyramidal. Training distribution changing.",
+      "persistence_days": null,
+      "tier": 3
+    }
+  ],
   "readiness_decision": {
     "recommendation": "go",
     "priority": 3,
     "signals": {
       "hrv": {
         "status": "green",
-        "value": 42.0,
-        "baseline_7d": 44.6,
-        "delta_pct": -5.8
+        "value": 43.0,
+        "baseline_7d": 44.3,
+        "delta_pct": -2.9
       },
       "rhr": {
         "status": "green",
-        "value": 46,
-        "baseline_7d": 44.3,
-        "delta_bpm": 1.7
+        "value": 45,
+        "baseline_7d": 44.7,
+        "delta_bpm": 0.3
       },
       "sleep": {
         "status": "green",
-        "hours": 7.33,
+        "hours": 8.65,
         "quality": 2
       },
       "acwr": {
         "status": "green",
-        "value": 1.26
+        "value": 1.29
       },
       "ri": {
         "status": "green",
-        "value": 0.91
+        "value": 0.96
       },
       "tsb": {
         "status": "green",
-        "value": 7.5
+        "value": 3.9
       }
     },
     "signal_summary": {
@@ -83,35 +93,35 @@
   "summary": {
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
-    "total_duration_decimal_hours": 12.33,
-    "total_activities": 7,
+    "total_duration_decimal_hours": 12.56,
+    "total_activities": 8,
     "by_activity_type": {
       "Ride": {
-        "duration_decimal_hours": 10.13,
-        "count": 5,
-        "tss": 519,
-        "distance_km": 191.6
+        "duration_decimal_hours": 8.42,
+        "count": 4,
+        "tss": 440,
+        "distance_km": 138.5
       },
       "VirtualRide": {
-        "duration_decimal_hours": 1.45,
-        "count": 1,
-        "tss": 66,
-        "distance_km": 26.1
+        "duration_decimal_hours": 2.78,
+        "count": 2,
+        "tss": 155,
+        "distance_km": 73.3
       },
       "WeightTraining": {
-        "duration_decimal_hours": 0.75,
-        "count": 1,
-        "tss": 0,
+        "duration_decimal_hours": 1.36,
+        "count": 2,
+        "tss": 12,
         "distance_km": 0.0
       }
     }
   },
   "current_status": {
     "fitness": {
-      "ctl": 79.13,
-      "atl": 71.6,
-      "tsb": 7.53,
-      "ramp_rate": 0.78,
+      "ctl": 79.37,
+      "atl": 75.51,
+      "tsb": 3.86,
+      "ramp_rate": 0.99,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -149,92 +159,92 @@
     },
     "current_metrics": {
       "weight_kg": 72.3,
-      "resting_hr": 46,
-      "hrv": 42.0,
+      "resting_hr": 45,
+      "hrv": 43.0,
       "sleep_quality": 2,
-      "sleep_hours": 7.33,
-      "sleep_formatted": "7h20m"
+      "sleep_hours": 8.65,
+      "sleep_formatted": "8h39m"
     }
   },
   "derived_metrics": {
-    "recovery_index": 0.91,
-    "hrv_baseline_7d": 44.6,
-    "rhr_baseline_7d": 44.3,
-    "hrv_baseline_28d": 45.4,
-    "rhr_baseline_28d": 44.2,
-    "latest_hrv": 42.0,
-    "latest_rhr": 46,
-    "acwr": 1.26,
+    "recovery_index": 0.96,
+    "hrv_baseline_7d": 44.3,
+    "rhr_baseline_7d": 44.7,
+    "hrv_baseline_28d": 45.2,
+    "rhr_baseline_28d": 44.3,
+    "latest_hrv": 43.0,
+    "latest_rhr": 45,
+    "acwr": 1.29,
     "acwr_interpretation": "optimal",
-    "monotony": 1.78,
-    "monotony_interpretation": "normal",
+    "monotony": 1.83,
+    "monotony_interpretation": "normal (primary sport 1.81, total 1.83 inflated by multi-sport)",
     "primary_sport": "cycling",
-    "primary_sport_monotony": 1.78,
-    "primary_sport_tss_7d": 585.0,
-    "effective_monotony": 1.78,
-    "multi_sport_detected": false,
-    "strain": 1041.0,
-    "stress_tolerance": 5.8,
-    "load_recovery_ratio": 6.4,
-    "tss_7d_total": 585.0,
-    "tss_28d_total": 1858.0,
+    "primary_sport_monotony": 1.81,
+    "primary_sport_tss_7d": 595.0,
+    "effective_monotony": 1.81,
+    "multi_sport_detected": true,
+    "strain": 1111.0,
+    "stress_tolerance": 6.1,
+    "load_recovery_ratio": 6.3,
+    "tss_7d_total": 607.0,
+    "tss_28d_total": 1878.0,
     "zone_distribution_7d": {
-      "z1_hours": 5.13,
-      "z2_hours": 4.03,
-      "z3_hours": 1.3,
-      "z4_plus_hours": 1.13,
-      "total_hours": 11.59,
+      "z1_hours": 5.37,
+      "z2_hours": 4.05,
+      "z3_hours": 1.01,
+      "z4_plus_hours": 1.4,
+      "total_hours": 11.82,
       "zone_basis": "mixed"
     },
-    "grey_zone_percentage": 11.2,
+    "grey_zone_percentage": 8.6,
     "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
-    "quality_intensity_percentage": 9.8,
+    "quality_intensity_percentage": 11.8,
     "quality_intensity_note": "Quality Intensity % (Z4+/threshold+) - target ~20% in polarized training",
-    "polarisation_index": 0.79,
+    "polarisation_index": 0.8,
     "polarisation_note": "Easy time (Z1+Z2) / Total - target ~80% in polarized training",
     "hard_days_this_week": 3,
     "hard_days_note": "Power ladder: z3+ >= 30min, z4+ >= 10min, z5+ >= 5min, z6+ >= 2min, z7 >= 1min. HR fallback (when no power): z4+ >= 10min, z5+ >= 5min. Per Seiler 3-zone model + Foster. HR-based days flagged with intensity_basis: hr",
     "seiler_tid_7d": {
-      "z1_seconds": 32956,
-      "z2_seconds": 4687,
-      "z3_seconds": 4078,
-      "z1_pct": 79.0,
-      "z2_pct": 11.2,
-      "z3_pct": 9.8,
-      "polarization_index": null,
-      "classification": "Pyramidal",
+      "z1_seconds": 33891,
+      "z2_seconds": 3642,
+      "z3_seconds": 5028,
+      "z1_pct": 79.6,
+      "z2_pct": 8.6,
+      "z3_pct": 11.8,
+      "polarization_index": 2.04,
+      "classification": "Polarized",
       "zone_basis": "mixed"
     },
     "seiler_tid_7d_primary": {
-      "z1_seconds": 32956,
-      "z2_seconds": 4687,
-      "z3_seconds": 4078,
-      "z1_pct": 79.0,
-      "z2_pct": 11.2,
-      "z3_pct": 9.8,
-      "polarization_index": null,
-      "classification": "Pyramidal",
+      "z1_seconds": 31687,
+      "z2_seconds": 3642,
+      "z3_seconds": 5028,
+      "z1_pct": 78.5,
+      "z2_pct": 9.0,
+      "z3_pct": 12.5,
+      "polarization_index": 2.04,
+      "classification": "Polarized",
       "zone_basis": "mixed",
       "sport": "cycling"
     },
     "seiler_tid_28d": {
-      "z1_seconds": 88144,
-      "z2_seconds": 19883,
-      "z3_seconds": 14580,
-      "z1_pct": 71.9,
-      "z2_pct": 16.2,
-      "z3_pct": 11.9,
+      "z1_seconds": 91864,
+      "z2_seconds": 20018,
+      "z3_seconds": 14263,
+      "z1_pct": 72.8,
+      "z2_pct": 15.9,
+      "z3_pct": 11.3,
       "polarization_index": null,
       "classification": "Pyramidal",
       "zone_basis": "mixed"
     },
     "seiler_tid_28d_primary": {
-      "z1_seconds": 59165,
-      "z2_seconds": 8197,
-      "z3_seconds": 6406,
-      "z1_pct": 80.2,
-      "z2_pct": 11.1,
-      "z3_pct": 8.7,
+      "z1_seconds": 62099,
+      "z2_seconds": 8635,
+      "z3_seconds": 7834,
+      "z1_pct": 79.0,
+      "z2_pct": 11.0,
+      "z3_pct": 10.0,
       "polarization_index": null,
       "classification": "Pyramidal",
       "zone_basis": "mixed",
@@ -261,38 +271,39 @@
       },
       "hrrc": {
         "mean_hrrc_7d": 43.5,
-        "mean_hrrc_28d": 26.7,
+        "mean_hrrc_28d": 26.8,
         "qualifying_sessions_7d": 2,
-        "qualifying_sessions_28d": 9,
+        "qualifying_sessions_28d": 8,
         "trend": "improving",
         "note": "HRRc = heart rate recovery (largest 60s HR drop in bpm after exceeding threshold HR for >1 min). Higher = better parasympathetic recovery. Null when threshold not reached, recording stopped before cooldown, or no HR data. Trend: 7d mean vs 28d mean, >10% = meaningful (min 1 session/7d, 3 sessions/28d). Display only \u2014 not wired into readiness_decision signals."
       },
       "tid_comparison": {
-        "classification_7d": "Pyramidal",
+        "classification_7d": "Polarized",
         "classification_28d": "Pyramidal",
-        "pi_7d": null,
+        "pi_7d": 2.04,
         "pi_28d": null,
         "pi_delta": null,
-        "drift": "consistent",
+        "drift": "shifting",
         "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
       }
     },
     "consistency_index": 1.0,
     "consistency_details": {
-      "planned_days": 2,
+      "planned_days": 3,
       "completed_days": 6,
-      "matched_days": 2,
+      "matched_days": 3,
       "planned_dates": [
         "2026-11-24",
-        "2026-11-25"
+        "2026-11-25",
+        "2026-11-26"
       ],
       "completed_dates": [
-        "2026-11-19",
         "2026-11-20",
         "2026-11-21",
         "2026-11-22",
         "2026-11-24",
-        "2026-11-25"
+        "2026-11-25",
+        "2026-11-26"
       ]
     },
     "phase_detection": {
@@ -307,11 +318,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.63,
+          "planned_tss_delta": 1.72,
           "hard_sessions_planned": 1,
           "race_proximity": null,
           "next_week_load": null,
-          "plan_coverage_current_week": 1.2,
+          "plan_coverage_current_week": 1.0,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
@@ -345,13 +356,13 @@
     "p_max": 905,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-11-25T23:51:09.043551",
+    "calculation_timestamp": "2026-11-26T11:56:54.223878",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
-      "activities_7d": 7,
-      "activities_28d": 25,
-      "planned_workouts_7d": 3,
+      "activities_7d": 8,
+      "activities_28d": 26,
+      "planned_workouts_7d": 5,
       "ftp_history_days": {
         "indoor": 75,
         "outdoor": 101
@@ -359,6 +370,105 @@
     }
   },
   "recent_activities": [
+    {
+      "id": "i214899023",
+      "date": "2026-11-26T15:10:03",
+      "type": "WeightTraining",
+      "name": "\u0417\u0430\u043b B \u2014 \u043e\u0434\u043d\u0430 \u043d\u043e\u0433\u0430 (",
+      "duration_hours": 0.61,
+      "distance_km": 0.0,
+      "tss": 12,
+      "intensity_factor": 44.212566,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 97,
+      "max_hr": 135,
+      "avg_cadence": null,
+      "avg_speed": null,
+      "max_speed": null,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": null,
+      "calories": 230,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": null,
+      "feel": 2,
+      "rpe": 3,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 2204,
+          "z2_time": 0,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      },
+      "has_intervals": false
+    },
+    {
+      "id": "i214789649",
+      "date": "2026-11-26T08:44:23",
+      "type": "VirtualRide",
+      "name": "Zwift - Intervals icu: Q2 B1 \u0444\u0440\u0430\u043a\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u043f\u043e\u0440\u043e\u0433 25x1 (Zwift)",
+      "duration_hours": 1.33,
+      "distance_km": 47.17,
+      "tss": 89,
+      "intensity_factor": 81.75439,
+      "avg_power": 217,
+      "normalized_power": 233,
+      "avg_hr": 140,
+      "max_hr": 159,
+      "avg_cadence": 87.64508,
+      "avg_speed": 35.4,
+      "max_speed": 52.7,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 1040.6,
+      "calories": 994,
+      "carbs_used": 209,
+      "carbs_ingested": null,
+      "variability_index": 1.0737327,
+      "decoupling": 6.1319137,
+      "efficiency_factor": 1.6642857,
+      "hrrc": null,
+      "elevation_m": 265.0,
+      "feel": 2,
+      "rpe": 6,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 994,
+          "z2_time": 1470,
+          "z3_time": 460,
+          "z4_time": 1807,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        },
+        "power_zones": {
+          "z1_time": 470,
+          "z2_time": 2464,
+          "z3_time": 438,
+          "z4_time": 959,
+          "z5_time": 467,
+          "z6_time": 2,
+          "z7_time": 0
+        }
+      },
+      "has_intervals": true
+    },
     {
       "id": "i214377307",
       "date": "2026-11-25T08:34:53",
@@ -646,79 +756,9 @@
         }
       },
       "has_intervals": true
-    },
-    {
-      "id": "i211922809",
-      "date": "2026-11-19T09:01:52",
-      "type": "Ride",
-      "name": "Training Session",
-      "duration_hours": 1.71,
-      "distance_km": 53.04,
-      "tss": 79,
-      "intensity_factor": 67.91809,
-      "avg_power": 182,
-      "normalized_power": 199,
-      "avg_hr": 121,
-      "max_hr": 149,
-      "avg_cadence": 85.00083,
-      "avg_speed": 31.0,
-      "max_speed": 58.2,
-      "avg_pace": null,
-      "avg_temp": 10.148371,
-      "weather": null,
-      "humidity": null,
-      "wind_speed": null,
-      "work_kj": 1131.9,
-      "calories": 1275,
-      "carbs_used": 225,
-      "carbs_ingested": null,
-      "variability_index": 1.0934066,
-      "decoupling": 4.764324,
-      "efficiency_factor": 1.644628,
-      "hrrc": null,
-      "elevation_m": 261.0,
-      "feel": null,
-      "rpe": null,
-      "zone_distribution": {
-        "hr_zones": {
-          "z1_time": 4369,
-          "z2_time": 1733,
-          "z3_time": 62,
-          "z4_time": 0,
-          "z5_time": 0,
-          "z6_time": 0,
-          "z7_time": 0
-        },
-        "power_zones": {
-          "z1_time": 1805,
-          "z2_time": 2398,
-          "z3_time": 1483,
-          "z4_time": 318,
-          "z5_time": 119,
-          "z6_time": 38,
-          "z7_time": 3
-        }
-      },
-      "has_intervals": true
     }
   ],
   "wellness_data": [
-    {
-      "date": "2026-11-19",
-      "weight_kg": null,
-      "resting_hr": 42,
-      "hrv_rmssd": 45.0,
-      "hrv_sdnn": null,
-      "sleep_hours": 7.88,
-      "sleep_formatted": "7h52m",
-      "sleep_quality": 1,
-      "sleep_score": 91.0,
-      "mental_energy": null,
-      "fatigue": null,
-      "soreness": null,
-      "avg_sleeping_hr": null,
-      "vo2max": null
-    },
     {
       "date": "2026-11-20",
       "weight_kg": null,
@@ -814,30 +854,35 @@
       "soreness": null,
       "avg_sleeping_hr": null,
       "vo2max": null
+    },
+    {
+      "date": "2026-11-26",
+      "weight_kg": null,
+      "resting_hr": 45,
+      "hrv_rmssd": 43.0,
+      "hrv_sdnn": null,
+      "sleep_hours": 8.65,
+      "sleep_formatted": "8h39m",
+      "sleep_quality": 2,
+      "sleep_score": 83.0,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": null,
+      "vo2max": null
     }
   ],
   "planned_workouts": [
     {
-      "id": 158407557,
-      "date": "2026-11-25",
-      "name": "Z2 endurance 1:30",
-      "type": "WORKOUT",
-      "planned_tss": 68,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "description": "session_template: AE-2. \u0420\u043e\u0432\u043d\u044b\u0439 Z2, 195-210 \u0412\u0442 outdoor (indoor 190-205). \u0427\u0421\u0421 \u043d\u0435 \u0432\u044b\u0448\u0435 130. 1:30.\n\u041f\u043e\u0441\u043b\u0435 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u0437\u0430\u043b\u0430 \u043d\u043e\u0433\u0438 \u0442\u044f\u0436\u0451\u043b\u044b\u0435 \u0438 \u043c\u043e\u0433\u0443\u0442 \u0431\u043e\u043b\u0435\u0442\u044c \u2014 \u044d\u0442\u043e \u043d\u0435 \u043f\u043e\u0432\u043e\u0434 \u043f\u043e\u0434\u043d\u0438\u043c\u0430\u0442\u044c \u0432\u0430\u0442\u0442\u044b \u0438\u043b\u0438 \u0431\u0440\u043e\u0441\u0430\u0442\u044c. \u0415\u0441\u043b\u0438 \u0431\u043e\u043b\u044f\u0442 \u0441\u0438\u043b\u044c\u043d\u043e \u2014 1:00 \u0438 \u0434\u043e\u043c\u043e\u0439.\n\u0415\u0441\u043b\u0438 \u0443\u043b\u0438\u0446\u0430 \u0441 \u0433\u043e\u0440\u043a\u0430\u043c\u0438 \u2014 \u043d\u0430 \u043f\u043e\u0434\u044a\u0451\u043c\u0430\u0445 \u0434\u0435\u0440\u0436\u0430\u0442\u044c \u043f\u043e\u0442\u043e\u043b\u043e\u043a 240 \u0412\u0442, \u043d\u0435 \u0438\u0434\u0442\u0438 \u0432 Z4.\n\n- 10m 55% 85-95rpm\n\n- 70m 70% 70-81% LTHR 85-95rpm\n\n- 10m 55%"
-    },
-    {
       "id": 158407558,
       "date": "2026-11-26",
-      "name": "Q2 B1 \u0444\u0440\u0430\u043a\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u043f\u043e\u0440\u043e\u0433 20-25x1",
+      "name": "Q2 B1 \u0444\u0440\u0430\u043a\u0446\u0438\u043e\u043d\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0439 \u043f\u043e\u0440\u043e\u0433 25x1 (Zwift)",
       "type": "WORKOUT",
-      "planned_tss": 86,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": "15m @161W | 5m @219W | 20\u00d71m @295W / 30s rec | 30m @199W | 10m @146W",
-      "description": "session_template: B1. \u041d\u0443\u0436\u043d\u0430 \u0440\u043e\u0432\u043d\u0430\u044f \u0434\u043e\u0440\u043e\u0433\u0430 \u0438\u043b\u0438 Zwift: \u043d\u0430 \u043f\u043e\u0434\u044a\u0451\u043c\u0435 30-\u0441\u0435\u043a\u0443\u043d\u0434\u043d\u044b\u0435 \u043f\u0430\u0443\u0437\u044b \u043b\u043e\u043c\u0430\u044e\u0442 \u0442\u0435\u043c\u043f.\n\n\u0412\u0418\u041b\u041a\u0410 20-25 \u041f\u041e\u0412\u0422\u041e\u0420\u041e\u0412: 1 \u043c\u0438\u043d @101% = 296 \u0412\u0442 outdoor / 288 indoor, 30 \u0441 @60% = 176 / 171.\n\u0412 \u043a\u0430\u043b\u0435\u043d\u0434\u0430\u0440\u0435 20 \u2014 \u044d\u0442\u043e \u041f\u041e\u041b.\n\u0414\u041e 25 \u0414\u041e\u0421\u0422\u0420\u0410\u0418\u0412\u0410\u0415\u0428\u042c, \u0415\u0421\u041b\u0418 \u043d\u0430 20-\u043c \u0427\u0421\u0421 \u0432 \u043a\u043e\u043d\u0446\u0435 \u043c\u0438\u043d\u0443\u0442\u044b \u043d\u0435 \u0432\u044b\u0448\u0435 160 \u0438 \u0432\u0430\u0442\u0442\u044b \u0434\u0435\u0440\u0436\u0430\u0442\u0441\u044f.\n\u041e\u0421\u0422\u0410\u041d\u041e\u0412\u041a\u0410 \u043d\u0430 15-\u043c, \u0415\u0421\u041b\u0418 \u043d\u043e\u0433\u0438 \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u043b\u0430 \u043d\u0435 \u0434\u0435\u0440\u0436\u0430\u0442 296 \u2014 \u0442\u043e\u0433\u0434\u0430 Z2-\u0445\u0432\u043e\u0441\u0442.\n\n\u0417\u0410\u0427\u0415\u041c: \u0442\u043e\u0442 \u0436\u0435 \u043f\u043e\u0440\u043e\u0433, \u0434\u0440\u0443\u0433\u043e\u0439 \u0441\u0442\u0438\u043c\u0443\u043b \u2014 \u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435 \u043f\u0430\u0443\u0437\u044b \u0434\u0435\u0440\u0436\u0430\u0442 \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u044c \u043d\u0430 \u043f\u043e\u0440\u043e\u0433\u0435 \u043f\u0440\u0438 \u043c\u0435\u043d\u044c\u0448\u0435\u043c\n\u043b\u0430\u043a\u0442\u0430\u0442\u0435. \u041d\u0435 VO2: \u043f\u043e\u0441\u043b\u0435 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u0437\u0430\u043b\u0430 \u0432\u043e \u0432\u0442\u043e\u0440\u043d\u0438\u043a 48 \u0447 \u0431\u0435\u0437 VO2/\u0441\u043f\u0440\u0438\u043d\u0442\u043e\u0432/\u0442\u0435\u0441\u0442\u043e\u0432, \u0447\u0435\u0442\u0432\u0435\u0440\u0433 \u0443\u0442\u0440\u043e\u043c \u2014 ~36 \u0447.\n\u041a\u0440\u0435\u043f\u0430\u0442\u0443\u0440\u0430 \u043f\u043e\u0441\u043b\u0435 \u0432\u0442\u043e\u0440\u043d\u0438\u043a\u0430 \u2014 \u043d\u043e\u0440\u043c\u0430, \u043d\u0430 \u043d\u0435\u0439 \u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u043c \u043d\u043e\u0433\u0438.\n\nZ2 30 \u043c\u0438\u043d (\u0441 25 \u043f\u043e\u0432\u0442\u043e\u0440\u0430\u043c\u0438 \u2014 20 \u043c\u0438\u043d, \u0431\u0443\u0434\u043d\u0438 \u0434\u043e 1:30).\n\n\u0412\u0435\u0447\u0435\u0440\u043e\u043c \u0437\u0430\u043b B, \u043d\u0435 \u0440\u0430\u043d\u044c\u0448\u0435 \u0447\u0435\u043c \u0447\u0435\u0440\u0435\u0437 3 \u0447 \u043f\u043e\u0441\u043b\u0435 \u0435\u0437\u0434\u044b.\n\n- 15m 55% 85-95rpm\n\n- 5m 75% 85-95rpm\n\n20x\n- 1m 101% 90-100rpm\n- 30s 60%\n\n- 30m 68% 70-81% LTHR 85-95rpm\n\n- 10m 50%"
+      "planned_tss": 89,
+      "duration_hours": 1.46,
+      "duration_formatted": "1h27m30s",
+      "workout_summary": "15m @161W | 5m @219W | 25\u00d71m @295W / 30s rec | 20m @199W | 10m @146W",
+      "description": "session_template: B1. \u041d\u0443\u0436\u043d\u0430 \u0440\u043e\u0432\u043d\u0430\u044f \u0434\u043e\u0440\u043e\u0433\u0430 \u0438\u043b\u0438 Zwift: \u043d\u0430 \u043f\u043e\u0434\u044a\u0451\u043c\u0435 30-\u0441\u0435\u043a\u0443\u043d\u0434\u043d\u044b\u0435 \u043f\u0430\u0443\u0437\u044b \u043b\u043e\u043c\u0430\u044e\u0442 \u0442\u0435\u043c\u043f.\n\n\u0412\u0418\u041b\u041a\u0410 20-25 \u041f\u041e\u0412\u0422\u041e\u0420\u041e\u0412: 1 \u043c\u0438\u043d @101% = 288 \u0412\u0442 indoor, 30 \u0441 @60% = 171.\n\u0412 \u043a\u0430\u043b\u0435\u043d\u0434\u0430\u0440\u0435 25 \u2014 \u044d\u0442\u043e \u041f\u041e\u0422\u041e\u041b\u041e\u041a (Zwift, \u0432\u044b\u0431\u043e\u0440 \u0430\u0442\u043b\u0435\u0442\u0430). \u041b\u0438\u0448\u043d\u0438\u0435 \u0441\u043a\u0438\u043f\u0430\u0435\u0448\u044c \u0432 Zwift.\n\u041f\u041e\u0421\u041b\u0415 20-\u0433\u043e \u0421\u041a\u0418\u041f\u0410\u0415\u0428\u042c \u041e\u0421\u0422\u0410\u0422\u041e\u041a, \u0415\u0421\u041b\u0418 \u0427\u0421\u0421 \u0432 \u043a\u043e\u043d\u0446\u0435 \u043c\u0438\u043d\u0443\u0442\u044b \u0432\u044b\u0448\u0435 160 \u0438\u043b\u0438 \u0432\u0430\u0442\u0442\u044b \u0441\u043f\u043e\u043b\u0437\u0430\u044e\u0442.\n\u041e\u0421\u0422\u0410\u041d\u041e\u0412\u041a\u0410 \u043d\u0430 15-\u043c, \u0415\u0421\u041b\u0418 \u043d\u043e\u0433\u0438 \u043f\u043e\u0441\u043b\u0435 \u0437\u0430\u043b\u0430 \u043d\u0435 \u0434\u0435\u0440\u0436\u0430\u0442 288 \u2014 \u0441\u043a\u0438\u043f\u0430\u0435\u0448\u044c \u0434\u043e Z2-\u0445\u0432\u043e\u0441\u0442\u0430.\n\n\u0417\u0410\u0427\u0415\u041c: \u0442\u043e\u0442 \u0436\u0435 \u043f\u043e\u0440\u043e\u0433, \u0434\u0440\u0443\u0433\u043e\u0439 \u0441\u0442\u0438\u043c\u0443\u043b \u2014 \u043a\u043e\u0440\u043e\u0442\u043a\u0438\u0435 \u043f\u0430\u0443\u0437\u044b \u0434\u0435\u0440\u0436\u0430\u0442 \u043c\u043e\u0449\u043d\u043e\u0441\u0442\u044c \u043d\u0430 \u043f\u043e\u0440\u043e\u0433\u0435 \u043f\u0440\u0438 \u043c\u0435\u043d\u044c\u0448\u0435\u043c\n\u043b\u0430\u043a\u0442\u0430\u0442\u0435. \u041d\u0435 VO2: \u043f\u043e\u0441\u043b\u0435 \u043f\u0435\u0440\u0432\u043e\u0433\u043e \u0437\u0430\u043b\u0430 \u0432\u043e \u0432\u0442\u043e\u0440\u043d\u0438\u043a 48 \u0447 \u0431\u0435\u0437 VO2/\u0441\u043f\u0440\u0438\u043d\u0442\u043e\u0432/\u0442\u0435\u0441\u0442\u043e\u0432, \u0447\u0435\u0442\u0432\u0435\u0440\u0433 \u0443\u0442\u0440\u043e\u043c \u2014 ~36 \u0447.\n\u041a\u0440\u0435\u043f\u0430\u0442\u0443\u0440\u0430 \u043f\u043e\u0441\u043b\u0435 \u0432\u0442\u043e\u0440\u043d\u0438\u043a\u0430 \u2014 \u043d\u043e\u0440\u043c\u0430, \u043d\u0430 \u043d\u0435\u0439 \u0438 \u043f\u0440\u043e\u0432\u0435\u0440\u0438\u043c \u043d\u043e\u0433\u0438.\n\nZ2 20 \u043c\u0438\u043d (\u0435\u0441\u043b\u0438 \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u0438\u043b\u0441\u044f \u043d\u0430 15-20 \u2014 \u043c\u043e\u0436\u043d\u043e 30, \u0431\u0443\u0434\u043d\u0438 \u0434\u043e 1:30).\n\n\u0412\u0435\u0447\u0435\u0440\u043e\u043c \u0437\u0430\u043b B, \u043d\u0435 \u0440\u0430\u043d\u044c\u0448\u0435 \u0447\u0435\u043c \u0447\u0435\u0440\u0435\u0437 3 \u0447 \u043f\u043e\u0441\u043b\u0435 \u0435\u0437\u0434\u044b.\n\n- 15m 55% 85-95rpm\n\n- 5m 75% 85-95rpm\n\n25x\n- 1m 101% 90-100rpm\n- 30s 60%\n\n- 20m 68% 70-81% LTHR 85-95rpm\n\n- 10m 50%"
     },
     {
       "id": 160155571,
@@ -848,7 +893,7 @@
       "duration_hours": 0.75,
       "duration_formatted": "45m",
       "workout_summary": null,
-      "description": "\u0421\u0438\u043b\u043e\u0432\u0430\u044f B, \u043d\u0435\u0434\u0435\u043b\u044f 1 \u0438\u0437 4. \u0417\u0430\u043b A (24.11) \u043f\u0440\u043e\u0448\u0451\u043b \u043e\u0447\u0435\u043d\u044c \u043b\u0435\u0433\u043a\u043e \u2014 \u0432\u0435\u0441\u0430 \u0437\u0434\u0435\u0441\u044c \u043f\u043e\u0434\u043d\u044f\u0442\u044b.\n\n**\u0415\u0441\u043b\u0438 \u0432 \u0447\u0435\u0442\u0432\u0435\u0440\u0433 \u043d\u043e\u0433\u0438 \u0435\u0449\u0451 \u0441\u0438\u043b\u044c\u043d\u043e \u0431\u043e\u043b\u044f\u0442 \u043f\u043e\u0441\u043b\u0435 \u0432\u0442\u043e\u0440\u043d\u0438\u043a\u0430** \u2014 \u0434\u0435\u043b\u0430\u0442\u044c B \u043d\u0430 \u0441\u0442\u0430\u0440\u044b\u0445 \u0432\u0435\u0441\u0430\u0445: \u0436\u0438\u043c +40 \u043a\u0433, \u0431\u043e\u043b\u0433\u0430\u0440\u0441\u043a\u0438\u0435 \u0431\u0435\u0437 \u0433\u0430\u043d\u0442\u0435\u043b\u0435\u0439.\n\n**RIR 4:** \u0441\u0442\u043e\u043f, \u043a\u043e\u0433\u0434\u0430 \u0432 \u0437\u0430\u043f\u0430\u0441\u0435 \u0435\u0449\u0451 4 \u0447\u0438\u0441\u0442\u044b\u0445 \u043f\u043e\u0432\u0442\u043e\u0440\u0430. \u041d\u0438\u0447\u0435\u0433\u043e \u0434\u043e \u043e\u0442\u043a\u0430\u0437\u0430. \u0412\u0435\u0441\u0430 \u2014 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u044b\u0435 \u043e\u0440\u0438\u0435\u043d\u0442\u0438\u0440\u044b, \u043f\u0440\u0430\u0432\u044c \u043f\u043e RIR \u0438 \u043f\u043e \u0442\u043e\u043c\u0443, \u0447\u0442\u043e \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u043e\u0441\u044c \u0432\u043e \u0432\u0442\u043e\u0440\u043d\u0438\u043a.\n\n**\u0412\u0435\u0447\u0435\u0440\u043e\u043c, \u043d\u0435 \u0440\u0430\u043d\u044c\u0448\u0435 \u0447\u0435\u043c \u0447\u0435\u0440\u0435\u0437 3 \u0447 \u043f\u043e\u0441\u043b\u0435 \u0443\u0442\u0440\u0435\u043d\u043d\u0435\u0433\u043e B1.** \u0417\u0430\u0432\u0442\u0440\u0430 \u043b\u0451\u0433\u043a\u0438\u0439 \u0434\u0435\u043d\u044c, \u0434\u043b\u0438\u043d\u043d\u0430\u044f \u0432 \u0432\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u044c\u0435.\n\n**\u0420\u0430\u0437\u043c\u0438\u043d\u043a\u0430 8\u201310 \u043c\u0438\u043d**\n\n\u2022 5 \u043c\u0438\u043d \u0432\u0435\u043b\u043e \u0438\u043b\u0438 \u0433\u0440\u0435\u0431\u043b\u044f \u043b\u0435\u0433\u043a\u043e\n\n\u2022 10 \u043f\u0440\u0438\u0441\u0435\u0434\u0430\u043d\u0438\u0439 \u0431\u0435\u0437 \u0432\u0435\u0441\u0430\n\n\u2022 5 \u0432\u044b\u043f\u0430\u0434\u043e\u0432 \u043d\u0430\u0437\u0430\u0434 \u043d\u0430 \u043a\u0430\u0436\u0434\u0443\u044e \u043d\u043e\u0433\u0443 \u0431\u0435\u0437 \u0432\u0435\u0441\u0430\n\n**1. \u0416\u0438\u043c \u043d\u043e\u0433\u0430\u043c\u0438 \u0434\u0432\u0443\u043c\u044f \u2014 2 \u00d7 10\u201312, \u043e\u0442\u0434\u044b\u0445 90 \u0441**\n\n\u041d\u0430\u0447\u043d\u0438 \u0441 +50\u201360 \u043a\u0433 \u043a \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0435. \u0420\u0430\u0437\u043c\u0438\u043d\u043e\u0447\u043d\u044b\u0435: \u043f\u0443\u0441\u0442\u0430\u044f \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430 \u00d7 10, \u043f\u043e\u043b\u043e\u0432\u0438\u043d\u0430 \u0440\u0430\u0431\u043e\u0447\u0435\u0433\u043e \u0432\u0435\u0441\u0430 \u00d7 8.\n\n\u2022 \u0421\u0442\u043e\u043f\u044b \u043d\u0430 \u0448\u0438\u0440\u0438\u043d\u0435 \u043f\u043b\u0435\u0447 \u043f\u043e \u0446\u0435\u043d\u0442\u0440\u0443 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u044b, \u043d\u043e\u0441\u043a\u0438 \u0447\u0443\u0442\u044c \u0432\u0440\u043e\u0437\u044c\n\n\u2022 \u0412\u043d\u0438\u0437, \u043f\u043e\u043a\u0430 \u043a\u043e\u043b\u0435\u043d\u0438 \u043d\u0435 \u043f\u043e\u0434\u043e\u0439\u0434\u0443\u0442 \u043a \u0433\u0440\u0443\u0434\u0438 \u0438 \u0442\u0430\u0437 \u043d\u0435 \u043d\u0430\u0447\u0430\u043b \u043e\u0442\u0440\u044b\u0432\u0430\u0442\u044c\u0441\u044f \u043e\u0442 \u0441\u043f\u0438\u043d\u043a\u0438\n\n\u2022 \u0412\u0432\u0435\u0440\u0445 \u0447\u0435\u0440\u0435\u0437 \u0432\u0441\u044e \u0441\u0442\u043e\u043f\u0443, \u043a\u043e\u043b\u0435\u043d\u0438 \u0432 \u0437\u0430\u043c\u043e\u043a \u043d\u0435 \u0432\u044b\u043f\u0440\u044f\u043c\u043b\u044f\u0442\u044c\n\n\u2022 \u041a\u043e\u043b\u0435\u043d\u0438 \u0441\u043c\u043e\u0442\u0440\u044f\u0442 \u0442\u0443\u0434\u0430 \u0436\u0435, \u043a\u0443\u0434\u0430 \u043d\u043e\u0441\u043a\u0438, \u0432\u043d\u0443\u0442\u0440\u044c \u043d\u0435 \u0437\u0430\u0432\u0430\u043b\u0438\u0432\u0430\u044e\u0442\u0441\u044f\n\nhttps://musclewiki.com/exercise/machine-leg-press\n\n**2. \u0411\u043e\u043b\u0433\u0430\u0440\u0441\u043a\u0438\u0435 \u0432\u044b\u043f\u0430\u0434\u044b \u0441 \u0433\u0430\u043d\u0442\u0435\u043b\u044f\u043c\u0438 \u2014 2 \u00d7 8 \u043d\u0430 \u043a\u0430\u0436\u0434\u0443\u044e \u043d\u043e\u0433\u0443, RIR 3, \u043e\u0442\u0434\u044b\u0445 90 \u0441**\n\n\u0413\u0430\u043d\u0442\u0435\u043b\u0438 6\u20138 \u043a\u0433 \u0432 \u043a\u0430\u0436\u0434\u043e\u0439 \u0440\u0443\u043a\u0435. \u041f\u0435\u0440\u0432\u044b\u0439 \u043f\u043e\u0434\u0445\u043e\u0434 \u043d\u0430 \u043a\u0430\u0436\u0434\u0443\u044e \u043d\u043e\u0433\u0443 \u2014 \u0431\u0435\u0437 \u0432\u0435\u0441\u0430, \u043a\u0430\u043a \u0440\u0430\u0437\u043c\u0438\u043d\u043a\u0430. \u0417\u0430\u0434\u043d\u044f\u044f \u043d\u043e\u0433\u0430 \u043d\u043e\u0441\u043a\u043e\u043c \u043d\u0430 \u0441\u043a\u0430\u043c\u044c\u0435 \u0432\u044b\u0441\u043e\u0442\u043e\u0439 \u0434\u043e \u043a\u043e\u043b\u0435\u043d\u0430. \u0422\u0435\u0440\u044f\u0435\u0448\u044c \u0440\u0430\u0432\u043d\u043e\u0432\u0435\u0441\u0438\u0435 \u2014 \u043e\u0434\u043d\u0430 \u0433\u0430\u043d\u0442\u0435\u043b\u044c \u0432 \u0440\u0443\u043a\u0435, \u0432\u0442\u043e\u0440\u043e\u0439 \u0440\u0443\u043a\u043e\u0439 \u0434\u0435\u0440\u0436\u0430\u0442\u044c\u0441\u044f \u0437\u0430 \u0441\u0442\u043e\u0439\u043a\u0443.\n\n\u2022 \u041f\u0435\u0440\u0435\u0434\u043d\u044f\u044f \u0441\u0442\u043e\u043f\u0430 \u0434\u0430\u043b\u0435\u043a\u043e \u043e\u0442 \u0441\u043a\u0430\u043c\u044c\u0438: \u0432\u043d\u0438\u0437\u0443 \u043a\u043e\u043b\u0435\u043d\u043e \u043d\u0430\u0434 \u0441\u0442\u043e\u043f\u043e\u0439, \u043d\u0435 \u0443\u0445\u043e\u0434\u0438\u0442 \u0434\u0430\u043b\u0435\u043a\u043e \u0432\u043f\u0435\u0440\u0451\u0434\n\n\u2022 \u041e\u043f\u0443\u0441\u043a\u0430\u0442\u044c\u0441\u044f \u0432\u0435\u0440\u0442\u0438\u043a\u0430\u043b\u044c\u043d\u043e \u0432\u043d\u0438\u0437, \u043f\u043e\u043a\u0430 \u0431\u0435\u0434\u0440\u043e \u043f\u0435\u0440\u0435\u0434\u043d\u0435\u0439 \u043d\u043e\u0433\u0438 \u043d\u0435 \u0441\u0442\u0430\u043d\u0435\u0442 \u043f\u043e\u0447\u0442\u0438 \u043f\u0430\u0440\u0430\u043b\u043b\u0435\u043b\u044c\u043d\u043e \u043f\u043e\u043b\u0443\n\n\u2022 \u041a\u043e\u0440\u043f\u0443\u0441 \u0447\u0443\u0442\u044c \u0432\u043f\u0435\u0440\u0451\u0434, \u0432\u0435\u0441 \u043d\u0430 \u043f\u0435\u0440\u0435\u0434\u043d\u0435\u0439 \u043d\u043e\u0433\u0435, \u0437\u0430\u0434\u043d\u044f\u044f \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u043b\u044f \u0440\u0430\u0432\u043d\u043e\u0432\u0435\u0441\u0438\u044f\n\n\u2022 \u0412\u0432\u0435\u0440\u0445 \u0447\u0435\u0440\u0435\u0437 \u043f\u044f\u0442\u043a\u0443 \u043f\u0435\u0440\u0435\u0434\u043d\u0435\u0439 \u043d\u043e\u0433\u0438\n\nhttps://musclewiki.com/exercise/bulgarian-split-squat\n\n\u0421 \u043e\u043f\u043e\u0440\u043e\u0439: https://musclewiki.com/exercise/assisted-bulgarian-split-squat\n\n**3. \u041f\u043e\u0434\u044a\u0451\u043c \u043a\u043e\u043b\u0435\u043d\u0430 \u043d\u0430 \u043d\u0438\u0436\u043d\u0435\u043c \u0431\u043b\u043e\u043a\u0435 \u2014 2 \u00d7 10 \u043d\u0430 \u043d\u043e\u0433\u0443, \u043e\u0442\u0434\u044b\u0445 60 \u0441**\n\n\u041c\u0430\u043d\u0436\u0435\u0442\u0430 \u043d\u0430 \u0449\u0438\u043a\u043e\u043b\u043e\u0442\u043a\u0443, \u0442\u0440\u043e\u0441 \u0441 \u043d\u0438\u0436\u043d\u0435\u0433\u043e \u0431\u043b\u043e\u043a\u0430. 5\u201310 \u043a\u0433. \u042d\u0442\u043e \u043c\u044b\u0448\u0446\u044b, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0442\u044f\u043d\u0443\u0442 \u043f\u0435\u0434\u0430\u043b\u044c \u0432\u0432\u0435\u0440\u0445.\n\n\u2022 \u0421\u0442\u043e\u0438\u0448\u044c \u0441\u043f\u0438\u043d\u043e\u0439 \u043a \u0431\u043b\u043e\u043a\u0443, \u0434\u0435\u0440\u0436\u0438\u0448\u044c\u0441\u044f \u0440\u0443\u043a\u043e\u0439 \u0437\u0430 \u0441\u0442\u043e\u0439\u043a\u0443\n\n\u2022 \u041f\u043e\u0434\u043d\u044f\u0442\u044c \u043a\u043e\u043b\u0435\u043d\u043e \u0434\u043e \u0443\u0440\u043e\u0432\u043d\u044f \u0442\u0430\u0437\u0430, \u043f\u0430\u0443\u0437\u0430 1 \u0441, \u043c\u0435\u0434\u043b\u0435\u043d\u043d\u043e \u043e\u043f\u0443\u0441\u0442\u0438\u0442\u044c\n\n\u2022 \u041a\u043e\u0440\u043f\u0443\u0441 \u043d\u0435 \u043e\u0442\u043a\u043b\u043e\u043d\u044f\u0435\u0442\u0441\u044f \u043d\u0430\u0437\u0430\u0434, \u043e\u043f\u043e\u0440\u043d\u0430\u044f \u043d\u043e\u0433\u0430 \u043f\u0440\u044f\u043c\u0430\u044f\n\nhttps://exrx.net/WeightExercises/HipFlexors/CBStandingLegRaise\n\n\u041d\u0435\u0442 \u043c\u0430\u043d\u0436\u0435\u0442\u044b \u2014 \u0442\u043e \u0436\u0435 \u0431\u0435\u0437 \u0432\u0435\u0441\u0430, \u043d\u0430\u0432\u0435\u0440\u0445\u0443 \u0434\u0435\u0440\u0436\u0430\u0442\u044c 3 \u0441: https://musclewiki.com/exercise/knee-raise-standing-unilateral\n\n**4. \u0421\u0433\u0438\u0431\u0430\u043d\u0438\u0435 \u043d\u043e\u0433 \u0432 \u0442\u0440\u0435\u043d\u0430\u0436\u0451\u0440\u0435 \u2014 2 \u00d7 10\u201312, RIR 3, \u043e\u0442\u0434\u044b\u0445 60 \u0441**\n\n\u041b\u0451\u0436\u0430 \u0438\u043b\u0438 \u0441\u0438\u0434\u044f, \u0447\u0442\u043e \u0435\u0441\u0442\u044c. 20\u201330 \u043a\u0433.\n\n\u2022 \u0412\u0430\u043b\u0438\u043a \u043d\u0430\u0434 \u043f\u044f\u0442\u043a\u0430\u043c\u0438, \u043a\u043e\u043b\u0435\u043d\u0438 \u0447\u0443\u0442\u044c \u0437\u0430 \u043a\u0440\u0430\u0435\u043c \u0441\u043a\u0430\u043c\u044c\u0438\n\n\u2022 \u0421\u043e\u0433\u043d\u0443\u0442\u044c \u043d\u043e\u0433\u0438 \u0434\u043e \u0443\u043f\u043e\u0440\u0430, \u043f\u0430\u0443\u0437\u0430 1 \u0441, \u043e\u043f\u0443\u0441\u043a\u0430\u0442\u044c \u043c\u0435\u0434\u043b\u0435\u043d\u043d\u043e, 2\u20133 \u0441\n\n\u2022 \u0422\u0430\u0437 \u043d\u0435 \u043e\u0442\u0440\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043e\u0442 \u0441\u043a\u0430\u043c\u044c\u0438\n\n\u041b\u0451\u0436\u0430: https://musclewiki.com/exercise/machine-hamstring-curl\n\n\u0421\u0438\u0434\u044f: https://musclewiki.com/exercise/machine-seated-hamstring-curl\n\n**5a. \u0411\u043e\u043a\u043e\u0432\u0430\u044f \u043f\u043b\u0430\u043d\u043a\u0430 \u043d\u0430 \u043b\u043e\u043a\u0442\u0435 \u2014 2 \u00d7 30 \u0441 \u043d\u0430 \u043a\u0430\u0436\u0434\u0443\u044e \u0441\u0442\u043e\u0440\u043e\u043d\u0443, \u043e\u0442\u0434\u044b\u0445 45 \u0441**\n\n\u2022 \u041b\u043e\u043a\u043e\u0442\u044c \u043f\u043e\u0434 \u043f\u043b\u0435\u0447\u043e\u043c, \u0442\u0435\u043b\u043e \u043e\u0434\u043d\u043e\u0439 \u043f\u0440\u044f\u043c\u043e\u0439 \u043b\u0438\u043d\u0438\u0435\u0439 \u043e\u0442 \u0433\u043e\u043b\u043e\u0432\u044b \u0434\u043e \u0441\u0442\u043e\u043f\n\n\u2022 \u0422\u0430\u0437 \u043d\u0435 \u043f\u0440\u043e\u0432\u0438\u0441\u0430\u0435\u0442\n\nhttps://musclewiki.com/exercise/elbow-side-plank\n\n**5b. \u0413\u0438\u043f\u0435\u0440\u044d\u043a\u0441\u0442\u0435\u043d\u0437\u0438\u044f, \u0442\u0440\u0435\u043d\u0430\u0436\u0451\u0440 \u043f\u043e\u0434 45\u00b0, \u0432\u0435\u0441 \u0442\u0435\u043b\u0430 \u2014 2 \u00d7 12, \u043e\u0442\u0434\u044b\u0445 45 \u0441**\n\n\u2022 \u0412\u0430\u043b\u0438\u043a \u043f\u043e\u0434 \u0442\u0430\u0437\u043e\u0432\u044b\u043c\u0438 \u043a\u043e\u0441\u0442\u044f\u043c\u0438, \u0440\u0443\u043a\u0438 \u043d\u0430 \u0433\u0440\u0443\u0434\u0438\n\n\u2022 \u041d\u0430\u043a\u043b\u043e\u043d \u0432\u043d\u0438\u0437 \u0441 \u043f\u0440\u044f\u043c\u043e\u0439 \u0441\u043f\u0438\u043d\u043e\u0439, \u043f\u043e\u0434\u044a\u0451\u043c \u0434\u043e \u043f\u0440\u044f\u043c\u043e\u0439 \u043b\u0438\u043d\u0438\u0438 \u0442\u0435\u043b\u0430\n\n\u2022 \u041d\u0430\u0432\u0435\u0440\u0445\u0443 \u043d\u0435 \u043f\u0440\u043e\u0433\u0438\u0431\u0430\u0442\u044c\u0441\u044f \u043d\u0430\u0437\u0430\u0434\n\nhttps://musclewiki.com/exercise/machine-45-degree-back-extension\n\n**\u041f\u043e\u0441\u043b\u0435**\n\n\u2022 \u0411\u043e\u043b\u044c \u0432 \u0441\u0443\u0441\u0442\u0430\u0432\u0435 \u2014 \u0443\u043f\u0440\u0430\u0436\u043d\u0435\u043d\u0438\u0435 \u0441\u0442\u043e\u043f. \u0416\u0436\u0435\u043d\u0438\u0435 \u0432 \u043c\u044b\u0448\u0446\u0435 \u2014 \u043d\u043e\u0440\u043c\u0430\n\n\u2022 \u0417\u0430\u043f\u0438\u0441\u0430\u0442\u044c \u0432\u0435\u0441\u0430 \u043f\u043e \u043a\u0430\u0436\u0434\u043e\u043c\u0443 \u0443\u043f\u0440\u0430\u0436\u043d\u0435\u043d\u0438\u044e\n\n\u2022 \u0423\u0436\u0438\u043d \u0441 \u0431\u0435\u043b\u043a\u043e\u043c \u0438 \u0443\u0433\u043b\u0435\u0432\u043e\u0434\u0430\u043c\u0438"
+      "description": "\u0421\u0438\u043b\u043e\u0432\u0430\u044f B, \u043d\u0435\u0434\u0435\u043b\u044f 1 \u0438\u0437 4. \u0417\u0430\u043b A (24.11) \u043f\u0440\u043e\u0448\u0451\u043b \u043e\u0447\u0435\u043d\u044c \u043b\u0435\u0433\u043a\u043e \u2014 \u0432\u0435\u0441\u0430 \u0437\u0434\u0435\u0441\u044c \u043f\u043e\u0434\u043d\u044f\u0442\u044b.\n\n**\u0415\u0441\u043b\u0438 \u0432 \u0447\u0435\u0442\u0432\u0435\u0440\u0433 \u043d\u043e\u0433\u0438 \u0435\u0449\u0451 \u0441\u0438\u043b\u044c\u043d\u043e \u0431\u043e\u043b\u044f\u0442 \u043f\u043e\u0441\u043b\u0435 \u0432\u0442\u043e\u0440\u043d\u0438\u043a\u0430** \u2014 \u0434\u0435\u043b\u0430\u0442\u044c B \u043d\u0430 \u0441\u0442\u0430\u0440\u044b\u0445 \u0432\u0435\u0441\u0430\u0445: \u0436\u0438\u043c +40 \u043a\u0433, \u0431\u043e\u043b\u0433\u0430\u0440\u0441\u043a\u0438\u0435 \u0431\u0435\u0437 \u0433\u0430\u043d\u0442\u0435\u043b\u0435\u0439.\n\n**RIR 4:** \u0441\u0442\u043e\u043f, \u043a\u043e\u0433\u0434\u0430 \u0432 \u0437\u0430\u043f\u0430\u0441\u0435 \u0435\u0449\u0451 4 \u0447\u0438\u0441\u0442\u044b\u0445 \u043f\u043e\u0432\u0442\u043e\u0440\u0430. \u041d\u0438\u0447\u0435\u0433\u043e \u0434\u043e \u043e\u0442\u043a\u0430\u0437\u0430. \u0412\u0435\u0441\u0430 \u2014 \u0441\u0442\u0430\u0440\u0442\u043e\u0432\u044b\u0435 \u043e\u0440\u0438\u0435\u043d\u0442\u0438\u0440\u044b, \u043f\u0440\u0430\u0432\u044c \u043f\u043e RIR \u0438 \u043f\u043e \u0442\u043e\u043c\u0443, \u0447\u0442\u043e \u043f\u043e\u043b\u0443\u0447\u0438\u043b\u043e\u0441\u044c \u0432\u043e \u0432\u0442\u043e\u0440\u043d\u0438\u043a.\n\n**\u0412\u0435\u0447\u0435\u0440\u043e\u043c, \u043d\u0435 \u0440\u0430\u043d\u044c\u0448\u0435 \u0447\u0435\u043c \u0447\u0435\u0440\u0435\u0437 3 \u0447 \u043f\u043e\u0441\u043b\u0435 \u0443\u0442\u0440\u0435\u043d\u043d\u0435\u0433\u043e B1.** \u0417\u0430\u0432\u0442\u0440\u0430 \u043b\u0451\u0433\u043a\u0438\u0439 \u0434\u0435\u043d\u044c, \u0434\u043b\u0438\u043d\u043d\u0430\u044f \u0432 \u0432\u043e\u0441\u043a\u0440\u0435\u0441\u0435\u043d\u044c\u0435.\n\n**\u0420\u0430\u0437\u043c\u0438\u043d\u043a\u0430 8\u201310 \u043c\u0438\u043d**\n\n\u2022 5 \u043c\u0438\u043d \u0432\u0435\u043b\u043e \u0438\u043b\u0438 \u0433\u0440\u0435\u0431\u043b\u044f \u043b\u0435\u0433\u043a\u043e\n\n\u2022 10 \u043f\u0440\u0438\u0441\u0435\u0434\u0430\u043d\u0438\u0439 \u0431\u0435\u0437 \u0432\u0435\u0441\u0430\n\n\u2022 5 \u0432\u044b\u043f\u0430\u0434\u043e\u0432 \u043d\u0430\u0437\u0430\u0434 \u043d\u0430 \u043a\u0430\u0436\u0434\u0443\u044e \u043d\u043e\u0433\u0443 \u0431\u0435\u0437 \u0432\u0435\u0441\u0430\n\n**1. \u0416\u0438\u043c \u043d\u043e\u0433\u0430\u043c\u0438 \u0434\u0432\u0443\u043c\u044f \u2014 2 \u00d7 10\u201312, \u043e\u0442\u0434\u044b\u0445 90 \u0441**\n\n\u041d\u0430\u0447\u043d\u0438 \u0441 +50\u201360 \u043a\u0433 \u043a \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0435. \u0420\u0430\u0437\u043c\u0438\u043d\u043e\u0447\u043d\u044b\u0435: \u043f\u0443\u0441\u0442\u0430\u044f \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u0430 \u00d7 10, \u043f\u043e\u043b\u043e\u0432\u0438\u043d\u0430 \u0440\u0430\u0431\u043e\u0447\u0435\u0433\u043e \u0432\u0435\u0441\u0430 \u00d7 8.\n\n\u2022 \u0421\u0442\u043e\u043f\u044b \u043d\u0430 \u0448\u0438\u0440\u0438\u043d\u0435 \u043f\u043b\u0435\u0447 \u043f\u043e \u0446\u0435\u043d\u0442\u0440\u0443 \u043f\u043b\u0430\u0442\u0444\u043e\u0440\u043c\u044b, \u043d\u043e\u0441\u043a\u0438 \u0447\u0443\u0442\u044c \u0432\u0440\u043e\u0437\u044c\n\n\u2022 \u0412\u043d\u0438\u0437, \u043f\u043e\u043a\u0430 \u043a\u043e\u043b\u0435\u043d\u0438 \u043d\u0435 \u043f\u043e\u0434\u043e\u0439\u0434\u0443\u0442 \u043a \u0433\u0440\u0443\u0434\u0438 \u0438 \u0442\u0430\u0437 \u043d\u0435 \u043d\u0430\u0447\u0430\u043b \u043e\u0442\u0440\u044b\u0432\u0430\u0442\u044c\u0441\u044f \u043e\u0442 \u0441\u043f\u0438\u043d\u043a\u0438\n\n\u2022 \u0412\u0432\u0435\u0440\u0445 \u0447\u0435\u0440\u0435\u0437 \u0432\u0441\u044e \u0441\u0442\u043e\u043f\u0443, \u043a\u043e\u043b\u0435\u043d\u0438 \u0432 \u0437\u0430\u043c\u043e\u043a \u043d\u0435 \u0432\u044b\u043f\u0440\u044f\u043c\u043b\u044f\u0442\u044c\n\n\u2022 \u041a\u043e\u043b\u0435\u043d\u0438 \u0441\u043c\u043e\u0442\u0440\u044f\u0442 \u0442\u0443\u0434\u0430 \u0436\u0435, \u043a\u0443\u0434\u0430 \u043d\u043e\u0441\u043a\u0438, \u0432\u043d\u0443\u0442\u0440\u044c \u043d\u0435 \u0437\u0430\u0432\u0430\u043b\u0438\u0432\u0430\u044e\u0442\u0441\u044f\n\nhttps://musclewiki.com/exercise/machine-leg-press\n\n**2. \u0411\u043e\u043b\u0433\u0430\u0440\u0441\u043a\u0438\u0435 \u0432\u044b\u043f\u0430\u0434\u044b \u0441 \u0433\u0430\u043d\u0442\u0435\u043b\u044f\u043c\u0438 \u2014 2 \u00d7 8 \u043d\u0430 \u043a\u0430\u0436\u0434\u0443\u044e \u043d\u043e\u0433\u0443, RIR 3, \u043e\u0442\u0434\u044b\u0445 90 \u0441**\n\n\u0413\u0430\u043d\u0442\u0435\u043b\u0438 6\u20138 \u043a\u0433 \u0432 \u043a\u0430\u0436\u0434\u043e\u0439 \u0440\u0443\u043a\u0435. \u041f\u0435\u0440\u0432\u044b\u0439 \u043f\u043e\u0434\u0445\u043e\u0434 \u043d\u0430 \u043a\u0430\u0436\u0434\u0443\u044e \u043d\u043e\u0433\u0443 \u2014 \u0431\u0435\u0437 \u0432\u0435\u0441\u0430, \u043a\u0430\u043a \u0440\u0430\u0437\u043c\u0438\u043d\u043a\u0430. \u0417\u0430\u0434\u043d\u044f\u044f \u043d\u043e\u0433\u0430 \u043d\u043e\u0441\u043a\u043e\u043c \u043d\u0430 \u0441\u043a\u0430\u043c\u044c\u0435 \u0432\u044b\u0441\u043e\u0442\u043e\u0439 \u0434\u043e \u043a\u043e\u043b\u0435\u043d\u0430. \u0422\u0435\u0440\u044f\u0435\u0448\u044c \u0440\u0430\u0432\u043d\u043e\u0432\u0435\u0441\u0438\u0435 \u2014 \u043e\u0434\u043d\u0430 \u0433\u0430\u043d\u0442\u0435\u043b\u044c \u0432 \u0440\u0443\u043a\u0435, \u0432\u0442\u043e\u0440\u043e\u0439 \u0440\u0443\u043a\u043e\u0439 \u0434\u0435\u0440\u0436\u0430\u0442\u044c\u0441\u044f \u0437\u0430 \u0441\u0442\u043e\u0439\u043a\u0443.\n\n\u2022 \u041f\u0435\u0440\u0435\u0434\u043d\u044f\u044f \u0441\u0442\u043e\u043f\u0430 \u0434\u0430\u043b\u0435\u043a\u043e \u043e\u0442 \u0441\u043a\u0430\u043c\u044c\u0438: \u0432\u043d\u0438\u0437\u0443 \u043a\u043e\u043b\u0435\u043d\u043e \u043d\u0430\u0434 \u0441\u0442\u043e\u043f\u043e\u0439, \u043d\u0435 \u0443\u0445\u043e\u0434\u0438\u0442 \u0434\u0430\u043b\u0435\u043a\u043e \u0432\u043f\u0435\u0440\u0451\u0434\n\n\u2022 \u041e\u043f\u0443\u0441\u043a\u0430\u0442\u044c\u0441\u044f \u0432\u0435\u0440\u0442\u0438\u043a\u0430\u043b\u044c\u043d\u043e \u0432\u043d\u0438\u0437, \u043f\u043e\u043a\u0430 \u0431\u0435\u0434\u0440\u043e \u043f\u0435\u0440\u0435\u0434\u043d\u0435\u0439 \u043d\u043e\u0433\u0438 \u043d\u0435 \u0441\u0442\u0430\u043d\u0435\u0442 \u043f\u043e\u0447\u0442\u0438 \u043f\u0430\u0440\u0430\u043b\u043b\u0435\u043b\u044c\u043d\u043e \u043f\u043e\u043b\u0443\n\n\u2022 \u041a\u043e\u0440\u043f\u0443\u0441 \u0447\u0443\u0442\u044c \u0432\u043f\u0435\u0440\u0451\u0434, \u0432\u0435\u0441 \u043d\u0430 \u043f\u0435\u0440\u0435\u0434\u043d\u0435\u0439 \u043d\u043e\u0433\u0435, \u0437\u0430\u0434\u043d\u044f\u044f \u0442\u043e\u043b\u044c\u043a\u043e \u0434\u043b\u044f \u0440\u0430\u0432\u043d\u043e\u0432\u0435\u0441\u0438\u044f\n\n\u2022 \u0412\u0432\u0435\u0440\u0445 \u0447\u0435\u0440\u0435\u0437 \u043f\u044f\u0442\u043a\u0443 \u043f\u0435\u0440\u0435\u0434\u043d\u0435\u0439 \u043d\u043e\u0433\u0438\n\n\u0421 \u0433\u0430\u043d\u0442\u0435\u043b\u044f\u043c\u0438: https://musclewiki.com/exercise/dumbbell-bulgarian-split-squat\n\n\u0421 \u0433\u0430\u043d\u0442\u0435\u043b\u044c\u044e \u0438 \u043e\u043f\u043e\u0440\u043e\u0439: https://musclewiki.com/exercise/dumbbell-assisted-bulgarian-split-squat\n\n\u0420\u0430\u0437\u043c\u0438\u043d\u043e\u0447\u043d\u044b\u0439 \u043f\u043e\u0434\u0445\u043e\u0434 \u0431\u0435\u0437 \u0432\u0435\u0441\u0430: https://musclewiki.com/exercise/bulgarian-split-squat\n\n**3. \u041f\u043e\u0434\u044a\u0451\u043c \u043a\u043e\u043b\u0435\u043d\u0430 \u043d\u0430 \u043d\u0438\u0436\u043d\u0435\u043c \u0431\u043b\u043e\u043a\u0435 \u2014 2 \u00d7 10 \u043d\u0430 \u043d\u043e\u0433\u0443, \u043e\u0442\u0434\u044b\u0445 60 \u0441**\n\n\u041c\u0430\u043d\u0436\u0435\u0442\u0430 \u043d\u0430 \u0449\u0438\u043a\u043e\u043b\u043e\u0442\u043a\u0443, \u0442\u0440\u043e\u0441 \u0441 \u043d\u0438\u0436\u043d\u0435\u0433\u043e \u0431\u043b\u043e\u043a\u0430. 5\u201310 \u043a\u0433. \u042d\u0442\u043e \u043c\u044b\u0448\u0446\u044b, \u043a\u043e\u0442\u043e\u0440\u044b\u0435 \u0442\u044f\u043d\u0443\u0442 \u043f\u0435\u0434\u0430\u043b\u044c \u0432\u0432\u0435\u0440\u0445.\n\n\u2022 \u0421\u0442\u043e\u0438\u0448\u044c \u0441\u043f\u0438\u043d\u043e\u0439 \u043a \u0431\u043b\u043e\u043a\u0443, \u0434\u0435\u0440\u0436\u0438\u0448\u044c\u0441\u044f \u0440\u0443\u043a\u043e\u0439 \u0437\u0430 \u0441\u0442\u043e\u0439\u043a\u0443\n\n\u2022 \u041f\u043e\u0434\u043d\u044f\u0442\u044c \u043a\u043e\u043b\u0435\u043d\u043e \u0434\u043e \u0443\u0440\u043e\u0432\u043d\u044f \u0442\u0430\u0437\u0430, \u043f\u0430\u0443\u0437\u0430 1 \u0441, \u043c\u0435\u0434\u043b\u0435\u043d\u043d\u043e \u043e\u043f\u0443\u0441\u0442\u0438\u0442\u044c\n\n\u2022 \u041a\u043e\u0440\u043f\u0443\u0441 \u043d\u0435 \u043e\u0442\u043a\u043b\u043e\u043d\u044f\u0435\u0442\u0441\u044f \u043d\u0430\u0437\u0430\u0434, \u043e\u043f\u043e\u0440\u043d\u0430\u044f \u043d\u043e\u0433\u0430 \u043f\u0440\u044f\u043c\u0430\u044f\n\nhttps://exrx.net/WeightExercises/HipFlexors/CBStandingLegRaise\n\n\u041d\u0435\u0442 \u043c\u0430\u043d\u0436\u0435\u0442\u044b \u2014 \u0442\u043e \u0436\u0435 \u0431\u0435\u0437 \u0432\u0435\u0441\u0430, \u043d\u0430\u0432\u0435\u0440\u0445\u0443 \u0434\u0435\u0440\u0436\u0430\u0442\u044c 3 \u0441: https://musclewiki.com/exercise/knee-raise-standing-unilateral\n\n**4. \u0421\u0433\u0438\u0431\u0430\u043d\u0438\u0435 \u043d\u043e\u0433 \u0432 \u0442\u0440\u0435\u043d\u0430\u0436\u0451\u0440\u0435 \u2014 2 \u00d7 10\u201312, RIR 3, \u043e\u0442\u0434\u044b\u0445 60 \u0441**\n\n\u041b\u0451\u0436\u0430 \u0438\u043b\u0438 \u0441\u0438\u0434\u044f, \u0447\u0442\u043e \u0435\u0441\u0442\u044c. 20\u201330 \u043a\u0433.\n\n\u2022 \u0412\u0430\u043b\u0438\u043a \u043d\u0430\u0434 \u043f\u044f\u0442\u043a\u0430\u043c\u0438, \u043a\u043e\u043b\u0435\u043d\u0438 \u0447\u0443\u0442\u044c \u0437\u0430 \u043a\u0440\u0430\u0435\u043c \u0441\u043a\u0430\u043c\u044c\u0438\n\n\u2022 \u0421\u043e\u0433\u043d\u0443\u0442\u044c \u043d\u043e\u0433\u0438 \u0434\u043e \u0443\u043f\u043e\u0440\u0430, \u043f\u0430\u0443\u0437\u0430 1 \u0441, \u043e\u043f\u0443\u0441\u043a\u0430\u0442\u044c \u043c\u0435\u0434\u043b\u0435\u043d\u043d\u043e, 2\u20133 \u0441\n\n\u2022 \u0422\u0430\u0437 \u043d\u0435 \u043e\u0442\u0440\u044b\u0432\u0430\u0435\u0442\u0441\u044f \u043e\u0442 \u0441\u043a\u0430\u043c\u044c\u0438\n\n\u041b\u0451\u0436\u0430: https://musclewiki.com/exercise/machine-hamstring-curl\n\n\u0421\u0438\u0434\u044f: https://musclewiki.com/exercise/machine-seated-hamstring-curl\n\n**5a. \u0411\u043e\u043a\u043e\u0432\u0430\u044f \u043f\u043b\u0430\u043d\u043a\u0430 \u043d\u0430 \u043b\u043e\u043a\u0442\u0435 \u2014 2 \u00d7 30 \u0441 \u043d\u0430 \u043a\u0430\u0436\u0434\u0443\u044e \u0441\u0442\u043e\u0440\u043e\u043d\u0443, \u043e\u0442\u0434\u044b\u0445 45 \u0441**\n\n\u2022 \u041b\u043e\u043a\u043e\u0442\u044c \u043f\u043e\u0434 \u043f\u043b\u0435\u0447\u043e\u043c, \u0442\u0435\u043b\u043e \u043e\u0434\u043d\u043e\u0439 \u043f\u0440\u044f\u043c\u043e\u0439 \u043b\u0438\u043d\u0438\u0435\u0439 \u043e\u0442 \u0433\u043e\u043b\u043e\u0432\u044b \u0434\u043e \u0441\u0442\u043e\u043f\n\n\u2022 \u0422\u0430\u0437 \u043d\u0435 \u043f\u0440\u043e\u0432\u0438\u0441\u0430\u0435\u0442\n\nhttps://musclewiki.com/exercise/elbow-side-plank\n\n**5b. \u0413\u0438\u043f\u0435\u0440\u044d\u043a\u0441\u0442\u0435\u043d\u0437\u0438\u044f, \u0442\u0440\u0435\u043d\u0430\u0436\u0451\u0440 \u043f\u043e\u0434 45\u00b0, \u0432\u0435\u0441 \u0442\u0435\u043b\u0430 \u2014 2 \u00d7 12, \u043e\u0442\u0434\u044b\u0445 45 \u0441**\n\n\u2022 \u0412\u0430\u043b\u0438\u043a \u043f\u043e\u0434 \u0442\u0430\u0437\u043e\u0432\u044b\u043c\u0438 \u043a\u043e\u0441\u0442\u044f\u043c\u0438, \u0440\u0443\u043a\u0438 \u043d\u0430 \u0433\u0440\u0443\u0434\u0438\n\n\u2022 \u041d\u0430\u043a\u043b\u043e\u043d \u0432\u043d\u0438\u0437 \u0441 \u043f\u0440\u044f\u043c\u043e\u0439 \u0441\u043f\u0438\u043d\u043e\u0439, \u043f\u043e\u0434\u044a\u0451\u043c \u0434\u043e \u043f\u0440\u044f\u043c\u043e\u0439 \u043b\u0438\u043d\u0438\u0438 \u0442\u0435\u043b\u0430\n\n\u2022 \u041d\u0430\u0432\u0435\u0440\u0445\u0443 \u043d\u0435 \u043f\u0440\u043e\u0433\u0438\u0431\u0430\u0442\u044c\u0441\u044f \u043d\u0430\u0437\u0430\u0434\n\nhttps://musclewiki.com/exercise/machine-45-degree-back-extension\n\n**\u041f\u043e\u0441\u043b\u0435**\n\n\u2022 \u0411\u043e\u043b\u044c \u0432 \u0441\u0443\u0441\u0442\u0430\u0432\u0435 \u2014 \u0443\u043f\u0440\u0430\u0436\u043d\u0435\u043d\u0438\u0435 \u0441\u0442\u043e\u043f. \u0416\u0436\u0435\u043d\u0438\u0435 \u0432 \u043c\u044b\u0448\u0446\u0435 \u2014 \u043d\u043e\u0440\u043c\u0430\n\n\u2022 \u0417\u0430\u043f\u0438\u0441\u0430\u0442\u044c \u0432\u0435\u0441\u0430 \u043f\u043e \u043a\u0430\u0436\u0434\u043e\u043c\u0443 \u0443\u043f\u0440\u0430\u0436\u043d\u0435\u043d\u0438\u044e\n\n\u2022 \u0423\u0436\u0438\u043d \u0441 \u0431\u0435\u043b\u043a\u043e\u043c \u0438 \u0443\u0433\u043b\u0435\u0432\u043e\u0434\u0430\u043c\u0438"
     },
     {
       "id": 158407559,
@@ -885,20 +930,20 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
+    "attempted": 4,
     "success": 1,
     "patternA": 1,
     "patternB": 0,
     "bail_no_workout_doc": 1,
-    "bail_no_match": 4
+    "bail_no_match": 3
   },
   "weekly_summary": {
-    "total_training_hours": 12.33,
-    "total_training_formatted": "12h19m",
-    "total_tss": 585,
-    "activities_count": 7,
-    "avg_hrv": 44.6,
-    "avg_resting_hr": 44.3
+    "total_training_hours": 12.56,
+    "total_training_formatted": "12h33m",
+    "total_tss": 607,
+    "activities_count": 8,
+    "avg_hrv": 44.3,
+    "avg_resting_hr": 44.7
   },
   "race_calendar": {
     "next_race": null,
