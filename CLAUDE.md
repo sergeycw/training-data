@@ -34,6 +34,7 @@
 | `data/ftp_history.json` | История изменений FTP (indoor/outdoor) | Benchmark Index, прогресс FTP |
 | `data/session_feedback.json` | RPE и субъективные ощущения после quality sessions | Контекст субъективной нагрузки |
 | `data/plan_events.json` | Events для push в Intervals.icu календарь | Генерируется AI при создании/обновлении плана |
+| `data/gym_garmin.json` | Структура силовых для Garmin (упражнения из каталога Garmin, подходы, веса) | Генерируется AI вместе с залом в `plan_events.json` |
 | `context/DOSSIER.md` | Профиль атлета: зоны, цели, оборудование, расписание | Контекст для персонализации |
 | `context/SECTION_11.md` | Полный протокол: правила, пороги, фреймворки | **Авторитетный источник** тренерской логики |
 | `context/WORKOUT_LIBRARY.md` | Библиотека шаблонов сессий: 26 апстрим + 9 athlete-specific | **Обязательно** при назначении любой структурированной сессии (§11B.8). Не изобретать структуры вне библиотеки |
@@ -45,6 +46,7 @@
 | `scripts/sync.py` | Синк данных из Intervals.icu | Автоматизация |
 | `scripts/push_plan.py` | Push plan_events.json → Intervals.icu | `--dry-run` / `--clear FROM TO` |
 | `scripts/garmin_login.py` | Разовый вход в Garmin Connect, токены в `~/.garminconnect` (вне репо) | `.venv-garmin/bin/python scripts/garmin_login.py`, пароль вводит атлет |
+| `scripts/push_gym_garmin.py` | Push `data/gym_garmin.json` → Garmin Connect: силовые с упражнениями на часы | `.venv-garmin/bin/python scripts/push_gym_garmin.py [--dry-run]`, после `push_plan.py` |
 
 ## Иерархия источников данных
 
