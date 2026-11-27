@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-27T00:08:27.302316",
+  "generated_at": "2026-11-27T11:49:18.936040",
   "version": "3.85",
   "scan_hours": 168,
   "retention_days": 7,
@@ -1232,6 +1232,25 @@
           "zone": 1,
           "training_load": 0.9323457,
           "decoupling": -4.934889
+        }
+      ]
+    },
+    {
+      "activity_id": "i215208415",
+      "date": "2026-11-27",
+      "type": "Ride",
+      "name": "Road Cycling",
+      "interval_summary": [
+        "1x 2h5m 115bpm"
+      ],
+      "intervals": [
+        {
+          "type": "WORK",
+          "label": "7503s@115bpm",
+          "duration_secs": 7503,
+          "avg_hr": 115,
+          "max_hr": 149,
+          "zone": 1
         }
       ]
     }
