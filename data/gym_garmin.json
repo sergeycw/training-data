@@ -132,9 +132,9 @@
     "ex": "Leg Press",
     "sets": 6,
     "reps": 10,
-    "kg": 30,
+    "kg": 20,
     "rest_s": 45,
-    "note": "Одной ногой +30 кг. Левая, правая по очереди. RIR 3"
+    "note": "Одной ногой +20 кг. Левая, правая по очереди. RIR 3"
    },
    {
     "ex": "Calf Raise",
@@ -175,7 +175,7 @@
     "ex": "Leg Press",
     "sets": 1,
     "reps": 8,
-    "kg": 35,
+    "kg": 30,
     "rest_s": 60,
     "note": "Разминочный"
    },
@@ -183,9 +183,9 @@
     "ex": "Leg Press",
     "sets": 3,
     "reps": 10,
-    "kg": 60,
+    "kg": 55,
     "rest_s": 90,
-    "note": "RIR 3. +60-70 кг. Колени не в замок"
+    "note": "RIR 3. +55 кг. Колени не в замок"
    },
    {
     "ex": "Dumbbell Bulgarian Split Squat",
